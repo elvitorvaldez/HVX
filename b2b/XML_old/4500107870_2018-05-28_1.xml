@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:18:09" Bandera="T" Version="1.0" NumDocumento="10001861"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107870" FechaOrdenCompra="2018-05-14" NumeroPedidoProveedor="870906" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-14" FechaEntregaProveedor="2018-05-14" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-H-3300" NumArtP="H-3300" Descripcion="04 H-3300 REGADERA 5 C/BZO Y CH CR" PrecioUnitario="675.17">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-15"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="1350.34"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:04:07" Bandera="T" Version="1.0" NumDocumento="10001627"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097964" FechaOrdenCompra="2018-02-13" NumeroPedidoProveedor="870379" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-13" FechaEntregaProveedor="2018-02-13" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-07-HM-14" NumArtP="HM-14" Descripcion="04 HM-14 MEZC.ANTARES 4 CROMO" PrecioUnitario="2733.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="2733.00"/>
+  </Resumen>
+</Documento>

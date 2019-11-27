@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:32:26" Bandera="T" Version="1.0" NumDocumento="10002231"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106837" FechaOrdenCompra="2018-05-05" NumeroPedidoProveedor="871244" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-05" FechaEntregaProveedor="2018-05-05" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-06-C-46CR" NumArtP="C-46" Descripcion="04 C-46 MANERAL ANTEA CROMO" PrecioUnitario="160.73">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-15106" NumArtP="15106" Descripcion="04 15106 GANCHO SENCILLO PREMIER CROMO" PrecioUnitario="240.86">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-342" NumArtP="342-C" Descripcion="04 342-C COLADERA C/REJILLA CUADRADA" PrecioUnitario="361.77">
+      <CAR EstatusArticulo="AA" Cantidad="11.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-342RL" NumArtP="342-RL" Descripcion="04 342-RL REBOSADERO REDONDO C/DES" PrecioUnitario="353.23">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-6900" NumArtP="C-69" Descripcion="04 C-69 MANERAL KUBICA CROMO" PrecioUnitario="470.58">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="4.000" UDM="JG" NumArtD="04-C-77" NumArtP="C-77" Descripcion="04 C-77 JGO.MANERALES GDE MAGNA DX CROMO" PrecioUnitario="896.12">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="19.000" UDM="PZ" NumArtD="04-EP-905" NumArtP="EP-905" Descripcion="04 EP-905 MONO DE LAVABO VERTIKA CROMO" PrecioUnitario="2845.78">
+      <CAR EstatusArticulo="AA" Cantidad="19.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-MEP-2115" NumArtP="MEP-2115" Descripcion="04 MEP-2115 MEZC/LAV 8 A 12 PREMIER CR" PrecioUnitario="3497.24">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-05-14"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="89786.60"/>
+  </Resumen>
+</Documento>

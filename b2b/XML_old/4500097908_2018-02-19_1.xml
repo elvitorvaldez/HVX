@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:02:00" Bandera="T" Version="1.0" NumDocumento="10001563"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097908" FechaOrdenCompra="2018-02-12" NumeroPedidoProveedor="870343" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-12" FechaEntregaProveedor="2018-02-12" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-M-1007" NumArtP="M-1007" Descripcion="04 M-1007 MEZC PARA LAV 8 A12 BENNU CRO" PrecioUnitario="6346.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="2.000" UDM="JG" NumArtD="04-C-78" NumArtP="C-78" Descripcion="04 C-78JGO.MANERALES GDE BENNU CRO" PrecioUnitario="1827.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="16346.00"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:27:30" Bandera="T" Version="1.0" NumDocumento="10002134"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108796" FechaOrdenCompra="2018-05-19" NumeroPedidoProveedor="871164" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-19" FechaEntregaProveedor="2018-05-19" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-HOT-108" NumArtP="HOT-108" Descripcion="04 HOT-108 JABONERA CROMO EXPLORA" PrecioUnitario="371.25">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-25"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-0205500" NumArtP="TV-060" Descripcion="04 TV-060 SALIDA TINA PARED CROMO(TV-055" PrecioUnitario="1112.33">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-25"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-HOT-107" NumArtP="HOT-107" Descripcion="04 HOT-107 CEPILLERO CRO EXPLORA" PrecioUnitario="371.25">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-25"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-05C-03" NumArtP="C-3" Descripcion="04 C-3 MANERAL DIAMANTE GDE TRASPARE" PrecioUnitario="225.92">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-25"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-RM-27" NumArtP="RM-27" Descripcion="04 RM-27- REGADERA MANUAL CROM0" PrecioUnitario="1734.40">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-25"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="4041.07"/>
+  </Resumen>
+</Documento>

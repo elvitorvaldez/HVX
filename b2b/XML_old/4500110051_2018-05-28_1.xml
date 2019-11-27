@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:16:24" Bandera="T" Version="1.0" NumDocumento="10001810"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500110051" FechaOrdenCompra="2018-05-25" NumeroPedidoProveedor="870859" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-25" FechaEntregaProveedor="2018-05-25" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-09E-77-CR" NumArtP="E-77" Descripcion="04 E-77 MEZC.MONO.AQUA CROMO" PrecioUnitario="1272.11">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-966" NumArtP="THP-966" Descripcion="04 THP-966 EXTENSION CORTA P/MONO. CROMO" PrecioUnitario="623.02">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3790.26"/>
+  </Resumen>
+</Documento>

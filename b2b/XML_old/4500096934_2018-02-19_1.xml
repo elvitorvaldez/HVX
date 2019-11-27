@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:01:35" Bandera="T" Version="1.0" NumDocumento="10001551"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500096934" FechaOrdenCompra="2018-01-31" NumeroPedidoProveedor="870282" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-01-31" FechaEntregaProveedor="2018-01-31" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-037" NumArtP="TR-037" Descripcion="04 TR-037 BRAZO CHAPETON VERTICAL 30 CM." PrecioUnitario="783.00">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-02-08"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-02910500" NumArtP="9105" Descripcion="04 9105 TOA/BARRA CRO NUVA" PrecioUnitario="2023.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-08"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-1002" NumArtP="MR-1002" Descripcion="04 MR-1002 MEZC.P/EMPOT.P/REG.Y/O TINA" PrecioUnitario="2435.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-08"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-TH-101-S" NumArtP="TH-101-S" Descripcion="04 TH-101-S MANERAL CUADRADO" PrecioUnitario="718.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-08"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-15107-S" NumArtP="15107-S" Descripcion="04 15107-S P.CEPILLO PREMIER SAT" PrecioUnitario="971.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-08"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-01-117-00" NumArtP="117" Descripcion="04 117 P.PAPEL S/EMPOTRAR CLASICA CROMO" PrecioUnitario="808.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-08"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-01-108-00" NumArtP="108" Descripcion="04 108 JABONERA SENCILLA CLASICA CROMO" PrecioUnitario="576.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-08"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="30082.00"/>
+  </Resumen>
+</Documento>

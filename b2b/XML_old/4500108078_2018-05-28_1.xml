@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:26:48" Bandera="T" Version="1.0" NumDocumento="10002117"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108078" FechaOrdenCompra="2018-05-15" NumeroPedidoProveedor="871038" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-15" FechaEntregaProveedor="2018-05-15" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="29.000" UDM="PZ" NumArtD="04-210400" NumArtP="2104" Descripcion="04 2104 P.PAPEL CRO KONOS" PrecioUnitario="450.91">
+      <CAR EstatusArticulo="AA" Cantidad="29.000" CantidadBackorder="0" FechaEntregaArt="2018-05-23"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="39.000" UDM="PZ" NumArtD="04-24-CHLI-1" NumArtP="24-CHLI" Descripcion="04 24-CHLI COL C/CONTRA CUAD P/INS CERAM" PrecioUnitario="702.67">
+      <CAR EstatusArticulo="AA" Cantidad="39.000" CantidadBackorder="0" FechaEntregaArt="2018-05-23"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-963" NumArtP="TH-963" Descripcion="04 THP-963 EXTENSION P/MONO E-94 E-904" PrecioUnitario="806.04">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-23"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-E-924" NumArtP="E-924" Descripcion="04 E-924 MEZC/LAV NAUTI CORTA CC PUSH CR" PrecioUnitario="2581.68">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-23"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="52419.32"/>
+  </Resumen>
+</Documento>

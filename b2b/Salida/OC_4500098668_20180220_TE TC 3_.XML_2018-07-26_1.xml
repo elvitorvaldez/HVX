@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSACIN" FechaCreacionDocumento="2018-07-26T08:48:36" Bandera="T" Version="1.0" NumDocumento="10002585"/>
+    <SCI TipoDocumento="CO" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" Revision="00020" TipoConfirmacion="RE" NumeroOrdenCompra="4500098668" FechaOrdenCompra="2018-02-19" NumeroPedidoProveedor="0" FechaConfirmacion="2018-07-26" FechaEntregaDistribuidor="2018-02-19" FechaEntregaProveedor="2018-02-19" TextoLibreOrden="ERROR PEDIDO NO CREADO - ORDEN DE COMPRA YA PROCESADA"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-240" NumArtP="H-200" Descripcion="04 H-200 REGADERA" PrecioUnitario="1029.00">
+      <CAR EstatusArticulo="AR" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-01-19"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-240" NumArtP="24" Descripcion="24 COLADERA" PrecioUnitario="1029.00">
+      <CAR EstatusArticulo="AR" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-01-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="41160.00"/>
+  </Resumen>
+</Documento>

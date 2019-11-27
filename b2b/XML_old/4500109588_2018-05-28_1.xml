@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:23:42" Bandera="T" Version="1.0" NumDocumento="10002016"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109588" FechaOrdenCompra="2018-05-22" NumeroPedidoProveedor="871063" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-22" FechaEntregaProveedor="2018-05-22" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-RM28" NumArtP="RM-28" Descripcion="04 RM-28 REGADERA DESLIZABLE CRO" PrecioUnitario="1591.20">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-30"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3182.40"/>
+  </Resumen>
+</Documento>

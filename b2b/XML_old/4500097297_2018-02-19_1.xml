@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:04:28" Bandera="T" Version="1.0" NumDocumento="10001637"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097297" FechaOrdenCompra="2018-02-06" NumeroPedidoProveedor="870403" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-06" FechaEntregaProveedor="2018-02-06" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-E305" NumArtP="E-305" Descripcion="04 E-305 MONOMANDO SALIDA FLEXIBLE CRO" PrecioUnitario="7727.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-14"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="12.000" UDM="PZ" NumArtD="04-16106-S" NumArtP="16106-S" Descripcion="04 16106-S GANCHO DOBLE VERTIKA" PrecioUnitario="945.00">
+      <CAR EstatusArticulo="AA" Cantidad="12.000" CantidadBackorder="0" FechaEntregaArt="2018-02-14"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-H-3007" NumArtP="H-3007" Descripcion="04 H-3007 REGADERA CRO PLATO ANCHO 10" PrecioUnitario="5499.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-14"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-963" NumArtP="TH-963" Descripcion="04 THP-963 EXTENSION P/MONO E-94 E-904" PrecioUnitario="1370.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-14"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-11E-40CRO" NumArtP="E-40-II" Descripcion="04 E-40-II ENSAM. BASICO EMPOT. CROMO" PrecioUnitario="1861.00">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-02-14"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-010TH100" NumArtP="TH-100-S" Descripcion="04 TH-100-S MANERAL CENTRAL SATIN" PrecioUnitario="481.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-14"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-TH-969-S" NumArtP="TH-969-S" Descripcion="04 THP-969-S EXTENSION P/MONOANDO SATIN" PrecioUnitario="1197.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-14"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="72902.00"/>
+  </Resumen>
+</Documento>

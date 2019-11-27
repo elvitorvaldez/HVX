@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:27:37" Bandera="T" Version="1.0" NumDocumento="10002138"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108207" FechaOrdenCompra="2018-05-16" NumeroPedidoProveedor="871166" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-16" FechaEntregaProveedor="2018-05-16" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="16.000" UDM="JG" NumArtD="04-C-79" NumArtP="C-79" Descripcion="04 C-79 JUEGO MANERALES GRANDES ULTRA CR" PrecioUnitario="799.40">
+      <CAR EstatusArticulo="AA" Cantidad="16.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="12790.40"/>
+  </Resumen>
+</Documento>

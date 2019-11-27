@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500108089" FechaOrdenCompra="2018-05-15" EstatusOrden="O" TerminosPago="30.00" Extra4COC="ST"/>
+    <ns1:ROC Telefono="01553339400" Extra2="CEDIS BARRAGAN"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1901" EnviarAP="21-06" ENombreLocalidad="CEDIS BARRAGAN" ECalle="MANUEL L. BARRAGAN 200" EColonia="COL. EX HACIENDA EL CANADA" EMunicipio="GENERAL ESCOBEDO" EEstado="NL" ECodigoPostal="66065" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-02TV-1200" NumArtP="TV-120" Descripcion="04 TV-120 LLAVE ECONOMIZADORA CROMO" PrecioUnitario="1297.24" ImporteTotal="12842.68" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="1,167.52"/>
+    <ns1:ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-11E-40CRO" NumArtP="E-40-II" Descripcion="04 E-40-II ENSAM. BASICO EMPOT. CROMO" PrecioUnitario="1095.26" ImporteTotal="2957.20" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="985.73"/>
+    <ns1:ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-24" NumArtP="RM-24" Descripcion="04 RM-24 REGADERA D/ALTURA DESLIZABLE" PrecioUnitario="2140.26" ImporteTotal="1926.23" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="1,926.23"/>
+    <ns1:ART Linea="40" CantidadOrdenada="17.000" UDM="PZ" NumArtD="04-342" NumArtP="342-C" Descripcion="04 342-C COLADERA C/REJILLA CUADRADA" PrecioUnitario="361.77" ImporteTotal="5535.08" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="325.59"/>
+    <ns1:ART Linea="50" CantidadOrdenada="9.000" UDM="PZ" NumArtD="04-6900" NumArtP="C-69" Descripcion="04 C-69 MANERAL KUBICA CROMO" PrecioUnitario="470.58" ImporteTotal="3811.70" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="423.52"/>
+    <ns1:ART Linea="60" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-EP-905" NumArtP="EP-905" Descripcion="04 EP-905 MONO DE LAVABO VERTIKA CROMO" PrecioUnitario="2845.78" ImporteTotal="46101.64" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="2,561.20"/>
+    <ns1:ART Linea="70" CantidadOrdenada="7.000" UDM="PZ" NumArtD="04-EP-932" NumArtP="EP-932" Descripcion="04 EP-932 MONO/MAXIMA MED DE LAVABO CRO" PrecioUnitario="2283.45" ImporteTotal="14385.73" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="2,055.10"/>
+    <ns1:ART Linea="80" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-MEP-2115" NumArtP="MEP-2115" Descripcion="04 MEP-2115 MEZC/LAV 8 A 12 PREMIER CR" PrecioUnitario="3497.24" ImporteTotal="12590.06" FechaEntregaArt="2018-07-02" ExtraART2="10.00" ExtraART3="3,147.52"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="100150.32" IVA="16024.05" Total="116174.37" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( CIENTODIECISEIS MIL CIENTOSETENTA Y CUATRO PESOS 37/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

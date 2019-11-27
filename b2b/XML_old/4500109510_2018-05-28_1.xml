@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:12:56" Bandera="T" Version="1.0" NumDocumento="10001706"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109510" FechaOrdenCompra="2018-05-22" NumeroPedidoProveedor="870642" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-22" FechaEntregaProveedor="2018-05-22" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-TR013C" NumArtP="TR-013" Descripcion="04 TR-013 BZO/CHAP. CRO CUADRADO" PrecioUnitario="246.08">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-30"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="492.16"/>
+  </Resumen>
+</Documento>

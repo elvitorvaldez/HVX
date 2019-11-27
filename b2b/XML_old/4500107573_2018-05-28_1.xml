@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:28:45" Bandera="T" Version="1.0" NumDocumento="10002170"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107573" FechaOrdenCompra="2018-05-11" NumeroPedidoProveedor="871157" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-11" FechaEntregaProveedor="2018-05-11" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-14E-34000" NumArtP="E-34" Descripcion="04 E-34 MEZC.MONOMANDO P/FRE.CROMO" PrecioUnitario="1719.70">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="5.000" UDM="PZ" NumArtD="04-06MB0610" NumArtP="B-610-S" Descripcion="04 BARRA DE SEGURIDAD B-610-S" PrecioUnitario="623.96">
+      <CAR EstatusArticulo="AA" Cantidad="5.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-037" NumArtP="TR-037" Descripcion="04 TR-037 BRAZO CHAPETON VERTICAL 30 CM." PrecioUnitario="460.86">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-0390" NumArtP="TR-039" Descripcion="04 TR-039 BRAZO Y CHAPETON ANGULAR CROMO" PrecioUnitario="793.23">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-700" NumArtP="E-700" Descripcion="04 E-700 MEZC/TINA 1 CRO VERTIKA" PrecioUnitario="1729.66">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="5.000" UDM="PZ" NumArtD="04-9042" NumArtP="H-904" Descripcion="04 H-904 REG/BZO CRO VERTIKA CHORRO FIJO" PrecioUnitario="1278.28">
+      <CAR EstatusArticulo="AA" Cantidad="5.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-06TR-012" NumArtP="TR-012" Descripcion="04 TR-012 BRAZO Y CHAPETON CRO" PrecioUnitario="212.42">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-18"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-0350" NumArtP="TR-035-S" Descripcion="04 TR-035-S BRAZO Y CHAPETON ANGULAR SAT" PrecioUnitario="575.60">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-210600" NumArtP="2106" Descripcion="04 2106 GANCHO DOBLE KONOS CROMO" PrecioUnitario="293.49">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-18"/>
+    </ART>
+    <ART Linea="100" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-TH-968" NumArtP="TH-968" Descripcion="04 THP-968 EXT CRO P/MEZC 1 VERTIKA" PrecioUnitario="715.47">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="110" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-03FB18519" NumArtP="FB-185-19" Descripcion="04 FB-185-19 FLUXOMETRO BAT.P/MING." PrecioUnitario="6160.47">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="120" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-03-310-38" NumArtP="310-38" Descripcion="04 310-38 FLUXOMETRO D/PEDAL P/W.C." PrecioUnitario="2849.57">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-18"/>
+    </ART>
+    <ART Linea="130" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E305" NumArtP="E-305" Descripcion="04 E-305 MONOMANDO SALIDA FLEXIBLE CRO" PrecioUnitario="4547.45">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="140" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01-117-00" NumArtP="117" Descripcion="04 117 P.PAPEL S/EMPOTRAR CLASICA CROMO" PrecioUnitario="475.56">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="35318.03"/>
+  </Resumen>
+</Documento>

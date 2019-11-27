@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500109125" FechaOrdenCompra="2018-05-21" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070279048" Extra4COC="SP"/>
+    <ns1:ROC Contacto="MARIBEL RODRIGUEZ" Telefono="01553339400" Mail="maribel.rodriguez@gilsa.biz" Extra1="0010141135" Extra2="CEDIS BARRAGAN"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1901" EnviarAP="21-06" ENombreLocalidad="CEDIS BARRAGAN" ECalle="MANUEL L. BARRAGAN 200" EColonia="COL. EX HACIENDA EL CANADA" EMunicipio="GENERAL ESCOBEDO" EEstado="NL" ECodigoPostal="66065" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-0204601" NumArtP="E-46-S" Descripcion="04 E-46-S MONOMANDO REGADERA NUVA SATIN" PrecioUnitario="1850.08" ImporteTotal="1665.07" FechaEntregaArt="2018-07-30" ExtraART2="10.00" ExtraART3="1,665.07"/>
+    <ns1:ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-99-S" NumArtP="EP-99-S" Descripcion="04 EP-99-S MONO DE LAVABO NUVA SATIN" PrecioUnitario="3258.75" ImporteTotal="2932.87" FechaEntregaArt="2018-07-30" ExtraART2="10.00" ExtraART3="2,932.87"/>
+    <ns1:ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02910501" NumArtP="9105-S" Descripcion="04 9105-S TOA/BARRA SATIN NUVA" PrecioUnitario="1311.94" ImporteTotal="1180.75" FechaEntregaArt="2018-07-30" ExtraART2="10.00" ExtraART3="1,180.75"/>
+    <ns1:ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02910901" NumArtP="9109-S" Descripcion="04 9109-S TOA/BARRA SATIN CORTO SEN NUVA" PrecioUnitario="811.72" ImporteTotal="730.55" FechaEntregaArt="2018-07-30" ExtraART2="10.00" ExtraART3="730.55"/>
+    <ns1:ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02910601" NumArtP="9106-S" Descripcion="04 9106-S GANCHO SENCILLO NUVA SATIN" PrecioUnitario="516.81" ImporteTotal="465.13" FechaEntregaArt="2018-07-30" ExtraART2="10.00" ExtraART3="465.13"/>
+    <ns1:ART Linea="60" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-03700" NumArtP="TR-037-S" Descripcion="04 TR-037-S BRAZO CHAPETON VERTICAL" PrecioUnitario="511.59" ImporteTotal="460.43" FechaEntregaArt="2018-07-30" ExtraART2="10.00" ExtraART3="460.43"/>
+    <ns1:ART Linea="70" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02911701" NumArtP="9117-S" Descripcion="04 9117-S P.PAPEL SATIN NUVA SENCILLO" PrecioUnitario="607.37" ImporteTotal="546.63" FechaEntregaArt="2018-07-30" ExtraART2="10.00" ExtraART3="546.63"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="7981.43" IVA="1277.03" Total="9258.46" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( NUEVE MIL DOSCIENTOS CINCUENTA Y OCHO PESOS 46/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:02:52" Bandera="T" Version="1.0" NumDocumento="10001590"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097472" FechaOrdenCompra="2018-02-08" NumeroPedidoProveedor="870312" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-08" FechaEntregaProveedor="2018-02-08" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="170" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-924" NumArtP="E-924" Descripcion="04 E-924 MEZC/LAV NAUTI CORTA CC PUSH CR" PrecioUnitario="4387.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="180" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-73" NumArtP="C-73" Descripcion="04 C-73 MANERAL KONOS CROMO" PrecioUnitario="663.49">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="190" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19105-S" NumArtP="19105-S" Descripcion="04 19105-S TOA/BARRA SATIN MAGNA DX" PrecioUnitario="2262.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="200" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-151051" NumArtP="15105-S" Descripcion="04 15105-S TOA/BARRA SATIN PREMIER" PrecioUnitario="1929.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="210" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01-TH100" NumArtP="TH-100" Descripcion="04 TH-100 MANERAL CENTRAL CROMO" PrecioUnitario="431.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="12695.98"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:13:05" Bandera="T" Version="1.0" NumDocumento="10001708"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500107115" FechaOrdenCompra="2018-05-08" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-08" FechaEntregaProveedor="2018-05-08" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="80" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-EP-932" NumArtP="EP-932" Descripcion="04 EP-932 MONO/MAXIMA MED DE LAVABO CRO" PrecioUnitario="2283.45">
+      <CAR EstatusArticulo="AR" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-EP-933" NumArtP="EP-933" Descripcion="04 EP-933 MONO/MAXIMA ALTO DE LAVABO CRO" PrecioUnitario="2704.95">
+      <CAR EstatusArticulo="AR" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="29087.40"/>
+  </Resumen>
+</Documento>

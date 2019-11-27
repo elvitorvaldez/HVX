@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:19:53" Bandera="T" Version="1.0" NumDocumento="10001913"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500107008" FechaOrdenCompra="2018-05-07" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-07" FechaEntregaProveedor="2018-05-07" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E780" NumArtP="E-780-DX" Descripcion="04 E-780 MEZC/REG 1 CRO MAGNA DX" PrecioUnitario="2308.57">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-07"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="2308.57"/>
+  </Resumen>
+</Documento>

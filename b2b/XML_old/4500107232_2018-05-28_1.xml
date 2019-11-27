@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:28:26" Bandera="T" Version="1.0" NumDocumento="10002165"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107232" FechaOrdenCompra="2018-05-09" NumeroPedidoProveedor="871190" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-09" FechaEntregaProveedor="2018-05-09" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="28.000" UDM="PZ" NumArtD="04-01-104-00" NumArtP="104" Descripcion="04 104 P.PAPEL P/EMPOTRAR CLASICA CROMO" PrecioUnitario="542.42">
+      <CAR EstatusArticulo="AA" Cantidad="28.000" CantidadBackorder="0" FechaEntregaArt="2018-05-09"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="15187.76"/>
+  </Resumen>
+</Documento>

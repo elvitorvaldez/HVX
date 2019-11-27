@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:05:39" Bandera="T" Version="1.0" NumDocumento="10001671"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500092538" FechaOrdenCompra="2017-12-07" NumeroPedidoProveedor="0" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-07" FechaEntregaProveedor="2017-12-07" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="15.000" UDM="PZ" NumArtD="04-EP-933" NumArtP="EP-933" Descripcion="04 EP-933 MONO/MAXIMA ALTO DE LAVABO CRO" PrecioUnitario="2527.80">
+      <CAR EstatusArticulo="AR" Cantidad="15.000" CantidadBackorder="0" FechaEntregaArt="2017-12-15"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="37917.00"/>
+  </Resumen>
+</Documento>

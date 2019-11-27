@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:27:21" Bandera="T" Version="1.0" NumDocumento="10002130"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109035" FechaOrdenCompra="2018-05-21" NumeroPedidoProveedor="871151" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-21" FechaEntregaProveedor="2018-05-21" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-14E-34000" NumArtP="E-34" Descripcion="04 E-34 MEZC.MONOMANDO P/FRE.CROMO" PrecioUnitario="1719.70">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-29"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3439.40"/>
+  </Resumen>
+</Documento>

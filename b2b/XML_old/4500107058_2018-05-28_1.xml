@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:22:39" Bandera="T" Version="1.0" NumDocumento="10001989"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107058" FechaOrdenCompra="2018-05-08" NumeroPedidoProveedor="871021" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-08" FechaEntregaProveedor="2018-05-08" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-928" NumArtP="E-928" Descripcion="04 E-928 MONOMANDO DE LAV CENTURY CROMO" PrecioUnitario="1641.94">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-12"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-929" NumArtP="E-929" Descripcion="04 E-929 MEZ/LAV SQUADRA CR" PrecioUnitario="1694.09">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-12"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="4977.97"/>
+  </Resumen>
+</Documento>

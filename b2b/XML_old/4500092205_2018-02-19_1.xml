@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:03:34" Bandera="T" Version="1.0" NumDocumento="10001611"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500092205" FechaOrdenCompra="2017-12-04" NumeroPedidoProveedor="870341" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-04" FechaEntregaProveedor="2017-12-04" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-MEP-2115" NumArtP="MEP-2115" Descripcion="04 MEP-2115 MEZC/LAV 8 A 12 PREMIER CR" PrecioUnitario="3268.65">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="9805.95"/>
+  </Resumen>
+</Documento>

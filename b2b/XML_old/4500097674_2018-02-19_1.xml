@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:05:05" Bandera="T" Version="1.0" NumDocumento="10001653"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097674" FechaOrdenCompra="2018-02-09" NumeroPedidoProveedor="870390" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-09" FechaEntregaProveedor="2018-02-09" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-922" NumArtP="E-922" Descripcion="04 E-922 MEZ/LAV BAMBOO CORTA CC PUSH CR" PrecioUnitario="4175.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="8350.00"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:05:10" Bandera="T" Version="1.0" NumDocumento="10001656"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500092575" FechaOrdenCompra="2017-12-07" NumeroPedidoProveedor="870410" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-07" FechaEntregaProveedor="2017-12-07" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-03800" NumArtP="TR-038" Descripcion="04 TR-038 BRAZO CHAPETON KUBICA CROMO" PrecioUnitario="570.90">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2017-12-07"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="2283.60"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:21:32" Bandera="T" Version="1.0" NumDocumento="10001958"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109445" FechaOrdenCompra="2018-05-22" NumeroPedidoProveedor="870968" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-22" FechaEntregaProveedor="2018-05-22" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-19106" NumArtP="19106" Descripcion="04 19106 GANCHO CRO SENCILLO MAGNA DX" PrecioUnitario="473.19">
+      <CAR EstatusArticulo="AA" Cantidad="18.000" CantidadBackorder="0" FechaEntregaArt="2018-05-30"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="8517.42"/>
+  </Resumen>
+</Documento>

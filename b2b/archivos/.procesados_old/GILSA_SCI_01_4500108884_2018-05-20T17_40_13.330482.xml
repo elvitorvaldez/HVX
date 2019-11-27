@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500108884" FechaOrdenCompra="2018-05-20" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070278645" Extra4COC="SP"/>
+    <ns1:ROC Contacto="TAMEZ HINOJOSA JUAN MANUEL" Telefono="01553339400" Mail="juan.tamez@gilsa.biz" Extra1="0010140899" Extra2="CARRETERA NACIONAL"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1002" EnviarAP="21-03" ENombreLocalidad="Carretera Nacional" ECalle="CARRETERA NACIONAL KM 269" EMunicipio="MONTERREY" EEstado="NL" ECodigoPostal="64988" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-05C-03" NumArtP="C-3" Descripcion="04 C-3 MANERAL DIAMANTE GDE TRASPARE" PrecioUnitario="225.92" ImporteTotal="406.66" FechaEntregaArt="2018-05-21" ExtraART2="10.00" ExtraART3="203.33"/>
+    <ns1:ART Linea="20" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-H-3303" NumArtP="H-3303" Descripcion="04 H-3303 REGADERA CUADRADA C/BZ Y CH CR" PrecioUnitario="1168.28" ImporteTotal="2102.90" FechaEntregaArt="2018-05-21" ExtraART2="10.00" ExtraART3="1,051.45"/>
+    <ns1:ART Linea="30" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-05-C-1400" NumArtP="C-14" Descripcion="04 C-14 MANERAL GDE.EUR-CAPRI CROMO" PrecioUnitario="245.60" ImporteTotal="884.16" FechaEntregaArt="2018-05-21" ExtraART2="10.00" ExtraART3="221.04"/>
+    <ns1:ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-TV-016-40" NumArtP="TV-016-40" Descripcion="04 TV-016-40 CESPOL P/LAVABO S/CONTRA 40" PrecioUnitario="665.21" ImporteTotal="598.69" FechaEntregaArt="2018-05-21" ExtraART2="10.00" ExtraART3="598.69"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="3992.41" IVA="638.79" Total="4631.20" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( CUATRO MIL SEISCIENTOS TREINTA Y UN PESOS 20/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

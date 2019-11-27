@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSACIN" FechaCreacionDocumento="2018-10-18T09:51:10" Bandera="T" Version="1.0" NumDocumento="10002587"/>
+    <SCI TipoDocumento="CO" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500114756" FechaOrdenCompra="2018-06-29" NumeroPedidoProveedor="0" FechaConfirmacion="2018-10-18" FechaEntregaDistribuidor="2018-06-29" FechaEntregaProveedor="2018-06-29" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-15105" NumArtP="15105" Descripcion="04 15105-C TOA/BARRA CRO PREMIER" PrecioUnitario="986.20">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-TV-122" NumArtP="TV-122" Descripcion="04 TV-122 LLAVE ECONOMIZADORA ANT.CRO" PrecioUnitario="1297.24">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-702" NumArtP="E-702" Descripcion="04 E-702 MEZC/REG/TINA 1 CRO PREMIER" PrecioUnitario="1644.79">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-TH-968" NumArtP="THP-968" Descripcion="04 THP-968 EXT CRO P/MEZC 1 VERTIKA" PrecioUnitario="715.47">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-3005" NumArtP="H-3005" Descripcion="04 H-3005-C REG.PREMIER DE 5X8CHORRO F" PrecioUnitario="1759.53">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-03-110-38" NumArtP="110-38" Descripcion="04 110-38 FLUXOMETRO MANIJA P/W.C." PrecioUnitario="2369.27">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="6.000" UDM="JG" NumArtD="04-C-77" NumArtP="C-77" Descripcion="04 C-77 JGO.MANERALES GDE MAGNA DX CROMO" PrecioUnitario="896.12">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-1410900" NumArtP="14109" Descripcion="04 14109 TOA/BARRA CRO CORTO SENC.KUBICA" PrecioUnitario="792.76">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-02TV-1200" NumArtP="TV-120" Descripcion="04 TV-120 LLAVE ECONOMIZADORA CROMO" PrecioUnitario="1297.24">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="100" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-EP-94" NumArtP="EP-94" Descripcion="04 EP-94 MONOMANDO DE LAVABO KUBICA CRO" PrecioUnitario="3105.60">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="110" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-E-921" NumArtP="E-921" Descripcion="04 E-921 MONO/LAV ALTO ALICA CR" PrecioUnitario="3235.99">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="120" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-16105" NumArtP="16105" Descripcion="04 16105 TOA/BARRA CRO VERTIKA" PrecioUnitario="1239.40">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="130" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-11700" NumArtP="HOT-117" Descripcion="04 HOT-117 P.PAPEL CRO EXPLORA" PrecioUnitario="485.52">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="140" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-1410500" NumArtP="14105" Descripcion="04 14105 TOA/BARRA CRO KUBICA" PrecioUnitario="1280.65">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="150" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-E305" NumArtP="E-305" Descripcion="04 E-305 MONOMANDO SALIDA FLEXIBLE CRO" PrecioUnitario="4547.45">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="160" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-06MB0610" NumArtP="B-610-S" Descripcion="04 BARRA DE SEGURIDAD B-610-S" PrecioUnitario="623.96">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="170" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-30030" NumArtP="H-3003" Descripcion="04 H-3003 REGADERA PLATO ANCHO 7CROMO" PrecioUnitario="1030.30">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="180" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-09E-77-CR" NumArtP="E-77" Descripcion="04 E-77 MEZC.MONO.AQUA CROMO" PrecioUnitario="1272.11">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="190" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04 RM-14" NumArtP="RM-14" Descripcion="04 RM-14 REGADERA MANUAL CRO C/BZO" PrecioUnitario="2274.92">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="200" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-RM-15" NumArtP="RM-15" Descripcion="04 RM-15 REGADERA MANUAL CRO BZO.LARGO" PrecioUnitario="2274.92">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="210" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-H-3008" NumArtP="H-3008" Descripcion="04 H-3008 REGADERA CRO REDONDA 8 ULTRA" PrecioUnitario="2575.04">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="220" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-1410600" NumArtP="14106" Descripcion="04 14106 GANCHO DOBLE KUBICA CROMO" PrecioUnitario="500.69">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="230" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-06-SH058" NumArtP="TH-058" Descripcion="04 TH-058 CONTRA P/LAVABO CROMO" PrecioUnitario="476.04">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="240" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-E-920" NumArtP="E-920" Descripcion="04 E-920 MONO ALIKA C/DESAGUE DE PUSH CR" PrecioUnitario="2581.68">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="250" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-06MB470S" NumArtP="B-470-S" Descripcion="04 BARRA RECTA SATINADA B-470-S" PrecioUnitario="588.88">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="260" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-06-H200" NumArtP="H-200" Descripcion="04 H-200 REGADERA OPTIMA CROMO" PrecioUnitario="436.20">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="270" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-1410400" NumArtP="14104" Descripcion="04 14104 P.PAPEL CRO KUBICA" PrecioUnitario="591.25">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="280" CantidadOrdenada="12.000" UDM="PZ" NumArtD="04-TH-969" NumArtP="THP-969" Descripcion="04 THP-969 EXTENSION P/MONOANDO CROMO" PrecioUnitario="636.77">
+      <CAR EstatusArticulo="AA" Cantidad="12.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="290" CantidadOrdenada="12.000" UDM="PZ" NumArtD="04-209" NumArtP="209" Descripcion="04 209 TOA/ARO CRO CLASICA" PrecioUnitario="344.22">
+      <CAR EstatusArticulo="AA" Cantidad="12.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="300" CantidadOrdenada="12.000" UDM="PZ" NumArtD="04-03800" NumArtP="TR-038" Descripcion="04 TR-038 BRAZO CHAPETON KUBICA CROMO" PrecioUnitario="610.69">
+      <CAR EstatusArticulo="AA" Cantidad="12.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="310" CantidadOrdenada="10.000" UDM="JG" NumArtD="04-6900" NumArtP="C-69" Descripcion="04 C-69 MANERAL KUBICA CROMO" PrecioUnitario="941.16">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="320" CantidadOrdenada="16.000" UDM="PZ" NumArtD="04-210600" NumArtP="2106" Descripcion="04 2106 GANCHO DOBLE KONOS CROMO" PrecioUnitario="293.49">
+      <CAR EstatusArticulo="AA" Cantidad="16.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="330" CantidadOrdenada="12.000" UDM="PZ" NumArtD="04-210900" NumArtP="2109" Descripcion="04 2109 TOA/BARRA CRO CORTO KONOS" PrecioUnitario="475.56">
+      <CAR EstatusArticulo="AA" Cantidad="12.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="340" CantidadOrdenada="14.000" UDM="PZ" NumArtD="04-16109" NumArtP="16109" Descripcion="04 16109 TOA/BARRA CRO CORTO VERTIKA" PrecioUnitario="757.20">
+      <CAR EstatusArticulo="AA" Cantidad="14.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="350" CantidadOrdenada="14.000" UDM="PZ" NumArtD="04-59" NumArtP="E-59" Descripcion="04 E-59 MEZC. MONO/REG/TINA" PrecioUnitario="1251.72">
+      <CAR EstatusArticulo="AA" Cantidad="14.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="360" CantidadOrdenada="14.000" UDM="PZ" NumArtD="04-E-700" NumArtP="E-700" Descripcion="04 E-700 MEZC/TINA 1 CRO VERTIKA" PrecioUnitario="1729.66">
+      <CAR EstatusArticulo="AA" Cantidad="14.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="370" CantidadOrdenada="16.000" UDM="PZ" NumArtD="04-06-C-46CR" NumArtP="C-46" Descripcion="04 C-46 MANERAL ANTEA CROMO" PrecioUnitario="160.73">
+      <CAR EstatusArticulo="AA" Cantidad="16.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="380" CantidadOrdenada="16.000" UDM="PZ" NumArtD="04-H-3009" NumArtP="H-3009" Descripcion="04 H-3009 REGADERA CRO PLATO ANCHO" PrecioUnitario="2780.82">
+      <CAR EstatusArticulo="AA" Cantidad="16.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="390" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-02-0047-03" NumArtP="C-47" Descripcion="04 C-47 MANERAL CORINTO CROMO" PrecioUnitario="485.77">
+      <CAR EstatusArticulo="AA" Cantidad="18.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="410" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-EP-909" NumArtP="EP-909" Descripcion="04 EP-909 MEZC/LAV PREMIER CR" PrecioUnitario="2233.19">
+      <CAR EstatusArticulo="AA" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="430" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-036" NumArtP="TR-036" Descripcion="04 TR-036 BRAZO CHAPETON KUBICA CROMO" PrecioUnitario="710.26">
+      <CAR EstatusArticulo="AA" Cantidad="18.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="440" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-15106" NumArtP="15106" Descripcion="04 15106 GANCHO SENCILLO PREMIER CROMO" PrecioUnitario="240.86">
+      <CAR EstatusArticulo="AA" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="450" CantidadOrdenada="22.000" UDM="PZ" NumArtD="04-210400" NumArtP="2104" Descripcion="04 2104 P.PAPEL CRO KONOS" PrecioUnitario="450.91">
+      <CAR EstatusArticulo="AA" Cantidad="22.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="460" CantidadOrdenada="22.000" UDM="PZ" NumArtD="04-24-CHLI-1" NumArtP="24-CHLI" Descripcion="04 24-CHLI COL C/CONTRA CUAD P/INS CERAM" PrecioUnitario="702.67">
+      <CAR EstatusArticulo="AA" Cantidad="22.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="470" CantidadOrdenada="26.000" UDM="PZ" NumArtD="04-05C-44-CR" NumArtP="C-44" Descripcion="04 C-44 MANERAL ANTARES CROMO" PrecioUnitario="229.01">
+      <CAR EstatusArticulo="AA" Cantidad="26.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="480" CantidadOrdenada="24.000" UDM="PZ" NumArtD="04-E907" NumArtP="E-907" Descripcion="04 E-907 MEZC. MONO EXPLORA CROMO" PrecioUnitario="1699.79">
+      <CAR EstatusArticulo="AA" Cantidad="24.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="490" CantidadOrdenada="26.000" UDM="PZ" NumArtD="04-EP-905" NumArtP="EP-905" Descripcion="04 EP-905 MONO DE LAVABO VERTIKA CROMO" PrecioUnitario="2845.78">
+      <CAR EstatusArticulo="AA" Cantidad="26.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="500" CantidadOrdenada="28.000" UDM="PZ" NumArtD="04-15109" NumArtP="15109" Descripcion="04 15109-C TOA/BARRA CORTO CRO PREMIER" PrecioUnitario="531.98">
+      <CAR EstatusArticulo="AA" Cantidad="28.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="510" CantidadOrdenada="28.000" UDM="PZ" NumArtD="04-06-632H" NumArtP="632-H" Descripcion="04 632-H COLADERA HORIZONTAL" PrecioUnitario="813.15">
+      <CAR EstatusArticulo="AA" Cantidad="28.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="520" CantidadOrdenada="24.000" UDM="PZ" NumArtD="04-16106" NumArtP="16106" Descripcion="04 16106 GANCHO DOBLE VERTIKA CROMO" PrecioUnitario="480.78">
+      <CAR EstatusArticulo="AA" Cantidad="24.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="530" CantidadOrdenada="24.000" UDM="PZ" NumArtD="04-16104" NumArtP="16104" Descripcion="04 16104 P.PAPEL CRO VERTIKA" PrecioUnitario="571.33">
+      <CAR EstatusArticulo="AA" Cantidad="24.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="540" CantidadOrdenada="30.000" UDM="PZ" NumArtD="04-15104" NumArtP="15104" Descripcion="04 15104-C P.PAPEL CRO PREMIER" PrecioUnitario="550.95">
+      <CAR EstatusArticulo="AA" Cantidad="30.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="550" CantidadOrdenada="34.000" UDM="PZ" NumArtD="04-035" NumArtP="TR-035" Descripcion="04 TR-035 BRAZO Y CHAPETON ANGULAR CRO." PrecioUnitario="496.90">
+      <CAR EstatusArticulo="AA" Cantidad="34.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="560" CantidadOrdenada="46.000" UDM="PZ" NumArtD="04-H201C" NumArtP="H-201" Descripcion="04 H-201 REGADERA CROMO EXPLORA" PrecioUnitario="505.91">
+      <CAR EstatusArticulo="AA" Cantidad="46.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="600" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-06-342R" NumArtP="342-R" Descripcion="04 342-R COLADERA C/REJILLA REDONDA" PrecioUnitario="309.14">
+      <CAR EstatusArticulo="AA" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="610" CantidadOrdenada="64.000" UDM="PZ" NumArtD="04-02TV-0160" NumArtP="TV-016" Descripcion="04 TV-016 CESPOL P/LAVABO S/CONTRA" PrecioUnitario="530.08">
+      <CAR EstatusArticulo="AA" Cantidad="64.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="630" CantidadOrdenada="80.000" UDM="PZ" NumArtD="04-342RL" NumArtP="342-RL" Descripcion="04 342-RL REBOSADERO REDONDO C/DES" PrecioUnitario="353.23">
+      <CAR EstatusArticulo="AA" Cantidad="80.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="640" CantidadOrdenada="88.000" UDM="PZ" NumArtD="04-12E-50001" NumArtP="E-50-II" Descripcion="04 E-50-II ENSAM.REG BASICO DUPLEX" PrecioUnitario="773.32">
+      <CAR EstatusArticulo="AA" Cantidad="88.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="650" CantidadOrdenada="282.000" UDM="PZ" NumArtD="04-342" NumArtP="342-C" Descripcion="04 342-C COLADERA C/REJILLA CUADRADA" PrecioUnitario="361.77">
+      <CAR EstatusArticulo="AA" Cantidad="282.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+    <ART Linea="660" CantidadOrdenada="512.000" UDM="PZ" NumArtD="04-342CJ" NumArtP="342-CL" Descripcion="04 342-CL COLADERA CUADRADA" PrecioUnitario="414.87">
+      <CAR EstatusArticulo="AA" Cantidad="512.000" CantidadBackorder="0" FechaEntregaArt="2018-07-13"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="1134397.16"/>
+  </Resumen>
+</Documento>

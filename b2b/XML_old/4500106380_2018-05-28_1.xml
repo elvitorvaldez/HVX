@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:27:57" Bandera="T" Version="1.0" NumDocumento="10002150"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106380" FechaOrdenCompra="2018-05-02" NumeroPedidoProveedor="871178" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-02" FechaEntregaProveedor="2018-05-02" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-9042" NumArtP="H-904" Descripcion="04 H-904 REG/BZO CRO VERTIKA CHORRO FIJO" PrecioUnitario="1278.28">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-10"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3834.84"/>
+  </Resumen>
+</Documento>

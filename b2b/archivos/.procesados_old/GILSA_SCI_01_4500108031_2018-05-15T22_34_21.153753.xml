@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500108031" FechaOrdenCompra="2018-05-15" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070276744" Extra4COC="SP"/>
+    <ns1:ROC Contacto="IRMA GUADALUPE GARCIA LUPERCIO" Telefono="01553339400" Mail="irma.garcia@gilsa.biz" Extra1="0010139761" Extra2="CALZADA DEL VALLE"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1007" EnviarAP="21-08" ENombreLocalidad="CALZADA DEL VALLE" ECalle="CALZADA DEL VALLE 320" EColonia="COL. DEL VALLE" EMunicipio="SAN PEDRO GARZA GARC&#xCD;A" EEstado="NL" ECodigoPostal="66220" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="5.000" UDM="PZ" NumArtD="04-EP-914-ND" NumArtP="EP-914-ND" Descripcion="04 EP-914-ND MONO D/LAV MAGNA DX NIQ DUR" PrecioUnitario="2841.51" ImporteTotal="12786.79" FechaEntregaArt="2018-05-19" ExtraART2="10.00" ExtraART3="2,557.36"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="12786.79" IVA="2045.89" Total="14832.68" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( CATORCE MIL OCHOCIENTOS TREINTA Y DOS PESOS 68/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

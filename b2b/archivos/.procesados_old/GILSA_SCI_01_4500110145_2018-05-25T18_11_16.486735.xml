@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500110145" FechaOrdenCompra="2018-05-25" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070281027" Extra4COC="SP"/>
+    <ns1:ROC Contacto="CERDA MARTINEZ MARIA ESTHELA" Telefono="01553339400" Mail="esthela.cerda@gilsa.biz" Extra1="0010142390" Extra2="SAN JERONIMO"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1004" EnviarAP="21-05" ENombreLocalidad="SAN JERONIMO" ECalle="AVE. INSURGENTES 4070" EColonia="COL. SAN JERONIMO" EMunicipio="MONTERREY" EEstado="NL" ECodigoPostal="64640" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-16107-S" NumArtP="16107-S" Descripcion="04 16107-S P. CEPILLO SAT VERTIKA" PrecioUnitario="920.78" ImporteTotal="2486.11" FechaEntregaArt="2018-05-26" ExtraART2="10.00" ExtraART3="828.70"/>
+    <ns1:ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-1410801" NumArtP="14108-S" Descripcion="04 14108-S JABONERA KUBICA SATIN" PrecioUnitario="1090.52" ImporteTotal="2944.40" FechaEntregaArt="2018-05-26" ExtraART2="10.00" ExtraART3="981.47"/>
+    <ns1:ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-3008-DX" NumArtP="E-3008-DX" Descripcion="04 E-3008-DX MONO ACUED. DX PARED CROMO" PrecioUnitario="3169.14" ImporteTotal="2852.23" FechaEntregaArt="2018-05-26" ExtraART2="10.00" ExtraART3="2,852.23"/>
+    <ns1:ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-07-HM-14" NumArtP="HM-14" Descripcion="04 HM-14 MEZC.ANTARES 4 CROMO" PrecioUnitario="1608.28" ImporteTotal="1447.45" FechaEntregaArt="2018-05-26" ExtraART2="10.00" ExtraART3="1,447.45"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="9730.19" IVA="1556.83" Total="11287.02" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( ONCE MIL DOSCIENTOS OCHENTA Y SIETE PESOS 02/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

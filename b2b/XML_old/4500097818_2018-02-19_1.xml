@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:04:32" Bandera="T" Version="1.0" NumDocumento="10001638"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097818" FechaOrdenCompra="2018-02-12" NumeroPedidoProveedor="870361" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-12" FechaEntregaProveedor="2018-02-12" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-966" NumArtP="TH-966" Descripcion="04 THP-966 EXTENSION CORTA P/MONO. CROMO" PrecioUnitario="1059.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-21"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-185-9-05" NumArtP="185-19-0.5" Descripcion="04 185-19-0.5 FLUXOMETRO MANIJA P/MING." PrecioUnitario="4026.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-21"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-9630" NumArtP="TH-963-S" Descripcion="04 THP-963-S EXTENSION P/MONO E-94 E-904" PrecioUnitario="1516.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-21"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-02910900" NumArtP="9109" Descripcion="04 9109 TOA/BARRA CRO CORTO SENC. NUVA" PrecioUnitario="1249.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-21"/>
+    </ART>
+    <ART Linea="120" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-MEP-2115-S" NumArtP="MEP-2115-S" Descripcion="04 MEP-2115-S ENS/LAV 8 A 12 PREMIER SAT" PrecioUnitario="6834.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-21"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="18431.00"/>
+  </Resumen>
+</Documento>

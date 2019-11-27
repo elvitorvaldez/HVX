@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <Control>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <COC NumeroOrdenCompra="4500116198" FechaOrdenCompra="2018-07-14" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070296190" Extra4COC="SP"/>
+    <ROC Contacto="BRISENO GONZALEZ CYNTHIA IRASEMA" Telefono="01553339400" Mail="cynthia.briseno@gilsa.biz" Extra1="0010152714" Extra2="CEDIS BARRAGAN"/>
+    <FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ENA EnviarAD="1901" EnviarAP="21-06" ENombreLocalidad="CEDIS BARRAGAN" ECalle="MANUEL L. BARRAGAN 200" EColonia="COL. EX HACIENDA EL CANADA" EMunicipio="GENERAL ESCOBEDO" EEstado="NL" ECodigoPostal="66065" EPais="MX"/>
+    <PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3303" NumArtP="H-3303" Descripcion="04 H-3303 REGADERA CUADRADA C/BZ Y CH CR" PrecioUnitario="1168.28" ImporteTotal="1168.28" FechaEntregaArt="2018-07-18" ExtraART3="1,168.28"/>
+    <ART Linea="20" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-H-3300" NumArtP="H-3300" Descripcion="04 H-3300 REGADERA 5 C/BZO Y CH CR" PrecioUnitario="675.17" ImporteTotal="1350.34" FechaEntregaArt="2018-07-18" ExtraART3="675.17"/>
+  </Detalle>
+  <Resumen>
+    <RES Moneda="MXN" Subtotal="2518.62" IVA="402.98" Total="2921.60" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( DOS MIL NOVECIENTOS VEINTIUN PESOS 60/100 M.N. )"/>
+  </Resumen>
+</Documento>

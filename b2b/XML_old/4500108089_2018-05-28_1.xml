@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:25:14" Bandera="T" Version="1.0" NumDocumento="10002067"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108089" FechaOrdenCompra="2018-05-15" NumeroPedidoProveedor="871091" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-15" FechaEntregaProveedor="2018-05-15" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-02TV-1200" NumArtP="TV-120" Descripcion="04 TV-120 LLAVE ECONOMIZADORA CROMO" PrecioUnitario="1297.24">
+      <CAR EstatusArticulo="AA" Cantidad="11.000" CantidadBackorder="0" FechaEntregaArt="2018-07-02"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-11E-40CRO" NumArtP="E-40-II" Descripcion="04 E-40-II ENSAM. BASICO EMPOT. CROMO" PrecioUnitario="1095.26">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-07-02"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-24" NumArtP="RM-24" Descripcion="04 RM-24 REGADERA D/ALTURA DESLIZABLE" PrecioUnitario="2140.26">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-02"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="17.000" UDM="PZ" NumArtD="04-342" NumArtP="342-C" Descripcion="04 342-C COLADERA C/REJILLA CUADRADA" PrecioUnitario="361.77">
+      <CAR EstatusArticulo="AA" Cantidad="17.000" CantidadBackorder="0" FechaEntregaArt="2018-07-02"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="9.000" UDM="PZ" NumArtD="04-6900" NumArtP="C-69" Descripcion="04 C-69 MANERAL KUBICA CROMO" PrecioUnitario="470.58">
+      <CAR EstatusArticulo="AA" Cantidad="9.000" CantidadBackorder="0" FechaEntregaArt="2018-07-02"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-EP-905" NumArtP="EP-905" Descripcion="04 EP-905 MONO DE LAVABO VERTIKA CROMO" PrecioUnitario="2845.78">
+      <CAR EstatusArticulo="AA" Cantidad="18.000" CantidadBackorder="0" FechaEntregaArt="2018-07-02"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-MEP-2115" NumArtP="MEP-2115" Descripcion="04 MEP-2115 MEZC/LAV 8 A 12 PREMIER CR" PrecioUnitario="3497.24">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-07-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="95293.99"/>
+  </Resumen>
+</Documento>

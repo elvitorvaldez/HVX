@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:20:30" Bandera="T" Version="1.0" NumDocumento="10001930"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106326" FechaOrdenCompra="2018-05-01" NumeroPedidoProveedor="870975" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-01" FechaEntregaProveedor="2018-05-01" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19117-ND" NumArtP="19117-ND" Descripcion="04 19117 PORTAPAPEL MAGNA DX NIQUEL DURA" PrecioUnitario="740.13">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-02"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-915-ND" NumArtP="EP-915-ND" Descripcion="04 EP-915-ND MONO/LAV ALTO MAGNA DX ND" PrecioUnitario="3694.95">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-02"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-RM-29" NumArtP="RM-29" Descripcion="04 RM-29 REGADERA MANUAL CROMO" PrecioUnitario="1885.17">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-02"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3011" NumArtP="H-3011" Descripcion="04 H-3011 REG CUADRADA 12 ANTI CR" PrecioUnitario="2915.95">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-02"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19109-ND" NumArtP="19109-ND" Descripcion="04 19109 TOA/BARRA CORTO MAGNA DX NIQUEL" PrecioUnitario="825.47">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="10061.67"/>
+  </Resumen>
+</Documento>

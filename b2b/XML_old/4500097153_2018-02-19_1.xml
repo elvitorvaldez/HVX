@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:01:11" Bandera="T" Version="1.0" NumDocumento="10001543"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097153" FechaOrdenCompra="2018-02-03" NumeroPedidoProveedor="870291" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-03" FechaEntregaProveedor="2018-02-03" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-EP-909-S" NumArtP="EP-909-S" Descripcion="04 EP-909-S MONO DE LAVABO PREMIER SATIN" PrecioUnitario="4171.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-TR013C" NumArtP="TR-013" Descripcion="04 TR-013 BZO/CHAP. CRO CUADRADO" PrecioUnitario="418.00">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-MEP-2115-S" NumArtP="MEP-2115-S" Descripcion="04 MEP-2115-S ENS/LAV 8 A 12 PREMIER SAT" PrecioUnitario="6834.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-924" NumArtP="E-924" Descripcion="04 E-924 MEZC/LAV NAUTI CORTA CC PUSH CR" PrecioUnitario="4387.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-73" NumArtP="C-73" Descripcion="04 C-73 MANERAL KONOS CROMO" PrecioUnitario="663.49">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-19105-S" NumArtP="19105-S" Descripcion="04 19105-S TOA/BARRA SATIN MAGNA DX" PrecioUnitario="2262.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="7.000" UDM="PZ" NumArtD="04-151051" NumArtP="15105-S" Descripcion="04 15105-S TOA/BARRA SATIN PREMIER" PrecioUnitario="1929.00">
+      <CAR EstatusArticulo="AA" Cantidad="7.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01059" NumArtP="C-59" Descripcion="04 C-59 MANERAL ATICA CROMO" PrecioUnitario="389.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-01-109-C0" NumArtP="109" Descripcion="04 109 TOA/ARO CRO CLASICA" PrecioUnitario="585.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="100" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-01026200" NumArtP="C-62" Descripcion="04 C-62 MANERAL NUVA I CROMO" PrecioUnitario="765.00">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="120" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-966" NumArtP="TH-966" Descripcion="04 THP-966 EXTENSION CORTA P/MONO. CROMO" PrecioUnitario="1059.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="130" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-96100" NumArtP="TH-961" Descripcion="04 THP-961 EXTENSION P/MONOMANDO CROMO" PrecioUnitario="1224.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="140" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-185-9-05" NumArtP="185-19-0.5" Descripcion="04 185-19-0.5 FLUXOMETRO MANIJA P/MING." PrecioUnitario="4026.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+    <ART Linea="160" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-00010" NumArtP="ES-001" Descripcion="04 ES-001 ESPEJO D/DOBLE VISTA CROMO" PrecioUnitario="2728.00">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-02-12"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="89390.94"/>
+  </Resumen>
+</Documento>

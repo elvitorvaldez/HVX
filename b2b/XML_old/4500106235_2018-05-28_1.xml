@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:31:13" Bandera="T" Version="1.0" NumDocumento="10002191"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106235" FechaOrdenCompra="2018-05-01" NumeroPedidoProveedor="871217" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-01" FechaEntregaProveedor="2018-05-01" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="12.000" UDM="PZ" NumArtD="04-05-C-2000" NumArtP="C-20" Descripcion="04 C-20 MANERAL ANDROS CROMO" PrecioUnitario="245.60">
+      <CAR EstatusArticulo="AA" Cantidad="12.000" CantidadBackorder="0" FechaEntregaArt="2018-05-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="2947.20"/>
+  </Resumen>
+</Documento>

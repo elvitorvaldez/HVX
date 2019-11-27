@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:21:49" Bandera="T" Version="1.0" NumDocumento="10001966"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108848" FechaOrdenCompra="2018-05-20" NumeroPedidoProveedor="871008" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-20" FechaEntregaProveedor="2018-05-20" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3013" NumArtP="H-3013" Descripcion="04 H-3013 REGADERA CUADRADA 16 ANTI CR" PrecioUnitario="4447.42">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-06-20"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-3008-DX" NumArtP="E-3008-DX" Descripcion="04 E-3008-DX MONO ACUED. DX PARED CROMO" PrecioUnitario="3169.14">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-06-20"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-300500" NumArtP="E-3005" Descripcion="04 E-3005 MEZC.MONO.DE PARED CROMO" PrecioUnitario="3761.81">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-06-20"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="15140.18"/>
+  </Resumen>
+</Documento>

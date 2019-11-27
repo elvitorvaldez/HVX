@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:23:11" Bandera="T" Version="1.0" NumDocumento="10002003"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108452" FechaOrdenCompra="2018-05-17" NumeroPedidoProveedor="871027" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-17" FechaEntregaProveedor="2018-05-17" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="92.000" UDM="PZ" NumArtD="04-REJ-02-AI" NumArtP="REJ-02-AI" Descripcion="04 REJ-02-AI REPISA AC/INOX ESQUINERA" PrecioUnitario="560.91">
+      <CAR EstatusArticulo="AA" Cantidad="92.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="51603.72"/>
+  </Resumen>
+</Documento>

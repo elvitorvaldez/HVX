@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:00:10" Bandera="T" Version="1.0" NumDocumento="10001516"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500097939" FechaOrdenCompra="2018-02-13" NumeroPedidoProveedor="0" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-13" FechaEntregaProveedor="2018-02-13" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-10718128SL" NumArtP="8128-S-L" Descripcion="04 8128-S/L JABONERA SENCILLA METAL" PrecioUnitario="1828.00">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-10718106SL" NumArtP="8106-S-L" Descripcion="04 8106-S/L GANCHO SENC ELEG.SAT/LAC" PrecioUnitario="906.00">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-10718105SL" NumArtP="8105-S-L" Descripcion="04 8105-S/L TOA/BARRA SATIN/LACA ELEG" PrecioUnitario="2428.00">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01-0056-06" NumArtP="C-56-S-L" Descripcion="04 C-56-S/L MANERAL ELEGANCE SAT/LAC" PrecioUnitario="869.00">
+      <CAR EstatusArticulo="AR" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-1001080006" NumArtP="H-800-S-L" Descripcion="04 H-800-S/L REGADERA ELEGANCE SATIN LAC" PrecioUnitario="1295.00">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-1001718104" NumArtP="8104-S-L" Descripcion="04 8104-S/L P.PAPEL SAT/LACA ELEGAN" PrecioUnitario="1054.35">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="9249.35"/>
+  </Resumen>
+</Documento>

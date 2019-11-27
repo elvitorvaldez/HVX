@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:16:00" Bandera="T" Version="1.0" NumDocumento="10001796"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108422" FechaOrdenCompra="2018-05-17" NumeroPedidoProveedor="870864" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-17" FechaEntregaProveedor="2018-05-17" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-M-1001-DX" NumArtP="M-1001-DX" Descripcion="04 M-1001-DX MEZC.ACUEDUCTO DX 12 CROMO" PrecioUnitario="4770.78">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-17"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="4770.78"/>
+  </Resumen>
+</Documento>

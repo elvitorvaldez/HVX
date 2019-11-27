@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:17:25" Bandera="T" Version="1.0" NumDocumento="10001838"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106408" FechaOrdenCompra="2018-05-02" NumeroPedidoProveedor="870885" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-02" FechaEntregaProveedor="2018-05-02" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-310500" NumArtP="2105" Descripcion="04 2105 TOA/BARRA CRO KONOS" PrecioUnitario="722.11">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-10"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="2888.44"/>
+  </Resumen>
+</Documento>

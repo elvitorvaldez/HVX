@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:06:31" Bandera="T" Version="1.0" NumDocumento="10001694"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097655" FechaOrdenCompra="2018-02-09" NumeroPedidoProveedor="870455" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-09" FechaEntregaProveedor="2018-02-09" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="5.000" UDM="PZ" NumArtD="04-15107-S" NumArtP="15107-S" Descripcion="04 15107-S P.CEPILLO PREMIER SAT" PrecioUnitario="971.00">
+      <CAR EstatusArticulo="AA" Cantidad="5.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-14105" NumArtP="14105-S" Descripcion="04 14105-S TOA/BARRA SATIN KUBICA" PrecioUnitario="2398.00">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-1002" NumArtP="MR-1002" Descripcion="04 MR-1002 MEZC.P/EMPOT.P/REG.Y/O TINA" PrecioUnitario="2435.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="5.000" UDM="PZ" NumArtD="04-01-117-00" NumArtP="117" Descripcion="04 117 P.PAPEL S/EMPOTRAR CLASICA CROMO" PrecioUnitario="808.00">
+      <CAR EstatusArticulo="AA" Cantidad="5.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-151061" NumArtP="15106-S" Descripcion="04 15106-S GANCHO SENCILLO PREMIER SATIN" PrecioUnitario="478.00">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-06-C-46CR" NumArtP="C-46" Descripcion="04 C-46 MANERAL ANTEA CROMO" PrecioUnitario="273.00">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="100" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-24-RHLI" NumArtP="24-RHLI" Descripcion="04 24-RHLI COLADERA DE UNA BOCA" PrecioUnitario="2731.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="110" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-208" NumArtP="208" Descripcion="04 208 JABONERA SENCILLA CLASICA CROMO" PrecioUnitario="576.00">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="120" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-0350" NumArtP="TR-035-S" Descripcion="04 TR-035-S BRAZO Y CHAPETON ANGULAR SAT" PrecioUnitario="978.00">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="130" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-3200" NumArtP="E-32" Descripcion="04 E-32 MONOMANDO NUVA P/FREG. CROMO" PrecioUnitario="3850.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="140" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-05C-44-CR" NumArtP="C-44" Descripcion="04 C-44 MANERAL ANTARES CROMO" PrecioUnitario="389.00">
+      <CAR EstatusArticulo="AA" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="160" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-059" NumArtP="TH-059" Descripcion="04 TH-059 CONTRA CON REJILLA P/LAV.CROMO" PrecioUnitario="809.00">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="170" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-01-TH100" NumArtP="TH-100" Descripcion="04 TH-100 MANERAL CENTRAL CROMO" PrecioUnitario="431.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="190" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-310500" NumArtP="2105" Descripcion="04 2105 TOA/BARRA CRO KONOS" PrecioUnitario="1227.00">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+    <ART Linea="200" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-E-922" NumArtP="E-922" Descripcion="04 E-922 MEZ/LAV BAMBOO CORTA CC PUSH CR" PrecioUnitario="4175.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-17"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="98269.00"/>
+  </Resumen>
+</Documento>

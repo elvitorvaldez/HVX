@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:16:09" Bandera="T" Version="1.0" NumDocumento="10001801"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500110064" FechaOrdenCompra="2018-05-25" NumeroPedidoProveedor="870873" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-25" FechaEntregaProveedor="2018-05-25" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="5.000" UDM="PZ" NumArtD="04-EP-909" NumArtP="EP-909" Descripcion="04 EP-909 MEZC/LAV PREMIER CR" PrecioUnitario="2233.19">
+      <CAR EstatusArticulo="AA" Cantidad="5.000" CantidadBackorder="0" FechaEntregaArt="2018-06-11"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="11165.95"/>
+  </Resumen>
+</Documento>

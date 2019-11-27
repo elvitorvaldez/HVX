@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:17:15" Bandera="T" Version="1.0" NumDocumento="10001832"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500110150" FechaOrdenCompra="2018-05-25" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-25" FechaEntregaProveedor="2018-05-25" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-EP-2114-S" NumArtP="EP-2114-S" Descripcion="04 EP-2114-S ENS/LAV 8 A 12 KUBICA SATIN" PrecioUnitario="3691.17">
+      <CAR EstatusArticulo="AR" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="7382.34"/>
+  </Resumen>
+</Documento>

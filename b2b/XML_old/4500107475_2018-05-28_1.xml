@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:18:33" Bandera="T" Version="1.0" NumDocumento="10001872"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107475" FechaOrdenCompra="2018-05-11" NumeroPedidoProveedor="870934" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-11" FechaEntregaProveedor="2018-05-11" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="9.000" UDM="PZ" NumArtD="04-02TV-1200" NumArtP="TV-120" Descripcion="04 TV-120 LLAVE ECONOMIZADORA CROMO" PrecioUnitario="1297.24">
+      <CAR EstatusArticulo="AA" Cantidad="9.000" CantidadBackorder="0" FechaEntregaArt="2018-05-21"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="5.000" UDM="PZ" NumArtD="04-06-C-46CR" NumArtP="C-46" Descripcion="04 C-46 MANERAL ANTEA CROMO" PrecioUnitario="160.73">
+      <CAR EstatusArticulo="AA" Cantidad="5.000" CantidadBackorder="0" FechaEntregaArt="2018-05-21"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-06-H200" NumArtP="H-200" Descripcion="04 H-200 REGADERA OPTIMA CROMO" PrecioUnitario="436.20">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-21"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-EP-905" NumArtP="EP-905" Descripcion="04 EP-905 MONO DE LAVABO VERTIKA CROMO" PrecioUnitario="2845.78">
+      <CAR EstatusArticulo="AA" Cantidad="18.000" CantidadBackorder="0" FechaEntregaArt="2018-05-21"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="65447.65"/>
+  </Resumen>
+</Documento>

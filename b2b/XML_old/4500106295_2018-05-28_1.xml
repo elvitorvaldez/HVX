@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:14:03" Bandera="T" Version="1.0" NumDocumento="10001738"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106295" FechaOrdenCompra="2018-05-01" NumeroPedidoProveedor="870790" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-01" FechaEntregaProveedor="2018-05-01" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-H-3300" NumArtP="H-3300" Descripcion="04 H-3300 REGADERA 5 C/BZO Y CH CR" PrecioUnitario="675.17">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-07"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3303" NumArtP="H-3303" Descripcion="04 H-3303 REGADERA CUADRADA C/BZ Y CH CR" PrecioUnitario="1168.28">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-07"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-E50-1" NumArtP="E-50" Descripcion="04 E-50 VALVEX 1 ENSAM.REG BASICO DUPLEX" PrecioUnitario="773.32">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-07"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="5611.90"/>
+  </Resumen>
+</Documento>

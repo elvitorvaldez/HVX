@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:02:07" Bandera="T" Version="1.0" NumDocumento="10001566"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097978" FechaOrdenCompra="2018-02-13" NumeroPedidoProveedor="870320" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-13" FechaEntregaProveedor="2018-02-13" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="4.000" UDM="JG" NumArtD="04-C-77-ND" NumArtP="C-77-ND" Descripcion="04 C-77-ND JGO.MANER.GDE MAGNA DX NIQ.DU" PrecioUnitario="1679.00">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="6716.00"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500109245" FechaOrdenCompra="2018-05-21" EstatusOrden="O" TerminosPago="30.00" Extra4COC="ST"/>
+    <ns1:ROC Telefono="01553339400" Extra1="0010141071" Extra2="CARRETERA NACIONAL"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1002" EnviarAP="21-03" ENombreLocalidad="Carretera Nacional" ECalle="CARRETERA NACIONAL KM 269" EMunicipio="MONTERREY" EEstado="NL" ECodigoPostal="64988" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02911700" NumArtP="9117" Descripcion="04 9117 P.PAPEL CRO NUVA SENCILLO" PrecioUnitario="549.53" ImporteTotal="494.58" FechaEntregaArt="2018-05-29" ExtraART2="10.00" ExtraART3="494.58"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="494.58" IVA="79.13" Total="573.71" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( QUINIENTOS SETENTA Y TRES PESOS 71/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

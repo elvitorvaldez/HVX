@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:21:05" Bandera="T" Version="1.0" NumDocumento="10001945"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106531" FechaOrdenCompra="2018-05-03" NumeroPedidoProveedor="870962" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-03" FechaEntregaProveedor="2018-05-03" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-06-4954" NumArtP="4954" Descripcion="04 4954 COLADERA DE PRETIL" PrecioUnitario="896.12">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-03"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-06-444X" NumArtP="444-X" Descripcion="04 444-X COLADERA PARA AZOTEA" PrecioUnitario="590.30">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-03"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3868.96"/>
+  </Resumen>
+</Documento>

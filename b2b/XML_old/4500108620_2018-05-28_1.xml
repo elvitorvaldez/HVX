@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:24:54" Bandera="T" Version="1.0" NumDocumento="10002057"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500108620" FechaOrdenCompra="2018-05-18" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-18" FechaEntregaProveedor="2018-05-18" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-709" NumArtP="E-709" Descripcion="04 E-709 MONO P/REG O TINA MAN C/DESV CR" PrecioUnitario="1410.56">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-18"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-05C-37-CR" NumArtP="C-37" Descripcion="04 C-37 MANERAL ANTIQUA CROMO" PrecioUnitario="776.60">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-05-18"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="9176.56"/>
+  </Resumen>
+</Documento>

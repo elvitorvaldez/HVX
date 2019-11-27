@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:22:50" Bandera="T" Version="1.0" NumDocumento="10001993"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108053" FechaOrdenCompra="2018-05-15" NumeroPedidoProveedor="871010" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-15" FechaEntregaProveedor="2018-05-15" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19106-ND" NumArtP="19106-ND" Descripcion="04 19106-ND GANCHO SENCILLO MAGNA DX ND" PrecioUnitario="519.66">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19109-ND" NumArtP="19109-ND" Descripcion="04 19109 TOA/BARRA CORTO MAGNA DX NIQUEL" PrecioUnitario="825.47">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19117-ND" NumArtP="19117-ND" Descripcion="04 19117 PORTAPAPEL MAGNA DX NIQUEL DURA" PrecioUnitario="740.13">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19105-ND" NumArtP="19105-ND" Descripcion="04 19105 TOA/BARRA MAGNA DX NIQUEL DURAV" PrecioUnitario="1331.38">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3416.64"/>
+  </Resumen>
+</Documento>

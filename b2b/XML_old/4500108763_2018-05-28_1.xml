@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:22:17" Bandera="T" Version="1.0" NumDocumento="10001977"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500108763" FechaOrdenCompra="2018-05-19" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-19" FechaEntregaProveedor="2018-05-19" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02-100-00" NumArtP="RM-10-S-L" Descripcion="04 RM-10-S/L REGADERA MANUAL ELEGANCE" PrecioUnitario="2505.82">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-1001080006" NumArtP="H-800-S-L" Descripcion="04 H-800-S/L REGADERA ELEGANCE SATIN LAC" PrecioUnitario="761.94">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01-0056-06" NumArtP="C-56-S-L" Descripcion="04 C-56-S/L MANERAL ELEGANCE SAT/LAC" PrecioUnitario="511.36">
+      <CAR EstatusArticulo="AR" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-2001-S/L" NumArtP="EP-2001-S/L" Descripcion="04 EP-2001-S/L ENS/LAV 8 A 12 ELEG ST LC" PrecioUnitario="3111.77">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="7402.25"/>
+  </Resumen>
+</Documento>

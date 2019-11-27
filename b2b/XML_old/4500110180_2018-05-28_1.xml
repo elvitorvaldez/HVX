@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:25:51" Bandera="T" Version="1.0" NumDocumento="10002086"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500110180" FechaOrdenCompra="2018-05-26" NumeroPedidoProveedor="871116" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-26" FechaEntregaProveedor="2018-05-26" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-305-AAI" NumArtP="E-305-AAI" Descripcion="04 E-305-AAI MONOMANDO P/COC ACAB ACERO" PrecioUnitario="5489.57">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-300201" NumArtP="H-3002-S" Descripcion="04 H-3002-S REGADERA D/PLATO KUBICA SAT." PrecioUnitario="3813.49">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-14105" NumArtP="14105-S" Descripcion="04 14105-S TOA/BARRA SATIN KUBICA" PrecioUnitario="1411.04">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-031" NumArtP="TV-031" Descripcion="04 TV-031 CONEXION P/CESPOL DOBLE" PrecioUnitario="678.49">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-02H-8801" NumArtP="H-8801" Descripcion="04 H-8801 CONTRA CANASTA P/FREGADERO" PrecioUnitario="759.09">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+    <ART Linea="150" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-14E-34000" NumArtP="E-34" Descripcion="04 E-34 MEZC.MONOMANDO P/FRE.CROMO" PrecioUnitario="1719.70">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="30330.60"/>
+  </Resumen>
+</Documento>

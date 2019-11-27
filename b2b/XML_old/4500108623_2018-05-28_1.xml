@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:20:11" Bandera="T" Version="1.0" NumDocumento="10001921"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108623" FechaOrdenCompra="2018-05-18" NumeroPedidoProveedor="870973" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-18" FechaEntregaProveedor="2018-05-18" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-02-0047-03" NumArtP="C-47" Descripcion="04 C-47 MANERAL CORINTO CROMO" PrecioUnitario="267.17">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-06-18"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="7.000" UDM="PZ" NumArtD="04-02TV-0058" NumArtP="TV-105" Descripcion="04 TV-105 LLAVE ECONOMIZADORA" PrecioUnitario="1127.97">
+      <CAR EstatusArticulo="AA" Cantidad="7.000" CantidadBackorder="0" FechaEntregaArt="2018-06-18"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-EP-905" NumArtP="EP-905" Descripcion="04 EP-905 MONO DE LAVABO VERTIKA CROMO" PrecioUnitario="2845.78">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-06-18"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="33333.73"/>
+  </Resumen>
+</Documento>

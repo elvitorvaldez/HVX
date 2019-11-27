@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:17:46" Bandera="T" Version="1.0" NumDocumento="10001848"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106628" FechaOrdenCompra="2018-05-03" NumeroPedidoProveedor="870913" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-03" FechaEntregaProveedor="2018-05-03" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-06200" NumArtP="TH-062" Descripcion="04 TH-062 CONTRA C/DESAGUE T/HONGO CROMO" PrecioUnitario="460.39">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-03"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-6700" NumArtP="C-67" Descripcion="04 C-67 MANERAL PRIMMA GRANDE CROMO" PrecioUnitario="238.02">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-03"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="1412.47"/>
+  </Resumen>
+</Documento>

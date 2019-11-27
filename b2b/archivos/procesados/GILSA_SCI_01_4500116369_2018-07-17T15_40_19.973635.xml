@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <Control>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <COC NumeroOrdenCompra="4500116369" FechaOrdenCompra="2018-07-17" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070296883" Extra4COC="SP"/>
+    <ROC Contacto="MENDEZ MENDEZ CIRA" Telefono="01553339400" Mail="cira.mendez@gilsa.biz" Extra1="0010153234" Extra2="CARRETERA NACIONAL"/>
+    <FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ENA EnviarAD="1002" EnviarAP="21-03" ENombreLocalidad="Carretera Nacional" ECalle="CARRETERA NACIONAL KM 269" EMunicipio="MONTERREY" EEstado="NL" ECodigoPostal="64988" EPais="MX"/>
+    <PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-06H-50000" NumArtP="H-500" Descripcion="04 H-500 REGADERA S/BZO.S/VAL.CONTRO" PrecioUnitario="558.53" ImporteTotal="1117.06" FechaEntregaArt="2018-07-17" ExtraART3="558.53"/>
+    <ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-07-HM-17" NumArtP="HM-17" Descripcion="04 HM-17 MEZC.ALBATROS 4 C/REJILLA CRO" PrecioUnitario="1647.16" ImporteTotal="4941.48" FechaEntregaArt="2018-07-17" ExtraART3="1,647.16"/>
+  </Detalle>
+  <Resumen>
+    <RES Moneda="MXN" Subtotal="6058.54" IVA="969.37" Total="7027.91" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( SIETE MIL VEINTISIETE PESOS 91/100 M.N. )"/>
+  </Resumen>
+</Documento>

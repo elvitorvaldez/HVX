@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500110243" FechaOrdenCompra="2018-05-26" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070281216" Extra4COC="SP"/>
+    <ns1:ROC Contacto="MARCO ANTONIO DEL ALTO GONZALEZ" Telefono="01553339400" Mail="marco.delalto@gilsa.biz" Extra1="0010142525" Extra2="SANTA ENGRACIA"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1001" EnviarAP="21-02" ENombreLocalidad="SANTA ENGRACIA" ECalle="AVENIDA RICARDO MARGAIN 777" EColonia="COL. SANTA ENGRACIA" EMunicipio="SAN PEDRO GARZA GARC&#xCD;A" EEstado="NL" ECodigoPostal="66267" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01-0056-06" NumArtP="C-56-S-L" Descripcion="04 C-56-S/L MANERAL ELEGANCE SAT/LAC" PrecioUnitario="511.36" ImporteTotal="920.45" FechaEntregaArt="2018-05-30" ExtraART2="10.00" ExtraART3="460.23"/>
+    <ns1:ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-2001-S/L" NumArtP="EP-2001-S/L" Descripcion="04 EP-2001-S/L ENS/LAV 8 A 12 ELEG ST LC" PrecioUnitario="3111.77" ImporteTotal="2800.59" FechaEntregaArt="2018-05-30" ExtraART2="10.00" ExtraART3="2,800.59"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="3721.04" IVA="595.37" Total="4316.41" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( CUATRO MIL TRESCIENTOS DIECISEIS PESOS 41/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

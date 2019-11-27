@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:32:53" Bandera="T" Version="1.0" NumDocumento="10002242"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107847" FechaOrdenCompra="2018-05-14" NumeroPedidoProveedor="871265" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-14" FechaEntregaProveedor="2018-05-14" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-TZF-17" NumArtP="TZF NAO17" Descripcion="04 TZF-17 TAZA FLUX NAO 17 BLANCO" PrecioUnitario="1825.43">
+      <CAR EstatusArticulo="AA" Cantidad="11.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="41.000" UDM="PZ" NumArtD="04-AT-4" NumArtP="AT-4" Descripcion="04 AT-4 ASIENTO C/TAPA ANTIBACTE BCO" PrecioUnitario="545.73">
+      <CAR EstatusArticulo="AA" Cantidad="41.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="7.000" UDM="PZ" NumArtD="04-LV-2-1P" NumArtP="LV LUCERNA1" Descripcion="04 LV LAVABO LUCERNA 1 BLANCO" PrecioUnitario="1338.02">
+      <CAR EstatusArticulo="AA" Cantidad="7.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="100" CantidadOrdenada="30.000" UDM="PZ" NumArtD="04-MG-1" NumArtP="MG FERRY" Descripcion="04 MG-1 MINGI FERRY TIPO CASCADA BLANCO" PrecioUnitario="2673.19">
+      <CAR EstatusArticulo="AA" Cantidad="30.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="132016.50"/>
+  </Resumen>
+</Documento>

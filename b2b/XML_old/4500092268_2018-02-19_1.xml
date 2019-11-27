@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:02:04" Bandera="T" Version="1.0" NumDocumento="10001564"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500092268" FechaOrdenCompra="2017-12-04" NumeroPedidoProveedor="870344" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-04" FechaEntregaProveedor="2017-12-04" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="16.000" UDM="PZ" NumArtD="04-16104-S" NumArtP="16104-S" Descripcion="04 16104-S PORTA PAPEL VERTIKA SATIN" PrecioUnitario="618.20">
+      <CAR EstatusArticulo="AA" Cantidad="16.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-02-0047-03" NumArtP="C-47" Descripcion="04 C-47 MANERAL CORINTO CROMO" PrecioUnitario="249.70">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-3200" NumArtP="E-32" Descripcion="04 E-32 MONOMANDO NUVA P/FREG. CROMO" PrecioUnitario="2117.50">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-03801" NumArtP="TR-038-S" Descripcion="04 TR-038-S BRAZO CHAPETON KUBICA SATIN" PrecioUnitario="659.45">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2017-12-11"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="17103.35"/>
+  </Resumen>
+</Documento>

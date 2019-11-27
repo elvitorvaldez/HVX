@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Documento xmlns="http://www.tredicom.com/OrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Control>
+<CIN Emisor="GILSACIN" Receptor="HELVEXCIN" FechaCreacionDocumento="2018-02-20T17:31:43" Bandera="P" Version="1.0" NumDocumento="0000035065"/>
+<SCI TipoDocumento="CO" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+</Control>
+<Cabecera>
+<COC NumeroOrdenCompra="4500098668" FechaOrdenCompra="2018-02-19" EstatusOrden="M" TerminosPago="30.00" Revision="00020" Extra1COC="0077003166" Extra2COC="Orden Terceros"/>
+<ROC Contacto="GONZALEZ GAONA PABLO ERIC" Telefono="01553339400" Mail="pablo.gonzalez@gilsa.biz" Extra1="0010126668" Extra2="CEDIS BARRAGAN"/>
+<FAA FacturarAD="1000" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+<ENA EnviarAD="9000102867" ENombreLocalidad="VICTOR ALVARADO" ECalle="PEDRO RAMIREZ VAZQUEZ" ENumero="200" EMunicipio="SAN PEDRO GARZA GARCÍA" EEstado="NL" ECodigoPostal="99999" EPais="MX"/>
+<PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+</Cabecera>
+<Detalle>
+<ART Linea="10" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-240" NumArtP="H-200" Descripcion="04 H-200 REGADERA" PrecioUnitario="1029.00" ImporteTotal="5618.47" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="510.77"/>
+<ART Linea="20" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-240" NumArtP="24" Descripcion="24 COLADERA" PrecioUnitario="1029.00" ImporteTotal="5618.47" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="510.77"/>
+</Detalle>
+<Resumen>
+<RES Moneda="MXN" Subtotal="548442.07" IVA="87750.73" Total="636192.80" MensajeLibreRES1=" * El material deberá ser entregado en la dirección indicada, en caso   contrario no se aceptará la mercancía. * El número de esta orden de compra debe ser referenciado en la remisión   y/o factura con la que se entregue." MensajeLibreRES3="( SEISCIENTOS TREINTA Y SEIS MIL CIENTONOVENTA Y DOS PESOS 80/100 M.N. )"/>
+</Resumen>
+</Documento>

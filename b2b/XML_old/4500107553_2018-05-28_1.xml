@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:26:11" Bandera="T" Version="1.0" NumDocumento="10002097"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107553" FechaOrdenCompra="2018-05-11" NumeroPedidoProveedor="871133" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-11" FechaEntregaProveedor="2018-05-11" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="15.000" UDM="PZ" NumArtD="04-EP-914" NumArtP="EP-914" Descripcion="04 EP-914 MONO DE LAVABO MAGNA DX CROMO" PrecioUnitario="2581.68">
+      <CAR EstatusArticulo="AA" Cantidad="15.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="38725.20"/>
+  </Resumen>
+</Documento>

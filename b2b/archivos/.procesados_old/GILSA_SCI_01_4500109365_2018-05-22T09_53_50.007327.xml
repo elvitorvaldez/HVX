@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500109365" FechaOrdenCompra="2018-05-22" EstatusOrden="O" TerminosPago="30.00" Extra4COC="ST"/>
+    <ns1:ROC Telefono="01553339400" Extra1="0010141385" Extra2="CARRETERA NACIONAL"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1002" EnviarAP="21-03" ENombreLocalidad="Carretera Nacional" ECalle="CARRETERA NACIONAL KM 269" EMunicipio="MONTERREY" EEstado="NL" ECodigoPostal="64988" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-921" NumArtP="E-921" Descripcion="04 E-921 MONO/LAV ALTO ALICA CR" PrecioUnitario="3235.99" ImporteTotal="5824.78" FechaEntregaArt="2018-05-29" ExtraART2="10.00" ExtraART3="2,912.39"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="5824.78" IVA="931.96" Total="6756.74" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( SEIS MIL SETECIENTOS CINCUENTA Y SEIS PESOS 74/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

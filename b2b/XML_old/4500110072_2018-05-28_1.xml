@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:21:12" Bandera="T" Version="1.0" NumDocumento="10001949"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500110072" FechaOrdenCompra="2018-05-25" NumeroPedidoProveedor="870991" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-25" FechaEntregaProveedor="2018-05-25" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="22.000" UDM="PZ" NumArtD="04-15104" NumArtP="15104" Descripcion="04 15104-C P.PAPEL CRO PREMIER" PrecioUnitario="550.95">
+      <CAR EstatusArticulo="AA" Cantidad="22.000" CantidadBackorder="0" FechaEntregaArt="2018-06-11"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="12120.90"/>
+  </Resumen>
+</Documento>

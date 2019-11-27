@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:21:16" Bandera="T" Version="1.0" NumDocumento="10001950"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108082" FechaOrdenCompra="2018-05-15" NumeroPedidoProveedor="871003" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-15" FechaEntregaProveedor="2018-05-15" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="56.000" UDM="PZ" NumArtD="04-03-110-38" NumArtP="110-38" Descripcion="04 110-38 FLUXOMETRO MANIJA P/W.C." PrecioUnitario="2369.27">
+      <CAR EstatusArticulo="AA" Cantidad="56.000" CantidadBackorder="0" FechaEntregaArt="2018-06-18"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-06MB470S" NumArtP="B-470-S" Descripcion="04 BARRA RECTA SATINADA B-470-S" PrecioUnitario="588.88">
+      <CAR EstatusArticulo="AA" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-06-18"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-09E-77-CR" NumArtP="E-77" Descripcion="04 E-77 MEZC.MONO.AQUA CROMO" PrecioUnitario="1272.11">
+      <CAR EstatusArticulo="AA" Cantidad="11.000" CantidadBackorder="0" FechaEntregaArt="2018-06-18"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="20.000" UDM="PZ" NumArtD="04-210900" NumArtP="2109" Descripcion="04 2109 TOA/BARRA CRO CORTO KONOS" PrecioUnitario="475.56">
+      <CAR EstatusArticulo="AA" Cantidad="20.000" CantidadBackorder="0" FechaEntregaArt="2018-06-18"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="167961.13"/>
+  </Resumen>
+</Documento>

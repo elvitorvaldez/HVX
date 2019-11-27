@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:06:14" Bandera="T" Version="1.0" NumDocumento="10001690"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500096892" FechaOrdenCompra="2018-01-31" NumeroPedidoProveedor="0" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-01-31" FechaEntregaProveedor="2018-01-31" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-2006" NumArtP="EP-2006" Descripcion="04 EP-2006 ENS/LAV 8 A 12 NUVA CR" PrecioUnitario="4746.00">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-01-31"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="4746.00"/>
+  </Resumen>
+</Documento>

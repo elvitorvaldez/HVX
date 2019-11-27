@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500106263" FechaOrdenCompra="2018-05-01" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070272562" Extra4COC="SP"/>
+    <ns1:ROC Contacto="IBARRA GIJ&#xD3;N MARTHA ALEJANDRA" Telefono="01553339400" Mail="martha.ibarra@gilsa.biz" Extra1="0010137424" Extra2="CEDIS BARRAGAN"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="-" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1901" EnviarAP="-" ENombreLocalidad="CEDIS BARRAGAN" ECalle="MANUEL L. BARRAGAN 200" EColonia="COL. EX HACIENDA EL CANADA" EMunicipio="GENERAL ESCOBEDO" EEstado="NL" ECodigoPostal="66065" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3303" NumArtP="H-3303" Descripcion="04 H-3303 REGADERA CUADRADA C/BZ Y CH CR" PrecioUnitario="1168.28" ImporteTotal="1051.45" FechaEntregaArt="2018-05-09" ExtraART2="10.00" ExtraART3="1,051.45"/>
+    <ns1:ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-06MB066S" NumArtP="B-066-S" Descripcion="04 BARRA DE SEGURIDAD B-066-S (MB-066-S)" PrecioUnitario="1002.33" ImporteTotal="902.10" FechaEntregaArt="2018-05-09" ExtraART2="10.00" ExtraART3="902.10"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="1953.55" IVA="312.57" Total="2266.12" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( DOS MIL DOSCIENTOS SESENTA Y SEIS PESOS 12/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

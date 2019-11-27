@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:32:15" Bandera="T" Version="1.0" NumDocumento="10002227"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106409" FechaOrdenCompra="2018-05-02" NumeroPedidoProveedor="871239" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-02" FechaEntregaProveedor="2018-05-02" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-210400" NumArtP="2104" Descripcion="04 2104 P.PAPEL CRO KONOS" PrecioUnitario="450.91">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-10"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="1352.73"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:22:43" Bandera="T" Version="1.0" NumDocumento="10001990"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108642" FechaOrdenCompra="2018-05-18" NumeroPedidoProveedor="871022" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-18" FechaEntregaProveedor="2018-05-18" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-24" NumArtP="RM-24" Descripcion="04 RM-24 REGADERA D/ALTURA DESLIZABLE" PrecioUnitario="2140.26">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E305" NumArtP="E-305" Descripcion="04 E-305 MONOMANDO SALIDA FLEXIBLE CRO" PrecioUnitario="4547.45">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-031" NumArtP="TV-031" Descripcion="04 TV-031 CONEXION P/CESPOL DOBLE" PrecioUnitario="678.49">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="7366.20"/>
+  </Resumen>
+</Documento>

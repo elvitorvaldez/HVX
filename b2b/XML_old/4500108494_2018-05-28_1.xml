@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:22:00" Bandera="T" Version="1.0" NumDocumento="10001971"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108494" FechaOrdenCompra="2018-05-18" NumeroPedidoProveedor="871023" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-18" FechaEntregaProveedor="2018-05-18" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-007650" NumArtP="E-765" Descripcion="04 E-765 MONOMANDO BALANCEO S/DESV.CROMO" PrecioUnitario="1972.89">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-21"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-RM-27" NumArtP="RM-27" Descripcion="04 RM-27- REGADERA MANUAL CROM0" PrecioUnitario="1734.40">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-21"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-762" NumArtP="E-762" Descripcion="04 E-762 MONOMANDO D/BALANCE CROMO" PrecioUnitario="2516.25">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-21"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="16697.73"/>
+  </Resumen>
+</Documento>

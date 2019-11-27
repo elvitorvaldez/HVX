@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:19:41" Bandera="T" Version="1.0" NumDocumento="10001907"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109861" FechaOrdenCompra="2018-05-23" NumeroPedidoProveedor="870919" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-23" FechaEntregaProveedor="2018-05-23" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="JG" NumArtD="04-C-77-ND" NumArtP="C-77-ND" Descripcion="04 C-77-ND JGO.MANER.GDE MAGNA DX NIQ.DU" PrecioUnitario="988.10">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-23"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="3.000" UDM="JG" NumArtD="04-C-77-ND" NumArtP="C-77-ND" Descripcion="04 C-77-ND JGO.MANER.GDE MAGNA DX NIQ.DU" PrecioUnitario="988.10">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-23"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3952.40"/>
+  </Resumen>
+</Documento>

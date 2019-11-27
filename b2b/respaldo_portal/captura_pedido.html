@@ -1,0 +1,583 @@
+<?php
+Header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+Header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+
+$_Autentificar="ok";
+include('header_footer_portal.php');
+
+if (!cuentaConServicio('captura pedido',$_SESSION['id_usuario']))
+{
+	Header("Location: sin_permiso.html");
+}
+?>
+<!DOCTYPE html>
+<html>
+	<head>		
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Helvex - Nuevo pedido</title>
+		<?php set_sess_expiration_alert(); ?>
+		
+		<link rel="STYLESHEET" type="text/css" href="./styles/estilos_improved.css">
+		
+		<style type="text/css">
+			input.red {font-weight: bold; font-size: 12px; color: black; width:180px;height:32px}
+		</style>
+		
+		<script type="text/javascript" src="js/prototype.js"></script> 
+		<script type="text/javascript" src="./HelpBalloon/lib/scriptaculous/scriptaculous.js"></script>
+		<script type="text/javascript" src="./HelpBalloon/src/HelpBalloon.js"></script>
+		
+		<script type="text/javascript" src="js/validate.min.js"></script>
+		
+		<script src="js/funciones_portal.js" type="text/javascript" ></script>
+		
+		<script type="text/javascript">
+			function abre_popup(){
+				window.open("help.php" , "" , "fullscreen=0 , toolbar=0 , location=0 , status=0 , menubar=0 , scrollbars=0 , resizable=0 , width=500 , height=700" , false);
+			}
+			function OnChangeCliente(){
+				var ajaxType = "M"; // M mysql, S SAP										
+				var selcliente=document.getElementById("CustNumber");
+				var y=selcliente.options[selcliente.selectedIndex].value;
+				var x=y.split("|");
+				if (ajaxType=='M'){	x[0]="'"+x[0]+"'"	}
+				var url = './orgventas.php?CNumber='+x[0]+'&ajaxType='+ajaxType
+				new Ajax.Request(	url, {method: 'get', 
+																asynchronous: false,
+																onSuccess: 	function(transport) {	gOrgVentas = transport.responseText;}
+															}
+												);
+				document.getElementById("org").innerHTML = '<select onchange=\"OnChangeOrg()\" name=\"orgwdiv\"  id=\"orgwdiv\"  style=\"width: 210px\"><option value=\"\">Seleccione</option>' + gOrgVentas +'</select>';
+				document.getElementById("org").disabled=false;	
+			}	
+	
+			function OnChangeOrg() {
+				var ajaxType = "M";
+				var selcliente2=document.getElementById("CustNumber");
+				var y2=selcliente2.options[selcliente2.selectedIndex].value;
+				var x2=y2.split("|");
+				if (ajaxType=='M'){ x2[0]="'"+x2[0]+"'"	}
+				var selorg;										
+				var selorg=document.getElementById("orgwdiv");
+				var f=selorg.options[selorg.selectedIndex].value;
+				var url = './sectorpto.php?CNumber='+x2[0]+'&VKORG1='+f+'&ajaxType='+ajaxType
+				new Ajax.Request( url, {method: 'get', 
+																asynchronous: false,
+																onSuccess: 	function(transport) {	gSector = transport.responseText;	}
+															}
+												);
+				document.getElementById('sec').innerHTML = '<select onchange=\"onChangeTP();tipoobra();onchangeTP2()\"  id=\"tipodeobra2\" name=\"tipodeobra2\" style=\"width: 210px\"><option value=\"\">Seleccione</option>' + gSector +'</select>';
+				document.getElementById('sec').disabled=false;
+			}
+			
+			function onChangeTP() {
+				var selcliente3=document.getElementById("CustNumber");
+				var y3=selcliente3.options[selcliente3.selectedIndex].value;
+				var x3=y3.split("|");
+				var selorg2=document.getElementById("orgwdiv");
+				var f2=selorg2.options[selorg2.selectedIndex].value;
+				var selsec=document.getElementById("tipodeobra2");
+				var s2=selsec.options[selsec.selectedIndex].value;
+				
+				if( s2 == 99 ){ s2='01'	}
+				x3[0] = "'" + x3[0] + "'";							
+				//verificar url de la direccion
+				var url = './direccion_destinatario_mercancia.php?CNumber='+x3[0]+'&orgwdiv='+f2+'&tipodeobra2='+s2;
+				new Ajax.Request( url, {method: 'get', 
+																asynchronous: false,
+																onSuccess: 	function(transport) { ajaxDireccion = transport.responseText;	}
+															}
+												);
+				document.getElementById('dir').innerHTML='<p>'+ajaxDireccion+'</p>';
+				document.getElementById("carga").disabled=false;
+				<?php
+					$display='none';				
+					$sql_da="SELECT c_da from usuarios_R3 WHERE id_usuario='{$_SESSION["id_usuario"]}'";
+					$nuevo_query->query($DB, $sql_da);
+					$resultado_da = $nuevo_query->getArray();
+					$c_da=$resultado_da['c_da'];
+					if( $c_da==='X' )
+					{
+						$display='block';
+					}
+				?>
+				//validacion para carga de producto
+				var selcliente4=document.getElementById("CustNumber");
+				var y4=selcliente4.options[selcliente4.selectedIndex].value;
+				var x4=y4.split("|");
+				var str=document.getElementById("orgwdiv");
+				var str_value=str.value;
+				var org=document.getElementById("tipodeobra2");
+				var org_value=org.value;
+				var idu=document.getElementById("idu");
+				var idu_value=idu.value;
+				var url2 = './recupera_pedidos.php?CustNumber='+x4[0]+'&orgwdiv='+str_value+'&tipodeobr2='+org_value+'&idu='+idu_value
+				var recupera_pedidos;
+				new Ajax.Request( url2, {	method: 'get', 
+																	asynchronous: false,
+																	onSuccess: function(transport) { recupera_pedidos = transport.responseText; }
+																}
+												);						
+				document.getElementById("nbef").disabled=false;
+				document.getElementById('pgwd').innerHTML = '<select name=\"carga\" id=\"carga\" style=\"width: 300\" onchange=\"rpg();\"><option value=\'\'>Seleccione</option>' + recupera_pedidos +'</select>';
+			}
+	
+			function onchangeTP2(){
+				var selcliente3=document.getElementById("CustNumber");
+				var y3=selcliente3.options[selcliente3.selectedIndex].value;
+				var x3=y3.split("|");
+				x3[0]="'"+x3[0]+"'";	
+				
+				var str=document.getElementById("orgwdiv");
+				var str_value=str.value;
+				var org=document.getElementById("tipodeobra2");
+				var org_value=org.value;
+				if (org_value==99){ org_value="01"; }
+				var url3 = './direcciones_sap_clientes.php?CNumber='+x3[0]+'&orgwdiv='+str_value+'&tipodeobra2='+org_value
+				var dir_sap_cuenta;
+	
+				new Ajax.Request( url3, {	method: 'get', 
+																	asynchronous: false,
+																	onSuccess: 	function(transport){ dir_sap_cuenta = transport.responseText; }
+																}
+												);
+				document.getElementById('dira').innerHTML = '<select name=\"dirawdiv\" id=\"dirawdiv\" style=\"width: 400\" onchange=\"onchangeDA();\"><option value=\'0\'>Seleccione</option>'+dir_sap_cuenta+'</select>';
+			}
+							
+			function onchangeDA(){
+				var selcliente3=document.getElementById("CustNumber");
+				var y3=selcliente3.options[selcliente3.selectedIndex].value;
+				var x3=y3.split("|");
+				x3[0]="'"+x3[0]+"'"	
+				
+				var str=document.getElementById("orgwdiv");
+				var str_value=str.value;
+				var org=document.getElementById("tipodeobra2");
+				var org_value=org.value;
+				var da=document.getElementById('dirawdiv').value;
+				da="'"+da+"'"	
+				var url4 = './revisa_dir_sap.php?CNumber='+x3[0]+'&orgwdiv='+str_value+'&tipodeobra2='+org_value+'&da='+da
+				var dir_sap;
+	
+				new Ajax.Request( url4, {	method: 'get', 
+																	asynchronous: false,
+																	onSuccess: 	function(transport) { dir_sap = transport.responseText;	}
+																}
+												);
+				document.getElementById('dir').innerHTML=' <p> '+dir_sap+' </p> ';
+			}
+	
+			// Override the default settings to point to the parent directory
+			HelpBalloon.Options.prototype = Object.extend(HelpBalloon.Options.prototype, {
+				icon: '../images/icon.gif',
+				button: '../images/button.png',
+				balloonPrefix: '../images/balloon-'
+			});
+			
+			var gOrgVentas;
+			var gSector;
+			var selorg;
+			var ajaxDireccion;
+			var ajaxVerifica;
+			var mens;
+			var registro;
+			var el_registro;
+			var productos_array = new Array();
+			var productos_pedido= new Array();
+			var descuentos_array= new Array();
+			var subtotal=0,iva=0,total=0;
+		
+			num=0;
+		
+			<?php
+				$DB_query->query($DB,"Select * from variables_ambiente where nombre='max_producto'");
+				$var_trae=$DB_query->getArray();
+				echo " var maxicanti=$var_trae[valor]; ";
+			?>
+		
+			function rpg(){
+				document.getElementById("dira").disabled=false;
+				document.getElementById("Submit").disabled=false;
+			}
+				  
+			//funcion que muestra el formulario para el PT para obra (PTO), agregar las 7 o mas opciones posibles
+			function tipoobra(){
+				divis = document.getElementById("tipoobra2");
+				sel=document.getElementById("tipodeobra2");
+				if (sel.options[sel.selectedIndex].value==0 || sel.options[sel.selectedIndex].value==1 || sel.options[sel.selectedIndex].value==2 || sel.options[sel.selectedIndex].value==3 || sel.options[sel.selectedIndex].value==4 || sel.options[sel.selectedIndex].value==5 || sel.options[sel.selectedIndex].value==6 || sel.options[sel.selectedIndex].value==7){
+					divis.style.display="none";
+				}else{
+					divis.style.display="block";
+				}
+			}
+	
+			function valida_tipoobra(){
+				var t = document.getElementById('SPO').value;				
+				document.getElementById('SPO').value = t.toUpperCase();
+
+				var a=document.getElementById("tipodeobra2");
+				var a_value = a.options[a.selectedIndex].value;
+				if (a_value===''){
+					alert ("Elija una Cuenta, Organizaci\363n y Sector");
+					return false;
+				}
+				divis = document.getElementById("tipoobra2");
+				sel=document.getElementById("tipodeobra2");
+				if (sel.options[sel.selectedIndex].value==99){
+					var obra_txt=document.pedido2.elements['obra[obra]'].value;
+					var constructora_txt=document.pedido2.elements['constructora'].value;
+					if (obra_txt=='' || constructora_txt==''){
+						alert ("Llene los datos de referencia del proyecto");
+					}
+					else{
+						//document.pedido2.submit();
+						return true;
+					}
+				}
+				else if (sel.options[sel.selectedIndex].value==1 || sel.options[sel.selectedIndex].value==1 || sel.options[sel.selectedIndex].value==2 || sel.options[sel.selectedIndex].value==3 || sel.options[sel.selectedIndex].value==4) {
+					//document.pedido2.submit();
+					return true;
+				}
+				return false;
+			}
+		
+			function valida_recupera(){
+				var a=document.getElementById("carga");
+				var a_value=a.value;
+				if (a_value==''){
+					alert ("Escoga un pedido guardado");
+					return false;
+				}
+				//document.pedido2.submit();
+				return true;
+			}
+		
+			function cambia_obra(obran,constructora,calle,estado,cp,col,municipio,tel,fax,encargado,orden,mensaje){
+				document.pedido2.elements['obra[obra]'].value=obran;
+				document.pedido2.elements['constructora'].value=constructora;
+				document.pedido2.elements['obra[calle]'].value=calle;
+				document.pedido2.elements['obra[estado]'].value=estado;
+				document.pedido2.elements['obra[cp]'].value=cp;
+				document.pedido2.elements['obra[colonia]'].value=col;
+				document.pedido2.elements['obra[municipio]'].value=municipio;
+				document.pedido2.elements['obra[telefono]'].value=tel;
+				document.pedido2.elements['obra[fax]'].value=fax;
+				document.pedido2.elements['obra[encargado]'].value=encargado;
+				document.pedido2.elements['obra[ordencompra]'].value=orden;
+				document.pedido2.elements['obra[mensaje]'].value=mensaje;
+				document.pedido2.elements['SPO'].value=orden;
+			}
+		
+			ctafoco=0
+		
+			function carta_obra(obran,constructora,calle,estado,cp,col,municipio,tel,fax,encargado,orden,mensaje,vkorg){
+				referencia =	'carta.pdf.am?'+'obran='+obran+'&constructora='+constructora+'&calle='+calle+
+											'&estado='+estado+'&cp='+cp+'&colonia='+col+'&municipio='+municipio+'&telefono='+tel+
+											'&fax='+fax+'&encargado='+encargado+'&ordencompra='+orden+'&mensaje='+mensaje+
+											'&vkorg='+vkorg;
+				ligacarta = document.getElementById("linkcarta");
+				ligacarta.href=referencia;
+				//window.open(referencia,'carta');
+			}
+		
+			function datos_carta(){
+				obran=document.pedido2.elements['obra[obra]'].value;
+				constructora=document.pedido2.elements['constructora'].value;
+				calle=document.pedido2.elements['obra[calle]'].value;
+				estado=document.pedido2.elements['obra[estado]'].value;
+				cp=document.pedido2.elements['obra[cp]'].value;
+				col=document.pedido2.elements['obra[colonia]'].value;
+				municipio=document.pedido2.elements['obra[municipio]'].value;
+				tel=document.pedido2.elements['obra[telefono]'].value;
+				fax=document.pedido2.elements['obra[fax]'].value;
+				encargado=document.pedido2.elements['obra[encargado]'].value;
+				orden=document.pedido2.elements['obra[ordencompra]'].value;
+				mensaje=document.pedido2.elements['obra[mensaje]'].value;
+				vkorg=document.pedido2.elements['orgwdiv'].value;
+				carta_obra(obran,constructora,calle,estado,cp,col,municipio,tel,fax,encargado,orden,mensaje,vkorg);
+			}
+		
+			//funciones habilita y deshabilita combos
+			function carga_load(){
+				//document.getElementById("org").disabled=true;
+				document.getElementById("sec").disabled=true;
+				document.getElementById("carga").disabled=true;
+				document.getElementById("Submit").disabled=true;
+				document.getElementById("nbef").disabled=true;
+				document.getElementById("dira").disabled=true;
+			}
+	
+			function carga_load2(){
+				alert ("disabled");
+				document.getElementById("orgwdiv").disabled=true;
+				document.getElementById("sec").disabled=true;
+				document.getElementById("carga").disabled=true;
+				document.getElementById("Submit").disabled=true;
+				document.getElementById("nbef").disabled=true;
+			}
+			function getCartaURL()
+			{
+				var obra = document.pedido2.elements['obra[obra]'].value;
+				var cons = document.pedido2.constructora.value;
+				var call = document.pedido2.elements['obra[calle]'].value;
+				var edo  = document.pedido2.elements['obra[estado]'].value;
+				var cp	 = document.pedido2.elements['obra[cp]'].value;
+				var col	 = document.pedido2.elements['obra[colonia]'].value;
+				var mpio = document.pedido2.elements['obra[municipio]'].value;
+				var tel	 = document.pedido2.elements['obra[telefono]'].value;
+				var fax	 = document.pedido2.elements['obra[fax]'].value;
+				var enc	 = document.pedido2.elements['obra[encargado]'].value;
+				var ordc = document.pedido2.elements['obra[ordencompra]'].value;
+				var mnsj = document.pedido2.elements['obra[mensaje]'].value;
+				return( "carta.pdf.am?obran="+obra+"&constructora="+cons+"&calle="+call+"&estado="+edo+"&cp="+cp+"&colonia="+col+"&municipio="+mpio+"&telefono="+tel+"&fax="+fax+"&encargado="+enc+"&ordencompra="+ordc+"&mensaje="+mnsj );
+			}		
+		</script>
+	</head>
+
+	<body onLoad="carga_load();">
+		<script language="JavaScript1.2" src="js/load_provide_support.js" type="text/javascript"></script>
+	
+		<div class="main_area" id="dmain">
+			<div class="main_banner" id="page_banner">
+				<img alt="" border="0" src="<?php echo( get_rand_image('./Banners1024', 'jpg', 'Banner1024X60') );?>" width="100%">
+			</div>
+			<div class="menu" id="dmenu">
+			<?php
+				if(isset($_SESSION['id_usuario']))
+				{	
+					get_header(__FILE__);				
+				}
+			?>				
+			</div>
+			
+			<div class="welcome_div" id="dwelcome">
+				<div class="welcome_image">
+					<img alt="" border="0" src="images/llave.gif" width="17" height="13"  />
+				</div>
+				<div class="welcome_name">
+				<?php
+					get_greeting();
+				?>
+				</div>
+				<div class="welcome_date">
+				<?php
+					get_date();
+				?>
+				</div>
+			</div>
+			
+			<div class="data_container" id="dproductos">
+				<div class="folder_all" id="dfolder_head">
+					<div style="width:105px" class="folder_title" id="dsection_title" >
+						<img alt="" width="8" height="19" src="./../../images/boton_izq.gif"/>
+						<span class="folder_title_text">Nuevo pedido</span>
+					</div>
+					<div class="folder_sides">
+						<img alt="" width="7" height="22" src="./../../images/boton_der.gif"/>
+					</div>
+					<div class="sess_close">
+						<a href="<% echo $_SERVER['PHP_SELF']; %>?logout=logout">
+							Cerrar sesi&oacute;n
+						</a>
+					</div>
+				</div>
+				
+				<!--div class="operation_name" id="doperation">
+					<img alt="" src="./../../images/right1.gif" />
+					<b>Resultado</b><br>					
+				</div-->
+				
+				<div class="data_filter" id="dmodelo_filter">
+					<form id="nuevopedido2" name="pedido2" class="form_entries" method="POST" action="./captura_pedido_parte1_final.html">
+						<p>
+							<input type="hidden" name="idu" id="idu" value="<?php echo($_SESSION['id_usuario']); ?>" />			
+							Cuenta:
+							<select size="1" id="CustNumber" name="CustNumber" style="width:500px;" onChange="OnChangeCliente();carga_load();">
+								<option value='0'>Seleccione</option>
+								<?php
+								get_accounts_list_options_input( $_REQUEST );
+								?>
+							</select>
+							<a href="./nvopedido_archivo.html" target="_self">
+								<img alt="Subir archivo de Excel con pedido"  src="./excel.jpg" width="20" height="20" border="0"> 
+							</a>
+							<img alt="Ayuda para subir archivo Excel con pedido" src="./help2.jpg" width="20" height="20" border="0" onclick=abre_popup();> 
+						</p>
+						
+						Organizaci&oacute;n:
+						<span id="org">
+							<select name="orgwdiv" id="orgwdiv" style="width: 210px"></select>
+						</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Divisi&oacute;n:
+						<span id="sec">
+							<select name="tipodeobra2" id="tipodeobra2" style="width: 210px"></select>
+						</span>	
+						<br><br>
+						Direcci&oacute;n de entrega:
+						<div style="margin:auto; width:75%">
+							<span id="dir"></span>
+							<span id="dir2"></span>
+						</div>
+						Orden de Compra:
+						<input type=text name="SPO" id="SPO" style="width: 210px" MAXLENGTH=20 />
+						<i>(Opcional)</i>
+						<script type="text/javascript">
+							var hb1 = new HelpBalloon({
+							title: 'Orden de Compra',
+							content: 'Opcional. Introducir orden de compra, m\341ximo 20 caracteres.'
+							+'<br><br>En caso de no tener, dejar en blanco y Helvex le proporcionara un n\372mero de pedido'
+							});
+						</script>
+                                                <!--Angel-->
+                                                <br/><br/>
+                                                <input type="checkbox" name="chk_licitacion" id="chk_licitacion" value="1" onchange="javascript:mostrarLicitacion()" /> Proyecto Especificaci&oacute;n
+                                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                                <span id="spanProyecto" style="display: none;"> ID de Proyecto: </span>
+                                                <input type="text" name="id_licitacion" id="id_licitacion" maxlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.keyCode == 8' style="display: none;" />
+                                                <script type="text/javascript">
+                                                    function mostrarLicitacion() {
+                                                        id_licitacion = document.getElementById("id_licitacion");
+                                                        chk_licitacion = document.getElementById("chk_licitacion");
+                                                        if (chk_licitacion.checked) {
+                                                            spanProyecto.style.display='inline';
+                                                            id_licitacion.style.display='inline';
+                                                            id_licitacion.required = true;
+                                                        }
+                                                        else {
+                                                            spanProyecto.style.display="none";
+                                                            id_licitacion.style.display='none';
+                                                        }
+                                                    }
+                                                </script>
+                                                
+                                                <!--Fin Angel-->
+
+						<div id="tipoobra2" style="display:none; padding: 5px 10px 5px 10px; margin:auto; width:60%">
+							<b><u><i>Datos de la obra</i></u></b>
+							<script type="text/javascript">
+								var hb2 = new HelpBalloon( {title: 'Datos de la Obra',
+															content: 'Usted ha seleccionado productos "para Obra". Estos son datos de referencia para el proyecto.'
+															});
+							</script>
+							<br>
+							<strong>Nombre de la obra:</strong>
+							<input type="text" name="obra[obra]" id="obra[obra]" size="35" value=''>&nbsp;
+							<br>
+							<strong>Nombre de la constructora:</strong>
+							<input type="text" name="constructora" id="constructora" size="35" value="">
+							<input type=hidden name="obra[calle]" value="">
+							<input type=hidden name="obra[estado]" value="">
+							<input type=hidden name="obra[cp]" value="">
+							<input type=hidden name="obra[colonia]" value="">
+							<input type=hidden name="obra[municipio]" value="">
+							<input type=hidden name="obra[telefono]" value="">
+							<input type=hidden name="obra[fax]" value="">
+							<input type=hidden name="obra[encargado]" value="">
+							<input type=hidden name="obra[ordencompra]" value="">
+							<input type=hidden name="obra[mensaje]" value="">
+							<div style="width:100%; background:#FFE8E8; border-color:#BF0000; border-style: solid; border-width: 3px; padding: 2px 2px 2px 2px;">
+								<div style="border-style: solid; border-width: 1px; padding: 5px">
+									<p style="text-align:center;">
+										<b>Servicio de env&iacute;o del pedido directamente a la obra</b>
+									</p>
+									<p>
+										Helvex ofrece el servicio de entrega de su pedido directamente 
+										a la obra <b>con el correspondiente</b> cargo de flete a su cuenta.
+									</p>
+									<p>	
+										Si desea hacer uso de este servicio, por favor registre 
+										los datos en el siguiente formulario
+										<a onClick="javascript:window.open('direccion_entrega.html?obra='+document.pedido2.elements['obra[obra]'].value+'&constructora='+document.pedido2.elements['constructora'].value+'&orden='+document.pedido2.elements['SPO'].value+'&ncliente='+document.pedido2.elements['CustNumber'].value+'&vkorg='+document.pedido2.elements['orgwdiv'].value+'&spart='+document.pedido2.elements['tipodeobra2'].value,'nombre_ventana','width=500,height=550,menubar=no,resizable')" style="font-weight:bold;" href="javascript:void(0);" class="lnkrojo">
+											haciendo clic aqu&iacute;
+										</a>
+										<img border="0" src="images/externo.gif" width="20" height="10">
+										en el entendido de que la responsabilidad de entrega del mismo es suya, 
+										deslind&aacute;ndonos de cualquier contingencia en la recepci&oacute;n del mismo, 
+										una vez que se emita el talon de embarque del env&iacute;o. 
+										El flete ser&aacute; el mismo que usted pagar&iacute;a si lo enviara 
+										desde su bodega a la direcci&oacute;n indicada. 
+										<?php 
+											if ( isset( $_REQUEST['accion'] ) && $_REQUEST['accion']=='completar'){ 
+												$fdisplay='block';
+											}
+											else{
+												$fdisplay='none';
+											}														 
+										?>
+									</p>
+									<div id='carta' style='display:<?php echo $fdisplay; ?>;'>
+										<a id='linkcarta' style="font-weight:bold;" class='lnkrojo' target=_blank href='javascript:getCartaURL();'>Click aqui</a> para ver la carta
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div style="width:95%; ">
+							<div style="text-align:right;">
+								<input onclick="valida_tipoobra();" type="submit" disabled name="nbef" id="nbef" class="red" value="Crear nuevo pedido >> ">
+							</div>
+							
+							<hr noshade color="#BF0000" size="3">
+							<br>
+							<span id="leyenda" style="display:<?php echo $display;?>">
+								<b>Cambiar Direcci&oacute;n</b>
+							</span>			
+							<span id="dira" style="display:<?php echo $display;?>">
+								<select name="dirawdiv" id="dirawdiv" style="width: 260px"></select>
+							</span>
+							<br>
+							<hr noshade color="#BF0000" size="3">
+							<br>
+							<b>Recuperar pedido guardado</b>
+							<div id="pgwd">
+								<select name="carga" id="carga" style="width: 210px" onchange="rpg();"></select>
+							</div>
+							
+							<div style="text-align:right;">
+								<input class="red" onClick="valida_recupera();" type="submit" name="Submit" id="Submit" value="Cargar pedido guardado >>">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="message_to_user">
+				</div>				
+			</div>												
+			<div class="footer" id="dfooter">
+				<div class="footer_l">
+					<span class="hlink">
+						<?php get_footer(__FILE__, 1); ?>
+					</span>
+				</div>
+				<div class="footer_r">
+					<?php get_footer(__FILE__, 2); ?>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" >
+			var validator = new FormValidator('pedido2', [
+					{
+						name : 'SPO',
+						display: 'Orden de Compra',
+						rules: 'alpha_dash|max_length[20]'
+					},
+				],
+				function( errors, event ){					
+					if( errors.length > 0 )
+					{
+						var err_msg = '';
+						for( var i=0, errorLength = errors.length; i< errorLength; i++){
+							err_msg += errors[i].message + '\n';
+						}
+						alert(err_msg);
+					}					
+				}
+			);
+			validator.setMessage('required', '\'%s\' es requerido.');
+			validator.setMessage('alpha_dash', 'Solo se admiten caracteres alfanum\351ricos (sin acentos), guiones bajos y medios en \'%s\'.');
+			validator.setMessage('max_length', 'El n\372mero m\341ximo de caracteres para \'%s\' es %s.');
+		</script>
+		<script type="text/javascript" src="js/load_google_analytics.js"></script>
+	</body>
+</html>
+

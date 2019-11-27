@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:32:33" Bandera="T" Version="1.0" NumDocumento="10002234"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109139" FechaOrdenCompra="2018-05-21" NumeroPedidoProveedor="871253" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-21" FechaEntregaProveedor="2018-05-21" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-703" NumArtP="E-703" Descripcion="04 E-703 MEZC/REG/TINA 1 CRO PREMIER" PrecioUnitario="1810.26">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-06-28"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-H-3302" NumArtP="H-3302" Descripcion="04 H-3302 REG REDONDA 10 C/BZO Y CH CR" PrecioUnitario="1168.28">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-06-28"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-RM-27" NumArtP="RM-27" Descripcion="04 RM-27- REGADERA MANUAL CROM0" PrecioUnitario="1734.40">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-06-28"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="7049.50"/>
+  </Resumen>
+</Documento>

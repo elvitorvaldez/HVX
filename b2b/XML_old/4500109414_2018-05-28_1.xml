@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:13:41" Bandera="T" Version="1.0" NumDocumento="10001726"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109414" FechaOrdenCompra="2018-05-22" NumeroPedidoProveedor="870805" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-22" FechaEntregaProveedor="2018-05-22" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-H-106" NumArtP="H-106" Descripcion="04 H-106 REGADERA CRO CHF MAGNA DX" PrecioUnitario="724.95">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-06-16"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-EP-915" NumArtP="EP-915" Descripcion="04 EP-915 MONO DE LAV ALTO MAGNA DX CRO" PrecioUnitario="3360.21">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-06-16"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="8170.32"/>
+  </Resumen>
+</Documento>

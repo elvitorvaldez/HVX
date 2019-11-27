@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:19:54" Bandera="T" Version="1.0" NumDocumento="10001914"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500106416" FechaOrdenCompra="2018-05-02" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-02" FechaEntregaProveedor="2018-05-02" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-ME-3000" NumArtP="ME-3000" Descripcion="04 ME-3000 ENSAMBLE NUVA INCL MANERA CRO" PrecioUnitario="4219.05">
+      <CAR EstatusArticulo="AR" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="4219.05"/>
+  </Resumen>
+</Documento>

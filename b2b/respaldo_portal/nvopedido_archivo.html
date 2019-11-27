@@ -1,0 +1,198 @@
+<?php
+$_Autentificar='ok';
+include('header_footer_portal.php');
+
+if (!cuentaConServicio('captura pedido',$_SESSION['id_usuario'])){
+	Header("Location: sin_permiso.html"); 
+}
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Helvex - Nuevo Pedido Archivo</title>
+		<?php set_sess_expiration_alert(); ?>
+		<script src="./js/jquery.js" type="text/javascript" language="javascript"></script> 
+		<script src="./js/jquery.MultiFile.js" type="text/javascript" language="javascript"></script>
+		
+		<script type="text/javascript" src="js/validate.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="styles/estilos_improved.css">
+	</head>
+
+	<body>
+		<script language="JavaScript1.2" src="js/load_provide_support.js" type="text/javascript"></script>
+	
+		<div class="main_area" id="dmain">
+			<div class="main_banner" id="page_banner">
+				<img alt="" border="0" src="<?php echo( get_rand_image('./Banners1024', 'jpg', 'Banner1024X60') );?>" width="100%">
+			</div>
+			<div class="menu" id="dmenu">
+			<?php
+				if(isset($_SESSION['id_usuario']))
+				{	
+					get_header(__FILE__);				
+				}
+			?>				
+			</div>
+			
+			<div class="welcome_div" id="dwelcome">
+				<div class="welcome_image">
+					<img alt="" border="0" src="images/llave.gif" width="17" height="13"  />
+				</div>
+				<div class="welcome_name">
+				<?php
+					get_greeting();
+				?>
+				</div>
+				<div class="welcome_date">
+				<?php
+					get_date();
+				?>
+				</div>
+			</div>
+			
+			<div class="data_container" id="dproductos">
+				<div class="folder_all" id="dfolder_head">
+					<div style="width:219px" class="folder_title" id="dsection_title" >
+						<img alt="" width="8" height="19" src="./../../images/boton_izq.gif"/>
+						<span class="folder_title_text">Nuevo pedido desde archivo</span>
+					</div>
+					<div class="folder_sides">
+						<img alt="" width="7" height="22" src="./../../images/boton_der.gif"/>
+					</div>
+					<div class="sess_close">
+						<a href="<% echo $_SERVER['PHP_SELF']; %>?logout=logout">
+							Cerrar sesi&oacute;n
+						</a>
+					</div>
+				</div>
+				<!--div class="operation_name" id="doperation">
+					<img alt="" src="./../../images/right1.gif" />
+					<b>Resultado</b><br>					
+				</div-->
+				<div class="data_filter" id="dmodelo_filter">				
+					<form enctype="multipart/form-data" action="upload.php" method="POST" class="form_entries" name="frm_pedido" id="frm_pedido">
+						<div  style="width:70%;margin:auto;">
+							Cuenta:
+							<select size="1" id="CustNumber" name="CustNumber" style="width:500px;" onChange="">
+								<option value='0'>Seleccione</option>
+								<?php
+								echo "";
+								get_accounts_list_options_input( $_REQUEST );
+								?>
+							</select>
+                                                        <br><br>
+							Orden de Compra:
+							<input type="text" name="oc" id="oc" />				 		
+                                                        <br><br>
+                                                        <!--Angel-->
+                                                        <input type="checkbox" name="chk_licitacion" id="chk_licitacion" value="1" onchange="javascript:mostrarLicitacion()" /> Proyecto Especificaci&oacute;n
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        <span id="spanProyecto" style="display: none;"> ID de Proyecto: </span>
+                                                        <input type="text" name="id_licitacion" id="id_licitacion" maxlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.keyCode == 8' style="display: none;" />
+                                                        <script type="text/javascript">
+                                                            function mostrarLicitacion() {
+                                                                id_licitacion = document.getElementById("id_licitacion");
+                                                                chk_licitacion = document.getElementById("chk_licitacion");
+                                                                if (chk_licitacion.checked) {
+                                                                    spanProyecto.style.display='inline';
+                                                                    id_licitacion.style.display='inline';
+                                                                    id_licitacion.required = true;
+                                                                }
+                                                                else {
+                                                                    spanProyecto.style.display="none";
+                                                                    id_licitacion.style.display='none';
+                                                                }
+                                                            }
+                                                        </script>
+                                                        <!--Fin Angel-->
+                                                        <br><br>
+							Cargue Archivo:
+							<input type="file" name="file" id="file" />
+                                                        <br/><br/>
+							<input type="submit" name="submit" onclick="valida_formulario();" id="submit" value=" Enviar archivo >> " />
+						</div>
+					</form>
+				</div>
+				<div class="dhtmlx_container" id="prod_listing" style="width:94%">					
+					<script type="text/javascript">
+						function show_hide_help()
+						{
+							obj_div_hlp = document.getElementById("help_xls_format");
+							obj_spn_hlp = document.getElementById("txt_show_hide_help");
+							if(obj_div_hlp.style.display != 'none')
+							{
+								obj_div_hlp.style.display = 'none';
+								obj_spn_hlp.innerHTML = "+ Mostrar ayuda...";
+							}
+							else
+							{
+								obj_div_hlp.style.display = 'block';
+								obj_spn_hlp.innerHTML = "- Ocultar ayuda";
+							}
+						}
+					</script>
+					<div style="margin:20px auto 0px auto; width:80%;text-align:left;" >
+						<a href="javascript:show_hide_help()"><span id="txt_show_hide_help">- Ocultar ayuda</span></a>
+					</div>
+					<div id="help_xls_format" style="margin:auto; width:80%;text-align: left;" >
+						<br><b>Antes de enviar su archivo, revise que tenga el formato adecuado:</b>
+						<ul>
+							<li>No utilice t&iacute;tulos en las columnas.</li>
+							<li>No deje filas en blanco antes de escribir los datos de su pedido.</li>
+							<li>El archivo deber&aacute; incluir solamente <span style="color:blue;">MODELO en la columna A</span> y <span style="color:blue;">CANTIDAD en la columna B</span> </li>
+							<li>El modelo puede ser con la clave de Helvex o la clave equivalente que usted maneje, siempre y cuando la haya registrado antes en la secci&oacute;n de <a href="./equivalencias_ver.php" target=_blank><span style="color:red;">Equivalencias.</span></a></li>
+							<li>Puede mezclar modelos Helvex, Prisa y Elite, el sistema los clasificar&aacute; autom&aacute;ticamente.</li>
+							<li><b>Si el formato de su archivo es Open Office, aseg&uacute;rese que la columna A sea de tipo TEXTO y la columna B sea de tipo NUM&Eacute;RICO.</b></li>
+							<li>Ejemplo de un archivo correcto:<br><center><img src="./images/WellFormedSpreadSheetHelvexOrder.jpg" border="0" alt="" align="top">/<center></li>
+						</ul>
+						<br>
+					</div>
+				</div>
+				<div class="message_to_user">
+				</div>				
+			</div>												
+			<div class="footer" id="dfooter">
+				<div class="footer_l">
+					<span class="hlink">
+						<?php get_footer(__FILE__, 1); ?>
+					</span>
+				</div>
+				<div class="footer_r">
+					<?php get_footer(__FILE__, 2); ?>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" >
+			function valida_formulario() 
+			{
+				var t = document.getElementById('oc').value;				
+				document.getElementById('oc').value = t.toUpperCase();
+			}
+			
+			var validator = new FormValidator('frm_pedido', [
+					{
+						name : 'oc',
+						display: 'Orden de Compra',
+						rules: 'alpha_dash|max_length[20]'
+					},
+				],
+				function( errors, event ){					
+					if( errors.length > 0 )
+					{
+						var err_msg = '';
+						for( var i=0, errorLength = errors.length; i< errorLength; i++){
+							err_msg += errors[i].message + '\n';
+						}
+						alert(err_msg);
+					}					
+				}
+			);
+			validator.setMessage('required', '\'%s\' es requerido.');
+			validator.setMessage('alpha_dash', 'Solo se admiten caracteres alfanum\351ricos (sin acentos), guiones bajos y medios en \'%s\'.');
+			validator.setMessage('max_length', 'El n\372mero m\341ximo de caracteres para \'%s\' es %s.');
+		</script>		
+		<script type="text/javascript" src="js/load_google_analytics.js"></script>
+	</body>
+</html>

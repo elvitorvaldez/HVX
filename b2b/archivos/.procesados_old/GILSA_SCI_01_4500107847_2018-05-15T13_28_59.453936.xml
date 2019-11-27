@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500107847" FechaOrdenCompra="2018-05-14" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0077003517" Extra2COC="Orden Terceros"/>
+    <ns1:ROC Contacto="MARIBEL RODRIGUEZ" Telefono="01553339400" Mail="maribel.rodriguez@gilsa.biz" Extra1="0010139490" Extra2="CEDIS BARRAGAN"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="9000113121" EnviarAP="0000" ENombreLocalidad="DUNE - Entrega a cliente" ECalle="Alfonso Santos Palomo" ENumero="# 425" EInterior="" EColonia="Col. Coyoac&#xE1;n" EMunicipio="Monterrey" ELocalidad="" EEstado="NL" ECodigoPostal="CP 64510" EPais="M&#xE9;xico"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-TZF-17" NumArtP="TZF NAO17" Descripcion="04 TZF-17 TAZA FLUX NAO 17 BLANCO" PrecioUnitario="1825.43" ImporteTotal="16806.74" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="1,527.89"/>
+    <ns1:ART Linea="20" CantidadOrdenada="14.000" UDM="PZ" NumArtD="04-02TV-0160" NumArtP="TV-016" Descripcion="04 TV-016 CESPOL P/LAVABO S/CONTRA" PrecioUnitario="530.08" ImporteTotal="6211.48" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="443.68"/>
+    <ns1:ART Linea="30" CantidadOrdenada="41.000" UDM="PZ" NumArtD="04-AT-4" NumArtP="AT-4" Descripcion="04 AT-4 ASIENTO C/TAPA ANTIBACTE BCO" PrecioUnitario="545.73" ImporteTotal="18727.82" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="456.78"/>
+    <ns1:ART Linea="40" CantidadOrdenada="16.000" UDM="JG" NumArtD="04-10011" NumArtP="MR-1001" Descripcion="04 MR-1001 JGO. MAN VERTIKA CRO P/ROSC" PrecioUnitario="1145.99" ImporteTotal="15347.10" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="959.19"/>
+    <ns1:ART Linea="50" CantidadOrdenada="7.000" UDM="PZ" NumArtD="04-LV-2-1P" NumArtP="LV LUCERNA1" Descripcion="04 LV LAVABO LUCERNA 1 BLANCO" PrecioUnitario="1338.02" ImporteTotal="7839.46" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="1,119.92"/>
+    <ns1:ART Linea="60" CantidadOrdenada="30.000" UDM="PZ" NumArtD="04-310-19-1" NumArtP="310-19-1" Descripcion="04 310-19-1 FLUXOMETRO P/MIG.PEDAL 1 LTO" PrecioUnitario="2849.57" ImporteTotal="71552.70" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="2,385.09"/>
+    <ns1:ART Linea="70" CantidadOrdenada="15.000" UDM="PZ" NumArtD="04-TV296-1.9" NumArtP="TV296-1.9" Descripcion="04 TV296-1.9 LLAV ELEC LAV ARGOS 1.9 CRO" PrecioUnitario="8605.17" ImporteTotal="66023.16" FechaEntregaArt="2018-04-22" ExtraART2="48.85" ExtraART3="4,401.54"/>
+    <ns1:ART Linea="80" CantidadOrdenada="17.000" UDM="PZ" NumArtD="04-FB-110-38-3.5" NumArtP="FB-110-38-3.5" Descripcion="04 FB-110-38-3.5 FLUX/SENSOR ELECTRO CRO" PrecioUnitario="6160.47" ImporteTotal="87657.33" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="5,156.31"/>
+    <ns1:ART Linea="90" CantidadOrdenada="24.000" UDM="PZ" NumArtD="04-310-WC-4.8" NumArtP="310-WC-4.8" Descripcion="04 310-WC-4.8 FLUXOMETRO P/WC D/PEDAL" PrecioUnitario="2849.57" ImporteTotal="61550.71" FechaEntregaArt="2018-04-22" ExtraART2="10.00" ExtraART3="2,564.61"/>
+    <ns1:ART Linea="100" CantidadOrdenada="30.000" UDM="PZ" NumArtD="04-MG-1" NumArtP="MG FERRY" Descripcion="04 MG-1 MINGI FERRY TIPO CASCADA BLANCO" PrecioUnitario="2673.19" ImporteTotal="67123.80" FechaEntregaArt="2018-04-22" ExtraART2="16.30" ExtraART3="2,237.46"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="418840.30" IVA="67014.45" Total="485854.75" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( CUATROCIENTOS OCHENTA Y CINCO MIL OCHOCIENTOS CINCUENTA Y CUATRO PESOS 75/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

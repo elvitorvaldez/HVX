@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:22:13" Bandera="T" Version="1.0" NumDocumento="10001976"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108389" FechaOrdenCompra="2018-05-17" NumeroPedidoProveedor="870971" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-17" FechaEntregaProveedor="2018-05-17" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-H-3013" NumArtP="H-3013" Descripcion="04 H-3013 REGADERA CUADRADA 16 ANTI CR" PrecioUnitario="4447.42">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-17"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="5.000" UDM="JG" NumArtD="04-C-78" NumArtP="C-78" Descripcion="04 C-78JGO.MANERALES GDE BENNU CRO" PrecioUnitario="1075.34">
+      <CAR EstatusArticulo="AA" Cantidad="5.000" CantidadBackorder="0" FechaEntregaArt="2018-05-17"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3302-C/B" NumArtP="H-3302-C/B" Descripcion="04 H-3302-C/B REG RED 10 C/BZO Y CH CRB" PrecioUnitario="1168.28">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-17"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="24334.66"/>
+  </Resumen>
+</Documento>

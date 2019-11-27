@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:00:13" Bandera="T" Version="1.0" NumDocumento="10001517"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500096679" FechaOrdenCompra="2018-01-30" NumeroPedidoProveedor="870296" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-01-30" FechaEntregaProveedor="2018-01-30" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-926-DX" NumArtP="E-926-DX" Descripcion="04 E-926-DX MON/LAV PUSH ACUEDUCTO DX CR" PrecioUnitario="6481.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-03"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-2118-DX" NumArtP="E-2118-DX" Descripcion="04 E-2118-DX ENSAMBLE ACUED KUBICA DX CR" PrecioUnitario="6140.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-03"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-05C-35-CR" NumArtP="C-35" Descripcion="04 C-35 MANERAL TRIPOLI GDE. CROMO" PrecioUnitario="417.49">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-02-03"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="14290.96"/>
+  </Resumen>
+</Documento>

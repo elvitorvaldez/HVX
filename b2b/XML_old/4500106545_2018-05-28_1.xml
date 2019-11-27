@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:16:30" Bandera="T" Version="1.0" NumDocumento="10001813"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106545" FechaOrdenCompra="2018-05-03" NumeroPedidoProveedor="870868" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-03" FechaEntregaProveedor="2018-05-03" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-07-HM-14" NumArtP="HM-14" Descripcion="04 HM-14 MEZC.ANTARES 4 CROMO" PrecioUnitario="1608.28">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-03"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-92" NumArtP="EP-92" Descripcion="04 EP-92 MONOMANDO P/LAV.MANTISS 4 CROMO" PrecioUnitario="1789.40">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-03"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3397.68"/>
+  </Resumen>
+</Documento>

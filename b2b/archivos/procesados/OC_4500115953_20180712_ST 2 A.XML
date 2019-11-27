@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Documento xmlns="http://www.tredicom.com/OrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Control>
+<CIN Emisor="GILSACIN" Receptor="HELVEXCIN" FechaCreacionDocumento="2018-07-12T11:12:41" Bandera="P" Version="1.0" NumDocumento="0000055638"/>
+<SCI TipoDocumento="CO" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+</Control>
+<Cabecera>
+<COC NumeroOrdenCompra="4500115953" FechaOrdenCompra="2018-07-12" EstatusOrden="O" TerminosPago="30.00" Extra4COC="ST"/>
+<ROC Telefono="01553339400" Extra1="0010152122" Extra2="CEDIS BARRAGAN"/>
+<FAA FacturarAD="1000" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+<ENA EnviarAD="1901" ENombreLocalidad="CEDIS BARRAGAN" ECalle="MANUEL L. BARRAGAN 200" EColonia="COL. EX HACIENDA EL CANADA" EMunicipio="GENERAL ESCOBEDO" EEstado="NL" ECodigoPostal="66065" EPais="MX"/>
+<PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+</Cabecera>
+<Detalle>
+<ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-06-2584" NumArtP="2584" Descripcion="04 2584 COLADERA CUADRADA" PrecioUnitario="2638.10" ImporteTotal="5276.20" FechaEntregaArt="2018-07-20" ExtraART3="2,638.10"/>
+<ART Linea="20" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-06-2584" NumArtP="2584" Descripcion="04 2584 COLADERA CUADRADA" PrecioUnitario="2638.10" ImporteTotal="7914.30" FechaEntregaArt="2018-07-20" ExtraART3="2,638.10"/>
+</Detalle>
+<Resumen>
+<RES Moneda="MXN" Subtotal="13190.50" IVA="2110.48" Total="15300.98" MensajeLibreRES1=" * El material deberá ser entregado en la dirección indicada, en caso   contrario no se aceptará la mercancía. * El número de esta orden de compra debe ser referenciado en la remisión   y/o factura con la que se entregue." MensajeLibreRES3="( QUINCE MIL TRESCIENTOS PESOS 98/100 M.N. )"/>
+</Resumen>
+</Documento>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T09:59:48" Bandera="T" Version="1.0" NumDocumento="10001506"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500092217" FechaOrdenCompra="2017-12-04" NumeroPedidoProveedor="0" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-04" FechaEntregaProveedor="2017-12-04" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-713" NumArtP="E-713" Descripcion="04 E-713 MONO/MAXIMA P/REG C/DESVIAD. CR" PrecioUnitario="1447.05">
+      <CAR EstatusArticulo="AR" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-11"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="2894.10"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:00:10" Bandera="T" Version="1.0" NumDocumento="10001516"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097939" FechaOrdenCompra="2018-02-13" NumeroPedidoProveedor="870295" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-13" FechaEntregaProveedor="2018-02-13" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-07-HM-17" NumArtP="HM-17" Descripcion="04 HM-17 MEZC.ALBATROS 4 C/REJILLA CRO" PrecioUnitario="2640.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-MP-03-S/L" NumArtP="MP-03-S/L" Descripcion="04 MP-03-S/L MEZC D/LAV 4 ELEG SAT LACA" PrecioUnitario="2716.45">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="5356.45"/>
+  </Resumen>
+</Documento>

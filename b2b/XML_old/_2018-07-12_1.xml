@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-07-12T16:03:32" Bandera="T" Version="1.0" NumDocumento="10002254"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107847" FechaOrdenCompra="2018-05-14" NumeroPedidoProveedor="871410" FechaConfirmacion="2018-07-12" FechaEntregaDistribuidor="2018-05-14" FechaEntregaProveedor="2018-05-14" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="20" CantidadOrdenada="14.000" UDM="PZ" NumArtD="04-02TV-0160" NumArtP="TV-016" Descripcion="04 TV-016 CESPOL P/LAVABO S/CONTRA" PrecioUnitario="555.44">
+      <CAR EstatusArticulo="AA" Cantidad="14.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="16.000" UDM="JG" NumArtD="04-10011" NumArtP="MR-1001" Descripcion="04 MR-1001 JGO. MAN VERTIKA CRO P/ROSC" PrecioUnitario="1200.82">
+      <CAR EstatusArticulo="AA" Cantidad="16.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="30.000" UDM="PZ" NumArtD="04-310-19-1" NumArtP="310-19-1" Descripcion="04 310-19-1 FLUXOMETRO P/MIG.PEDAL 1 LTO" PrecioUnitario="2985.91">
+      <CAR EstatusArticulo="AA" Cantidad="30.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="15.000" UDM="PZ" NumArtD="04-TV296-1.9" NumArtP="TV296-1.9" Descripcion="04 TV296-1.9 LLAV ELEC LAV ARGOS 1.9 CRO" PrecioUnitario="4959.30">
+      <CAR EstatusArticulo="AA" Cantidad="15.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="17.000" UDM="PZ" NumArtD="04-FB-110-38-3.5" NumArtP="FB-110-38-3.5" Descripcion="04 FB-110-38-3.5 FLUX/SENSOR ELECTRO CRO" PrecioUnitario="6455.25">
+      <CAR EstatusArticulo="AA" Cantidad="17.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="24.000" UDM="PZ" NumArtD="04-310-WC-4.8" NumArtP="310-WC-4.8" Descripcion="04 310-WC-4.8 FLUXOMETRO P/WC D/PEDAL" PrecioUnitario="2776.89">
+      <CAR EstatusArticulo="AA" Cantidad="24.000" CantidadBackorder="0" FechaEntregaArt="2018-04-22"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="367340.69"/>
+  </Resumen>
+</Documento>

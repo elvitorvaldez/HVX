@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T09:59:26" Bandera="T" Version="1.0" NumDocumento="10001494"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500096915" FechaOrdenCompra="2018-01-31" NumeroPedidoProveedor="870275" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-01-31" FechaEntregaProveedor="2018-01-31" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-703" NumArtP="E-703" Descripcion="04 E-703 MEZC/REG/TINA 1 CRO PREMIER" PrecioUnitario="3076.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-10"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3303-C/B" NumArtP="H-3303-C/B" Descripcion="04 H-3303-C/B REG MULTICHORR PLATO CR/BC" PrecioUnitario="1985.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-10"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="5061.00"/>
+  </Resumen>
+</Documento>

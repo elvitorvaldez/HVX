@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:26:37" Bandera="T" Version="1.0" NumDocumento="10002112"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500106297" FechaOrdenCompra="2018-05-01" NumeroPedidoProveedor="871137" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-01" FechaEntregaProveedor="2018-05-01" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="JG" NumArtD="04-C-78" NumArtP="C-78" Descripcion="04 C-78JGO.MANERALES GDE BENNU CRO" PrecioUnitario="1075.34">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-03"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="1075.34"/>
+  </Resumen>
+</Documento>

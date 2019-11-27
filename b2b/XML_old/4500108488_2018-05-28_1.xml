@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:32:28" Bandera="T" Version="1.0" NumDocumento="10002232"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108488" FechaOrdenCompra="2018-05-18" NumeroPedidoProveedor="871241" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-18" FechaEntregaProveedor="2018-05-18" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="78.000" UDM="PZ" NumArtD="04-300201" NumArtP="H-3002-S" Descripcion="04 H-3002-S REGADERA D/PLATO KUBICA SAT." PrecioUnitario="3813.49">
+      <CAR EstatusArticulo="AA" Cantidad="78.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="297452.22"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:33:01" Bandera="T" Version="1.0" NumDocumento="10002245"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108084" FechaOrdenCompra="2018-05-15" NumeroPedidoProveedor="871267" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-15" FechaEntregaProveedor="2018-05-15" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="7.000" UDM="PZ" NumArtD="04 RM-14" NumArtP="RM-14" Descripcion="04 RM-14 REGADERA MANUAL CRO C/BZO" PrecioUnitario="2274.92">
+      <CAR EstatusArticulo="AA" Cantidad="7.000" CantidadBackorder="0" FechaEntregaArt="2018-06-25"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="26.000" UDM="PZ" NumArtD="04-05C-44-CR" NumArtP="C-44" Descripcion="04 C-44 MANERAL ANTARES CROMO" PrecioUnitario="229.01">
+      <CAR EstatusArticulo="AA" Cantidad="26.000" CantidadBackorder="0" FechaEntregaArt="2018-06-25"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-06MB0610" NumArtP="B-610-S" Descripcion="04 BARRA DE SEGURIDAD B-610-S" PrecioUnitario="623.96">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-06-25"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-310500" NumArtP="2105" Descripcion="04 2105 TOA/BARRA CRO KONOS" PrecioUnitario="722.11">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-06-25"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E305" NumArtP="E-305" Descripcion="04 E-305 MONOMANDO SALIDA FLEXIBLE CRO" PrecioUnitario="4547.45">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-06-25"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="9.000" UDM="PZ" NumArtD="04-EP-94" NumArtP="EP-94" Descripcion="04 EP-94 MONOMANDO DE LAVABO KUBICA CRO" PrecioUnitario="3105.60">
+      <CAR EstatusArticulo="AA" Cantidad="9.000" CantidadBackorder="0" FechaEntregaArt="2018-06-25"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="64308.28"/>
+  </Resumen>
+</Documento>

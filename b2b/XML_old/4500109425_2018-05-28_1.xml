@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:31:11" Bandera="T" Version="1.0" NumDocumento="10002190"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109425" FechaOrdenCompra="2018-05-22" NumeroPedidoProveedor="871215" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-22" FechaEntregaProveedor="2018-05-22" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-PIU-101" NumArtP="PIU-101" Descripcion="04 PIU-101 MONO/LAVABO ALTO PIURA CROMO" PrecioUnitario="4155.82">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-30"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-1342-HLI" NumArtP="1342-HLI" Descripcion="04 1342-HLI COLADERA P/BANO" PrecioUnitario="1937.93">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-30"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-703" NumArtP="E-703" Descripcion="04 E-703 MEZC/REG/TINA 1 CRO PREMIER" PrecioUnitario="1810.26">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-30"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-26" NumArtP="RM-26" Descripcion="04 RM-26 REGADERA D/ALTURA DESLIZABLE" PrecioUnitario="2140.26">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-30"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="15932.72"/>
+  </Resumen>
+</Documento>

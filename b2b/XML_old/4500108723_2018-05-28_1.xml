@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:16:45" Bandera="T" Version="1.0" NumDocumento="10001819"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108723" FechaOrdenCompra="2018-05-19" NumeroPedidoProveedor="870862" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-19" FechaEntregaProveedor="2018-05-19" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-210600" NumArtP="2106" Descripcion="04 2106 GANCHO DOBLE KONOS CROMO" PrecioUnitario="293.49">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-925" NumArtP="E-925" Descripcion="04 E-925 MEZC/LAV NAUTI ALTO CC PUSH CR" PrecioUnitario="3011.25">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-002" NumArtP="ES-002" Descripcion="04 ES-002 ESPEJO DOBLE VISTA C/LUZ CROMO" PrecioUnitario="2828.70">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-185-9-05" NumArtP="185-19-0.5" Descripcion="04 185-19-0.5 FLUXOMETRO MANIJA P/MING." PrecioUnitario="2369.27">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-73" NumArtP="C-73" Descripcion="04 C-73 MANERAL KONOS CROMO" PrecioUnitario="390.45">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-30060" NumArtP="H-3006" Descripcion="04 H-3006 REGADERA CRO KUBICA CUADR." PrecioUnitario="2355.04">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02H-8801" NumArtP="H-8801" Descripcion="04 H-8801 CONTRA CANASTA P/FREGADERO" PrecioUnitario="759.09">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-26"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="12007.29"/>
+  </Resumen>
+</Documento>

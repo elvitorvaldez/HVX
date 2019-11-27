@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:28:31" Bandera="T" Version="1.0" NumDocumento="10002168"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500107470" FechaOrdenCompra="2018-05-11" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-11" FechaEntregaProveedor="2018-05-11" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="20" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-20106" NumArtP="20106" Descripcion="04 20106 GANCHO SENCILLO CROMO MAXIMA" PrecioUnitario="240.86">
+      <CAR EstatusArticulo="AR" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-06-04"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="14.000" UDM="PZ" NumArtD="04-20117" NumArtP="20117" Descripcion="04 20117 PORTA PAPEL CROMO MAXIMA" PrecioUnitario="550.95">
+      <CAR EstatusArticulo="AR" Cantidad="14.000" CantidadBackorder="0" FechaEntregaArt="2018-06-04"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-E-712" NumArtP="E-712" Descripcion="04 E-712 MONOMANDO P/REG CROMO MAXIMA" PrecioUnitario="1278.28">
+      <CAR EstatusArticulo="AR" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-06-04"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="22904.70"/>
+  </Resumen>
+</Documento>

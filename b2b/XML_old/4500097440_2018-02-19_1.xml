@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:05:49" Bandera="T" Version="1.0" NumDocumento="10001676"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097440" FechaOrdenCompra="2018-02-07" NumeroPedidoProveedor="870391" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-07" FechaEntregaProveedor="2018-02-07" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-922" NumArtP="E-922" Descripcion="04 E-922 MEZ/LAV BAMBOO CORTA CC PUSH CR" PrecioUnitario="4175.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02-4037-01" NumArtP="E-39" Descripcion="04 E-39 ENSAM.EGO PLUS MONO.C/MANG.CROMO" PrecioUnitario="5268.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="150" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-73" NumArtP="C-73" Descripcion="04 C-73 MANERAL KONOS CROMO" PrecioUnitario="663.49">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="10769.98"/>
+  </Resumen>
+</Documento>

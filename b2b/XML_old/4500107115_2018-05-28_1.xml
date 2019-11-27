@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:13:05" Bandera="T" Version="1.0" NumDocumento="10001708"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107115" FechaOrdenCompra="2018-05-08" NumeroPedidoProveedor="870711" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-08" FechaEntregaProveedor="2018-05-08" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04 RM-14" NumArtP="RM-14" Descripcion="04 RM-14 REGADERA MANUAL CRO C/BZO" PrecioUnitario="2274.92">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-06-H200" NumArtP="H-200" Descripcion="04 H-200 REGADERA OPTIMA CROMO" PrecioUnitario="436.20">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-06MB470S" NumArtP="B-470-S" Descripcion="04 BARRA RECTA SATINADA B-470-S" PrecioUnitario="588.88">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-208" NumArtP="208" Descripcion="04 208 JABONERA SENCILLA CLASICA CROMO" PrecioUnitario="339.01">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-24-RHLI" NumArtP="24-RHLI" Descripcion="04 24-RHLI COLADERA DE UNA BOCA" PrecioUnitario="1607.33">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-342" NumArtP="342-C" Descripcion="04 342-C COLADERA C/REJILLA CUADRADA" PrecioUnitario="361.77">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-342RL" NumArtP="342-RL" Descripcion="04 342-RL REBOSADERO REDONDO C/DES" PrecioUnitario="353.23">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+    <ART Linea="100" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-RM-15" NumArtP="RM-15" Descripcion="04 RM-15 REGADERA MANUAL CRO BZO.LARGO" PrecioUnitario="2274.92">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-16"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="34692.68"/>
+  </Resumen>
+</Documento>

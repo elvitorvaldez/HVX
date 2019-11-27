@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:27:19" Bandera="T" Version="1.0" NumDocumento="10002129"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500109125" FechaOrdenCompra="2018-05-21" NumeroPedidoProveedor="871150" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-21" FechaEntregaProveedor="2018-05-21" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-0204601" NumArtP="E-46-S" Descripcion="04 E-46-S MONOMANDO REGADERA NUVA SATIN" PrecioUnitario="1850.08">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-30"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-99-S" NumArtP="EP-99-S" Descripcion="04 EP-99-S MONO DE LAVABO NUVA SATIN" PrecioUnitario="3258.75">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-30"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02910501" NumArtP="9105-S" Descripcion="04 9105-S TOA/BARRA SATIN NUVA" PrecioUnitario="1311.94">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-30"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02910901" NumArtP="9109-S" Descripcion="04 9109-S TOA/BARRA SATIN CORTO SEN NUVA" PrecioUnitario="811.72">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-30"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02910601" NumArtP="9106-S" Descripcion="04 9106-S GANCHO SENCILLO NUVA SATIN" PrecioUnitario="516.81">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-30"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-03700" NumArtP="TR-037-S" Descripcion="04 TR-037-S BRAZO CHAPETON VERTICAL" PrecioUnitario="511.59">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-30"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02911701" NumArtP="9117-S" Descripcion="04 9117-S P.PAPEL SATIN NUVA SENCILLO" PrecioUnitario="607.37">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-07-30"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="8868.26"/>
+  </Resumen>
+</Documento>

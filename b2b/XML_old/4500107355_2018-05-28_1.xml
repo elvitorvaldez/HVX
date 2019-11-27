@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:21:27" Bandera="T" Version="1.0" NumDocumento="10001956"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107355" FechaOrdenCompra="2018-05-10" NumeroPedidoProveedor="870980" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-10" FechaEntregaProveedor="2018-05-10" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-ME-302" NumArtP="ME-302" Descripcion="04 ME-302 MEZC/FEG CRO TRITON" PrecioUnitario="1579.35">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-05-10"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="15793.50"/>
+  </Resumen>
+</Documento>

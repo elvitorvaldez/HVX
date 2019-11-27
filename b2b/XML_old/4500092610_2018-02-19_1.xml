@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:05:17" Bandera="T" Version="1.0" NumDocumento="10001660"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500092610" FechaOrdenCompra="2017-12-08" NumeroPedidoProveedor="870416" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-08" FechaEntregaProveedor="2017-12-08" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="16.000" UDM="PZ" NumArtD="04-16109-S" NumArtP="16109-S" Descripcion="04 16109-S TOA/BARRA SATIN CORTO VERTIKA" PrecioUnitario="814.00">
+      <CAR EstatusArticulo="AA" Cantidad="16.000" CantidadBackorder="0" FechaEntregaArt="2017-12-15"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="13024.00"/>
+  </Resumen>
+</Documento>

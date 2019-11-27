@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:18:43" Bandera="T" Version="1.0" NumDocumento="10001876"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108622" FechaOrdenCompra="2018-05-18" NumeroPedidoProveedor="870935" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-18" FechaEntregaProveedor="2018-05-18" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04 RM-14" NumArtP="RM-14" Descripcion="04 RM-14 REGADERA MANUAL CRO C/BZO" PrecioUnitario="2274.92">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="7.000" UDM="PZ" NumArtD="04-19117" NumArtP="19117" Descripcion="04 19117 PORTAPAPEL CRO MAGNA DX" PrecioUnitario="643.41">
+      <CAR EstatusArticulo="AA" Cantidad="7.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-207" NumArtP="207" Descripcion="04 207 P.CEPILLERO CLASICA CROMO" PrecioUnitario="294.92">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="8.000" UDM="PZ" NumArtD="04-6900" NumArtP="C-69" Descripcion="04 C-69 MANERAL KUBICA CROMO" PrecioUnitario="470.58">
+      <CAR EstatusArticulo="AA" Cantidad="8.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-EP-94" NumArtP="EP-94" Descripcion="04 EP-94 MONOMANDO DE LAVABO KUBICA CRO" PrecioUnitario="3105.60">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="28695.35"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:25:25" Bandera="T" Version="1.0" NumDocumento="10002073"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108730" FechaOrdenCompra="2018-05-19" NumeroPedidoProveedor="871104" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-19" FechaEntregaProveedor="2018-05-19" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-PIU-06" NumArtP="PIU-06" Descripcion="04 PIU-06 GANCHO SENCILLO PIURA CROMO" PrecioUnitario="532.45">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-PIU-09" NumArtP="PIU-09" Descripcion="04 PIU-09 TOALLERO CORTO PIURA CROMO" PrecioUnitario="842.07">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-PIU-17" NumArtP="PIU-17" Descripcion="04 PIU-17 PORTAPAPEL PIURA CROMO" PrecioUnitario="628.70">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-19"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="2003.22"/>
+  </Resumen>
+</Documento>

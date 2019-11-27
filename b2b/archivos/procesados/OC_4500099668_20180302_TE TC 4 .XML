@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Documento xmlns="http://www.tredicom.com/OrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Control>
+<CIN Emisor="GILSACIN" Receptor="HELVEXCIN" FechaCreacionDocumento="2018-03-02T18:59:03" Bandera="P" Version="1.0" NumDocumento="0000036590"/>
+<SCI TipoDocumento="CO" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+</Control>
+<Cabecera>
+<COC NumeroOrdenCompra="4500099668" FechaOrdenCompra="2018-02-28" EstatusOrden="M" TerminosPago="30.00" Revision="00020" Extra1COC="0077003321" Extra2COC="Orden Terceros"/>
+<ROC Contacto="MARIBEL RODRIGUEZ" Telefono="01553339400" Mail="maribel.rodriguez@gilsa.biz" Extra1="0010128261" Extra2="CEDIS BARRAGAN"/>
+<FAA FacturarAD="1000" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+<ENA EnviarAD="9000107942" ENombreLocalidad="ing jorge" ECalle="ing jorge" EMunicipio="MONTERREY" EEstado="NL" ECodigoPostal="64989" EPais="MX"/>
+<PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+</Cabecera>
+<Detalle>
+<ART Linea="10" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-AT-4" NumArtP="AT-4" Descripcion="04 AT-4 ASIENTO C/TAPA ANTIBACTE BCO" PrecioUnitario="463.10" ImporteTotal="4283.67" FechaEntregaArt="2018-03-31" ExtraART2="7.50" ExtraART3="428.37"/>
+<ART Linea="20" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-06-SH058" NumArtP="TH-058" Descripcion="04 TH-058 CONTRA P/LAVABO CROMO" PrecioUnitario="809.00" ImporteTotal="4115.79" FechaEntregaArt="2018-03-31" ExtraART2="49.12" ExtraART3="411.58"/>
+<ART Linea="30" CantidadOrdenada="27.000" UDM="PZ" NumArtD="04-01-282-H" NumArtP="282-H" Descripcion="04 282-H COLADERA PARA BANO" PrecioUnitario="1761.00" ImporteTotal="24189.54" FechaEntregaArt="2018-03-31" ExtraART2="49.12" ExtraART3="895.91"/>
+<ART Linea="40" CantidadOrdenada="55.000" UDM="PZ" NumArtD="04-TZF-17" NumArtP="TZF NAO17" Descripcion="04 TZF-17 TAZA FLUX NAO 17 BLANCO" PrecioUnitario="4044.00" ImporteTotal="122331.00" FechaEntregaArt="2018-03-31" ExtraART2="45.00" ExtraART3="2,224.20"/>
+<ART Linea="50" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-LV-2-1P" NumArtP="LV LUCERNA1" Descripcion="04 LV LAVABO LUCERNA 1 BLANCO" PrecioUnitario="2120.80" ImporteTotal="4315.83" FechaEntregaArt="2018-03-31" ExtraART2="49.12" ExtraART3="1,078.96"/>
+<ART Linea="60" CantidadOrdenada="40.000" UDM="PZ" NumArtD="04-310-WC-4.8" NumArtP="310-WC-4.8" Descripcion="04 310-WC-4.8 FLUXOMETRO P/WC D/PEDAL" PrecioUnitario="4842.00" ImporteTotal="98534.70" FechaEntregaArt="2018-03-31" ExtraART2="49.13" ExtraART3="2,463.37"/>
+<ART Linea="70" CantidadOrdenada="25.000" UDM="PZ" NumArtD="04-01-4296-01" NumArtP="TV-296" Descripcion="04 TV-296 LLAVE ELECTR.BAT.ARGOS CROMO" PrecioUnitario="8042.00" ImporteTotal="102284.19" FechaEntregaArt="2018-03-31" ExtraART2="49.12" ExtraART3="4,091.37"/>
+<ART Linea="80" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-02TV-0160" NumArtP="TV-016" Descripcion="04 TV-016 CESPOL P/LAVABO S/CONTRA" PrecioUnitario="901.00" ImporteTotal="5042.22" FechaEntregaArt="2018-03-31" ExtraART2="49.13" ExtraART3="458.38"/>
+</Detalle>
+<Resumen>
+<RES Moneda="MXN" Subtotal="365096.94" IVA="58415.51" Total="423512.45" MensajeLibreRES1=" * El material deberá ser entregado en la dirección indicada, en caso   contrario no se aceptará la mercancía. * El número de esta orden de compra debe ser referenciado en la remisión   y/o factura con la que se entregue." MensajeLibreRES3="( CUATROCIENTOS VEINTITRES MIL QUINIENTOS DOCE PESOS 45/100 M.N. )"/>
+</Resumen>
+</Documento>

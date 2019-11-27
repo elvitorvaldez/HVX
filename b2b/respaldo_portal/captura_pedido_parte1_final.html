@@ -1,0 +1,1242 @@
+<?php
+$_Autentificar='ok';
+include('header_footer_portal.php');
+
+if (!cuentaConServicio('captura pedido',$_SESSION['id_usuario'])){
+	Header("Location: sin_permiso.html"); 
+}
+
+header("Cache-Control: no-store, no-cache, must-revalidate");
+
+$DB_query = new querys();
+$op_tipopedido[0]='Producto terminado';
+$op_tipopedido[1]='Producto terminado para obra';
+$op_tipopedido[2]='Refacciones';
+
+$custNumber = filter_input(INPUT_POST, 'CustNumber', FILTER_SANITIZE_SPECIAL_CHARS);
+$orgwdiv = filter_input(INPUT_POST, 'orgwdiv', FILTER_SANITIZE_SPECIAL_CHARS);
+$tipodeobra2 = filter_input(INPUT_POST, 'tipodeobra2', FILTER_SANITIZE_SPECIAL_CHARS);
+$SPO = filter_input(INPUT_POST, 'SPO', FILTER_SANITIZE_SPECIAL_CHARS);
+$carga = filter_input(INPUT_POST, 'carga', FILTER_SANITIZE_SPECIAL_CHARS);
+$dirawdiv = filter_input(INPUT_POST, 'dirawdiv', FILTER_SANITIZE_SPECIAL_CHARS);
+$licitacion = filter_input(INPUT_POST, 'id_licitacion', FILTER_SANITIZE_SPECIAL_CHARS);
+
+$recibe_cliente=($custNumber)?$custNumber:'';
+$organizacion_ventas=($orgwdiv)?$orgwdiv:'';
+$recibe_sector=($tipodeobra2)?$tipodeobra2:'';
+$orden_compra=($SPO)?$SPO:'';
+$id_pedido=($carga)?$carga:'';
+$direccion=($dirawdiv)?$dirawdiv:'';
+$numero_licitacion=($licitacion)?$licitacion:'';
+
+$parsed_sector=($recibe_sector=='99')?'01':$recibe_sector;
+$styledisplay='none';
+$cliente_idname = array( 0=>$recibe_cliente , 1=> '');
+
+$sql_query = "SELECT DISTINCT name1,name2  FROM SAP.Clientes_R3 WHERE kunnr = '$recibe_cliente'";
+$res = mysql_query($sql_query);
+if($res)
+{
+	$row = mysql_fetch_array($res);
+	$cliente_idname[1]= $row["name1"].' '.$row["name2"];
+	$recibe_cliente .= "||".$cliente_idname[1];
+}
+																									    
+$szQryOrg = "SELECT vtext FROM SAP.Orgvtas_R3 WHERE vkorg = '$organizacion_ventas'";
+$resOrg = mysql_query($szQryOrg);
+$txtOrganizacion = "";
+if($resOrg)
+{
+	$row = mysql_fetch_array($resOrg);
+	$txtOrganizacion = $row["vtext"];
+}
+
+$szQrySec = "SELECT vtext FROM SAP.Sector_R3 WHERE spart = '$parsed_sector'";
+$resSec = mysql_query($szQrySec);
+$txtSector = "";
+if($resSec)
+{
+	$row = mysql_fetch_array($resSec);
+	$txtSector = $row["vtext"];
+}
+			/*	switch ($organizacion_ventas) {
+					case 2201:
+						echo "<font color=\"#585858\">PRISA NACIONAL</font>";
+						echo "<input type=hidden name=org_txt id=org_txt value='Prisa Nacional'>";
+						break;
+					case 3101:
+						echo "<font color=\"#585858\">HELVEX NACIONAL</font>";
+						echo "<input type=hidden name=org_txt id=org_txt value='Helvex Nacional'>";
+						break;
+				}
+				
+
+				switch ($parsed_sector) {
+					case 01:
+						echo "<font color=\"#585858\">LLAVES Y ACCESORIOS</font>";
+						echo "<input type=hidden name=sec_txt id=sec_txt value='Producto Terminado'>";
+						break;
+					case 02:
+						echo "<font color=\"#585858\">REFACCIONES</font>";
+						echo "<input type=hidden name=sec_txt id=sec_txt value='Refacciones'>";
+						break;
+					case 03:
+						echo "<font color=\"#585858\">MUEBLES CER&Aacute;MICOS</font>";
+						echo "<input type=hidden name=sec_txt id=sec_txt value='Muebles Cer&aacute;micos'>";
+						break;
+					case 04:
+						echo "<font color=\"#585858\">ALTMANS</font>";
+						echo "<input type=hidden name=sec_txt id=sec_txt value='Altmans'>";
+						break;
+					
+				}*/
+
+if (!$id_pedido || $id_pedido=="")
+{
+	$motivo = ( $recibe_sector=='99' )?'04':'01';
+	$id_obra=( isset($_SESSION["id_obra"]) && $_SESSION["id_obra"] )?$_SESSION["id_obra"]:'';
+	$link = mysql_connect("localhost", "portal", "portal");
+	mysql_select_db("SAP", $link);
+	$id_usuario_session=$_SESSION['id_usuario']; 
+	$query="INSERT INTO pedidos_guardados_R3 (id_usuario,cuenta,org_vtas,sector,orden_compra,fecha_captura,fecha_modificacion,estado_actual,motivo_pedido,id_obra) "
+			. "VALUES ('$id_usuario_session','$cliente_idname[0]','$organizacion_ventas','$parsed_sector','$orden_compra','".date("Y-m-d h:i:s")."','".date("Y-m-d h:i:s A ")."','1','$motivo','$id_obra')";
+	$result = @mysql_query($query,$link);
+	$query="SELECT id_pedido from pedidos_guardados_R3 ORDER BY id_pedido DESC LIMIT 1";
+	unset($_SESSION["id_obra"]);
+	$id_pedido=mysql_insert_id();
+}
+
+/*switch ($parsed_sector)
+{
+	case 01:
+				$re_sec_fa='ZPT';
+				break;
+	case 02:
+				$re_sec_fa='ZREF';
+				break;
+				case 03:
+					$re_sec_fa='ZPT';
+					break;
+				case 04:
+					$re_sec_fa='ZPT';
+					break;
+}*/
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--meta http-equiv="Content-Type" content="text/html; charset=windows-1252"-->
+		<title>Helvex - Nuevo pedido</title>
+		<?php set_sess_expiration_alert(); ?>
+		<link rel="STYLESHEET" type="text/css" href="./dhtmlx/dhtmlx.css">
+		<!--link rel="stylesheet" type="text/css" href="styles/estilos.css"-->
+		<link rel="stylesheet" type="text/css" href="styles/estilos_improved.css">
+		<script src="js/prototype.js" type="text/javascript"></script>
+		<script src="dhtmlx/dhtmlx.js" type="text/javascript" ></script>
+
+		<script type="text/javascript">			
+			var browser=navigator.appName;
+			var maxicanti;
+			var productos_array = new Array();
+			var allProds_array = new Array();
+			var productos_pedido= new Array();
+			var productos_pedido_2=new Array();
+			var descuentos_array= new Array();
+			var subtotal=0,iva=0,total=0;
+			var respuesta;
+			var unidades;
+			var oldvalue='';
+			<?php
+			/* se hace la consulta a la BD para obtener el valor de la variable max_producto */
+			$DB_query->query($DB,"SELECT * FROM variables_ambiente WHERE nombre='max_producto'");
+			$var_trae = $DB_query->getArray();
+			echo ' var maxicanti='.$var_trae["valor"].'; ';
+
+			$query_marca="SELECT DISTINCT matnr, maktx, matnr_2, vtext_f, vtext_c, vtext_gm from Productos_R3 where vkorg='$organizacion_ventas' and spart='$parsed_sector' and kbetr>0";
+			$marcaRes = mysql_query($query_marca);
+			$htmlSelectProducts = "";
+			$nvo_cont = 0;
+			while( $row = mysql_fetch_array($marcaRes) )
+			{
+						$mht=htmlentities($row["maktx"]);
+						$matnr=$row["matnr"];
+						$htmlSelectProducts .= "<option value= '$matnr'>$matnr - $mht</option>";
+						$matnrEscaped = str_replace("/","",$matnr);
+						$existe = file_exists('images/productos/'.$matnrEscaped.'.jpg');
+						echo " allProds_array[$nvo_cont]={\"ITNO\" : \"$matnrEscaped\",\"FILEEXIST\" : \"$existe\"};\n ";
+						$nvo_cont++;
+			}
+			
+			?>
+			
+			
+			window.dhx_globalImgPath="dhtmlx/imgs/";
+			
+			function CommaFormatted(amount) {
+				var delimiter = ","; // replace comma if desired
+				var a = amount.split('.',2)
+				var d = a[1];
+				var i = parseInt(a[0]);
+				if(isNaN(i)) {
+					return '';
+				}
+				var minus = '';
+				if(i < 0) {
+					minus = '-';
+				}
+				i = Math.abs(i);
+				var n = new String(i);
+				var a = [];
+				while(n.length > 3) {
+					var nn = n.substr(n.length-3);
+					a.unshift(nn);
+					n = n.substr(0,n.length-3);
+				}
+				if(n.length > 0) {
+					a.unshift(n);
+				}
+				n = a.join(delimiter);
+				if(d.length < 1) {
+					amount = n;
+				} else {
+					amount = n + '.' + d;
+				}
+				amount = minus + amount;
+				return amount;
+			}
+		
+			//funcion para validar el maximo de texto introducido
+			function ismaxlength(obj) {
+				var mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
+				if (obj.getAttribute && obj.value.length>mlength)
+					obj.value=obj.value.substring(0,mlength)
+			}
+		
+			function handleKeyPress(e,form){
+			        var key=e.keyCode || e.which;
+					//  (key)
+			        if (key==13){
+			                //alert('enter');
+			                //valida_agrega();
+							valida_agrega_producto();
+							onclick_agrega();
+			        }
+			}
+										
+			function onclick_agrega() {
+				document.getElementById("cantidad").value='';
+				document.getElementById("filtromodelo_final").value='';
+				document.getElementById("acabado").value='';
+				filtra_teclado();
+			}
+			
+			var tpactual;
+			
+			function revisar_disponibilidad_db(){
+				cant=document.getElementById("cantidad");
+				var str=document.getElementById("sectorp_hidden");
+			    var str_value=str.value;
+			    var org=document.getElementById("orgp_hidden");
+			    var org_value=org.value;
+				if (isNaN(cant.value)){
+					alert ("No utilice caracteres como letras, acentos, comas, puntos, etc.");
+					return false;
+				}
+				prod_sel=document.getElementById("proddepwdiv");
+				if (cant.value=='' || prod_sel.value==''){
+					alert ("Indique el modelo y la cantidad.")
+					return false;
+				}
+				else if (cant.value<1 || (cant.value%1)>0) {
+					alert("Escriba un n\372mero entero mayor a 0 en cantidad.");
+					return false;
+				}	
+				else {
+					var url = './ZEXISTENCIAS_MATERIAL.php?filtromodelo='+prod_sel.value+'&org_value='+org_value+'&str_value='+str_value
+					var cp=cant.value;
+					new Ajax.Request(url,
+									{method: 'get', 
+									 asynchronous: false,
+									 onSuccess:function(transport)
+									 {
+										var unidades
+										unidades = transport.responseText; 
+										var comp=unidades-cp;
+										if (comp>=0) {
+											var mens="Disponibilidad total";
+											document.getElementById('disponibilidad').innerHTML=mens;
+										}
+										if (comp<0){
+											var mens="Producto no disponible";
+											document.getElementById('disponibilidad').innerHTML=mens;
+										}
+										if (comp<0 && unidades!=0){
+											var mens="Disponibilidad Parcial";
+											document.getElementById('disponibilidad').innerHTML=mens;
+										}
+									}
+								}
+					);
+					document.getElementById("disponibilidad").style.display='inline';
+				}
+			}
+	
+			var info_grupos = new Array();
+			info_grupos[0] = new Array();
+			info_grupos[1] = new Array();
+			info_grupos[2] = new Array();
+
+			//funcion para buscar el producto y regresar el valor del select del combo
+			function buscaproducto2(ITNO){
+					for (llave in allProds_array){
+					if (allProds_array[llave]['ITNO']==ITNO || allProds_array[llave]['ITNO']==ITNO.replace(/ /g,"")){
+						return llave;
+					}
+				}
+				return 'NULL';
+			}
+			
+			function colocaimagen3(){
+				divis = document.getElementById("prodimagen");
+				prod=document.pedido.elements['proddepwdiv'];
+				if (prod.options.length!=0){
+					foto=prod.options[prod.selectedIndex].value
+					foto2=foto.replace("/", "");
+					clave=buscaproducto2(foto2);
+						if (allProds_array[clave]['FILEEXIST']){
+							//divis.src='imagen.am?size=150&img=<?php echo $FULL_PATH; ?>/images/productos/'+foto.replace(/ /g,"").replace("/","")+'.jpg'
+							divis.src='imagen.am?size=150&img=<?php echo $FULL_PATH; ?>/images/productos/'+foto.replace("/","")+'.jpg'
+						}
+						else{
+							divis.src='images/productos/nohayphoto.gif'
+						}
+					}
+				else{
+					divis.src='images/productos/nohayphoto.gif'
+				}
+			}
+			
+			function oculta_div(nombre_id){
+				divis = document.getElementById(nombre_id);
+				divis.style.display="none";
+			}
+				
+			//<!-- recarga combo box a partir del input-->
+			function filtra_teclado() {
+				document.getElementById('cantidad').value='';
+				
+					ftomod=document.pedido.elements['filtromodelo_final'].value;
+					
+					var str=document.getElementById("sectorp_hidden");
+					var str_value=str.value;
+					
+					var org=document.getElementById("orgp_hidden");
+					var org_value=org.value;
+					
+					var url = './filtro_teclado.php?filtro='+ftomod+'&sector='+str_value+'&org='+org_value
+					
+				
+					new Ajax.Request(
+				
+					url,
+					{
+						method: 'get',
+						asynchronous: false,
+						onSuccess: function(transport) {
+							filtro = transport.responseText;
+							
+						}
+					});
+					document.getElementById('proddep').innerHTML = '<select onchange=\"colocaimagen3();oculta_div(\'disponibilidad\')\" id=\"proddepwdiv\" name=\"proddepwdiv\" style=\"width: 400\">' + filtro +'</select>';
+				
+			}
+				
+			//<!-- inicia funcion filtra por acabado -->
+			function acabado_busqueda() {
+					document.getElementById('cantidad').value='';
+					var acabado_txt=document.pedido.elements['acabado'].value;
+					var str2=document.getElementById("sectorp_hidden");
+					var str_value2=str2.value;
+					var org2=document.getElementById("orgp_hidden");
+					var org_value2=org2.value;
+				
+					if (acabado_txt.length==0 ||acabado_txt.length==3 || acabado_txt.length==6 || acabado_txt.length==9 || acabado_txt.length==12 || acabado_txt.length==15 || acabado_txt.length==18 || acabado_txt.length==21) {
+						var url = './filtro_acabado.php?acabado='+acabado_txt+'&sector='+str_value2+'&org='+org_value2;
+						new Ajax.Request(
+						url,
+						{
+							method: 'get',
+							asynchronous: false,
+							onSuccess: function(transport) {
+								filtro_aca = transport.responseText;
+								
+							}
+						});
+						document.getElementById('proddep').innerHTML = '<select onchange=\"colocaimagen3();oculta_div(\'disponibilidad\')\" id=\"proddepwdiv\" name=\"proddepwdiv\" style=\"width: 400\">' + filtro_aca +'</select>';
+					}
+			}
+			//<!-- termina funcion filtra acabado -->	 
+							 
+				
+			//<!--funciones agregadas para el arbol -->
+			function OnChangeFamilia() {
+					var selcliente=document.getElementById("tipo_final");
+					var y=selcliente.options[selcliente.selectedIndex].value;
+					
+					var url = './tipo.php?tipo_final='+y
+					
+					new Ajax.Request(
+				
+					url,
+					{
+						method: 'get',
+						asynchronous: false,
+						onSuccess: function(transport) {
+							tipo = transport.responseText;
+					
+						}
+					});
+				
+					document.getElementById('tipod').innerHTML = '<select onchange=\"OnChangeTipo();\" name=\"tipowdiv\"  id=\"tipowdiv\" style=\"width: 210px\"><option value=\'\'>Seleccione</option>' + tipo +'</select>';
+				
+					var str=document.getElementById("sectorp_hidden");
+					var str_value=str.value;
+					
+					var org=document.getElementById("orgp_hidden");
+					var org_value=org.value;
+					
+					var url2 = './productos.php?tipo_final='+y+'&sectorp_hidden='+str_value+'&org='+org_value
+					
+					new Ajax.Request(
+				
+					url2,
+					{
+						method: 'get',
+						asynchronous: false,
+						onSuccess: function(transport) {
+							productos = transport.responseText;
+							
+						}
+					});
+					document.getElementById('proddep').innerHTML = '<select onchange=\"colocaimagen3();\" id=\"proddepwdiv\" name=\"proddepwdiv\" style=\"width: 400\">' + productos +'</select>';
+			}
+				
+			function OnChangeTipo() {
+					var selcliente=document.getElementById("tipo_final");
+					var y=selcliente.options[selcliente.selectedIndex].value;
+					
+					var t=document.getElementById("tipowdiv");
+					var t1=t.options[t.selectedIndex].value;
+					
+					var url = './caracteristica.php?tipo_final='+y+'&tipowdiv='+t1
+					
+					new Ajax.Request(
+				
+					url,
+					{
+						method: 'get',
+						asynchronous: false,
+						onSuccess: function(transport) {
+							cara = transport.responseText;
+							
+						}
+					});
+				
+					document.getElementById('card').innerHTML = '<select onchange=\"OnChangeCaracteristica();\" id=\"cardwdiv\" name=\"cardwdiv\" style=\"width: 210px\"><option value=\'\'>Seleccione</option>' + cara +'</select>';
+				
+					var str=document.getElementById("sectorp_hidden");
+					var str_value=str.value;
+					var org=document.getElementById("orgp_hidden");
+					var org_value=org.value;
+					var url2 = './productos.php?tipo_final='+y+'&tipowdiv='+t1+'&sectorp_hidden='+str_value+'&org='+org_value
+					
+					new Ajax.Request(
+				
+					url2,
+					{
+						method: 'get',
+						asynchronous: false,
+						onSuccess: function(transport) {
+							productos2 = transport.responseText;
+						}
+					});
+				
+					document.getElementById('proddep').innerHTML = '<select onchange=\"colocaimagen3();\" name=\"proddepwdiv\" id=\"proddepwdiv\" style=\"width: 400\"><option value=\'\'>Seleccione</option>' + productos2 +'</select>';
+				
+			}
+				
+			function OnChangeCaracteristica() {
+					var selcliente=document.getElementById("tipo_final");
+					var c=selcliente.options[selcliente.selectedIndex].value;
+					var ct=document.getElementById("tipowdiv");
+					var ct1=ct.options[ct.selectedIndex].value;
+					var ca=document.getElementById("cardwdiv");
+					var cav=ca.options[ca.selectedIndex].value;
+					var str=document.getElementById("sectorp_hidden");
+					var str_value=str.value;
+					var org=document.getElementById("orgp_hidden");
+					var org_value=org.value;
+					
+					var url = './productos.php?tipo_final='+c+'&tipowdiv='+ct1+'&cardwdiv='+cav+'&sectorp_hidden='+str_value+'&org='+org_value
+					
+					new Ajax.Request(
+					{
+						method: 'get',
+						asynchronous: false,
+						onSuccess: function(transport) {
+							productos3 = transport.responseText;
+							//alert (productos3)
+						}
+					});
+					document.getElementById('proddep').innerHTML = '<select onchange=\"colocaimagen3()\" name=\"proddepwdiv\" id=\"proddepwdiv\" style=\"width: 400\"><option value=\'\'>Seleccione</option>' + productos3 +'</select>';
+			}
+
+			function valida_agrega_producto()
+			{
+				cant=document.getElementById("cantidad");
+				prod_sel=document.getElementById("proddepwdiv");
+				var b=parseInt(cant.value);
+				var url1="getprodmult.php?mlp=6";
+				var url2="getprodmult.php?mlp=12";
+				var productos_multiplos6,productos_multiplos12;
+				new Ajax.Request(
+				url1,
+				{
+					method: 'post',
+					asynchronous: false,
+					onSuccess: function(transport) {
+						p_multiplos6=transport.responseText;
+					}
+				});
+			
+				new Ajax.Request(
+				url2,
+				{
+					method: 'post',
+					asynchronous: false,
+					onSuccess: function(transport) {
+						p_multiplos12=transport.responseText;
+					}
+				});
+			
+				var valida12,valida6=0;
+				productos_multiplos12=p_multiplos12.split(',')
+				productos_multiplos6=p_multiplos6.split(',')
+				for (i=0;i<=productos_multiplos12.length-1;i++)
+				{
+					if (prod_sel.value==productos_multiplos12[i])
+					{
+						modulo=cant.value%12;
+						if (modulo!=0)
+						{
+							alert ("Para su pedido, el material "+prod_sel.value+"  requiere m\372ltiplos de 12 unidades");
+							return false;
+						}
+					}
+				}
+			
+				for (i=0;i<=productos_multiplos6.length-1;i++)
+				{
+					if (prod_sel.value==productos_multiplos6[i])
+					{
+						modulo=cant.value%6;
+						if (modulo!=0)
+						{
+							alert ("Para su pedido, el material "+prod_sel.value+"  requiere m\372ltiplos de 6 unidades");
+							return false;
+						}
+					}
+				}			
+			
+				if (cant.value>maxicanti)
+				{
+					alert('El valor m\341ximo en cantidad es '+maxicanti);
+					return false;
+				}
+			
+				if (cant.value=='' || prod_sel.value=='')
+				{
+					alert ("Indique el modelo y la cantidad");
+					return false;
+				}
+				else if (cant.value<1 || (cant.value%1)>0)
+				{
+					alert("Escriba un numero entero mayor a 0 en cantidad");
+					return false;
+				}
+				else if (isNaN(cant.value))
+				{
+					alert ("No utilice caracteres como letras, acentos, comas, puntos, etc");
+					return false;
+				}
+				else
+				{
+					datos_precios();
+					if (res[4]==0)
+					{
+						alert ("Material con precio $0");
+						return false;
+					}
+					var encontrado=0;
+					mygrid.forEachRow( function(id)
+					{
+						var modelo=mygrid.cells(id,0).getValue();
+						if (modelo==res[0])
+						{
+							var cantidad=mygrid.cells(id,2).getValue();
+							encontrado=1;
+						}
+			
+					});
+					
+					if (encontrado==0)
+					{
+						lastrow = mygrid.rowsCol.length ;
+						mygrid.addRow((new Date()).valueOf(),res[0]+'|'+res[1]+'|'+res[2]+'|'+res[3]+'|'+res[4]+'|'+res[5]+'|'+res[6]+'|'+res[7]+'|'+'images/button_drop.gif'+'|'+res[8]+'|'+res[9]+'|'+res[10]+'|'+res[11]+'|'+res[12],lastrow);
+					}
+					else
+					{
+						alert("Este Modelo ya se encuentra en su pedido, haga doble click sobre la Cantidad Ordenada si desea modificarla ");
+					}
+				}
+			}
+
+
+			function datos_precios() {
+				//<!--var proid2=document.getElementById("proid2");-->
+				var proid2=document.getElementById("proddepwdiv");
+				var f2=proid2.options[proid2.selectedIndex].value;
+			
+				<!--var prod_sel=document.getElementById("proddepwdiv"); -->
+			
+				var b=document.getElementById('cliente_hidden').value;
+				var c=document.getElementById('orgvtas_hidden').value;
+				var d=document.getElementById('sector_hidden').value;
+				var f=document.getElementById('cantidad').value;
+				var url = './bapi_precios_sola.php?cliente_hidden='+b+'&cantidad='+f+'&producto2='+f2+'&sector_hidden='+d+'&orgvtas_hidden='+c
+				<!--alert (url)-->
+			
+				new Ajax.Request(
+				url,
+				{
+					method: 'get',
+					asynchronous: false,
+					onSuccess: function(transport) {
+						<!--alert(transport.responseText)-->
+						respuesta = transport.responseText;
+						//alert (respuesta);
+					}
+				});
+			
+				res=respuesta.split("|");
+				res[0];
+				res[1];
+				res[2];
+				res[3];
+				res[4];
+				res[5];
+				res[6];
+				res[7];
+				res[8];
+				res[9];
+				res[10];
+				res[11];
+				res[12];
+			}
+			
+			function pregunta0() {
+				var b=document.getElementById('cliente_hidden').value;
+				var c=document.getElementById('orgvtas_hidden').value;
+				var d=document.getElementById('sector_hidden').value;
+				var url = './user_type.php?id_usuario=<?php echo $_SESSION['id_usuario'];?>&id_pedido=<?php echo $id_pedido;?>&cliente_hidden='+b+'&sector_hidden='+d+'&orgvtas_hidden='+c
+				new Ajax.Request(
+				url,
+				{
+					method: 'get',
+					asynchronous: false,
+					onSuccess: function(transport) {
+						<!--alert(transport.responseText)-->
+						usertype = transport.responseText;
+						//alert (usertype);
+					}
+				});
+				if (usertype==1) {
+					alert ("Usted no puede realizar su pedido, una vez confirmada la direcci\363n alterna de su carta responsiva el personal de ventas lo realizar\341");
+					document.nuevopedido.Submit.disabled=true;
+					return false;
+				} else {
+					pregunta();
+				}
+			
+			}
+			//Suma la cantidad de la columna col (Cant Ordenada) evitando sumar aquellos 
+			//modelos que empiecen por prefix, la columna de modelos se especifica en mod_col 
+			function sumProdQty(col, prefix, mod_col){
+				var out = 0;
+				for(var i=0;i<mygrid.getRowsNum();i++)
+				{
+					//Se evita sumar los modelos que empiecen con prefix
+					if( !(mygrid.cells2(i,mod_col).getValue()[0] === prefix) )
+						out+= parseFloat(mygrid.cells2(i,col).getValue())
+				}
+				out = out.toFixed(2);
+                                console.log(out);
+				return out;
+			}
+			
+			function pregunta()
+			{
+				if (mygrid.rowsCol.length <= 0)
+				{
+					alert ("Su pedido no cuenta con productos agregados.");
+					return false;
+				}
+				
+				window.scrollBy(0,100); // horizontal and vertical scroll increments
+				var client_id_for_addr=document.getElementById('cliente_hidden').value;
+				var use_dir_alterna = 0;
+				var dir_alt_id = document.getElementById('direccion_hidden').value;
+				var c=document.getElementById('orgvtas_hidden').value;
+				var s=document.getElementById('sector_hidden').value;
+				var url = "";
+				var policy = 0;
+				var order_region = 0;
+                                   
+                                //console.log("Antes:"+client_id_for_addr);
+                                //console.log("Alt:"+dir_alt_id);
+				if (client_id_for_addr != dir_alt_id)
+				{
+					//client_id_for_addr = dir_alt_id;
+					//use_dir_alterna = 1;
+				}
+				
+				url="verificar_region.php";
+                                 console.log("Cliente:"+client_id_for_addr);
+                                 console.log("DespAlt:"+dir_alt_id);
+                                 console.log("USE:"+use_dir_alterna);
+				new Ajax.Request(
+					url,
+					{
+						method: 'get',
+						asynchronous: false,
+						parameters: { kunnr:client_id_for_addr, vkorg:c, spart:s, is_dir_alterna:use_dir_alterna },
+						onSuccess: function(transport)
+									{
+										order_region = transport.responseText;
+									}
+					}
+				);
+                                console.log(order_region);
+				var ord_is_local = (order_region === "F")?0:1;
+				
+				url = "get_order_qty_policy.php";
+				new Ajax.Request(
+				url,
+				{
+					method: 'get',
+					asynchronous: false,
+					parameters: {org:c, sec:s, is_local:ord_is_local},
+					onSuccess: function(transport)
+								{
+									//alert(transport.responseText);
+									policy = transport.responseText
+								}
+				});
+				
+				if(policy[0] != "-" )
+				{
+					var p = policy.split("|");
+					var cant = parseInt(p[0]);
+					var unidades = "";
+					var col_to_sum = 7;
+					var total = 0;
+					
+					if(p[1] == "PESOS")
+					{
+						unidades = "$";
+						col_to_sum = 7;
+						total = sumColumn(col_to_sum);
+					}
+					else if (p[1] == "PIEZA")
+					{
+						unidades = "piezas";
+						col_to_sum = 2;
+						total = sumProdQty(col_to_sum, " ", 0)
+					}
+					
+					if(total < cant)
+					{
+						var msg="";
+						switch( col_to_sum )
+						{
+							case 2: msg = cant+" "+unidades+" (no cuentan los asientos)";
+									break;
+							case 7: msg = unidades+cant+" MXN";
+									break;
+							default:break;
+						}
+						alert ("Su pedido debe ser mayor a "+msg+", puede agregar m\341s productos o guardarlo para despu\351s.");
+						return false;
+					}
+				}
+
+				if (confirm('\277Estas seguro de enviar el pedido?'))
+				{
+					//makeRequest('./genera_pedido_final2.php','pdiv');
+					divCentral = document.getElementById('pdiv');
+					divCentral.innerHTML= '<img src="./images/ajax-loader2.gif" height="35" width="35" />';
+					divCentral.style.display="block";
+					document.pedido.submit();
+				}
+			}
+			
+			function pregunta2() {
+				if (confirm('Su pedido no se realizar\341 y quedar\341 guardado para despu\351s. \277Esta usted seguro?')) {
+					javascript:
+					location.href='./captura_pedido.html'
+				}
+			}
+		</script> 
+
+	</head>
+
+	<body>
+		<script language="JavaScript1.2" src="js/load_provide_support.js" type="text/javascript"></script>
+		<div class="main_area" id="dmain">
+			<div class="main_banner" id="page_banner">
+				<img alt="" border="0" src="<?php echo( get_rand_image('./Banners1024', 'jpg', 'Banner1024X60') );?>" style="width:100%;">
+			</div>
+			<div class="menu" id="dmenu">
+			<?php
+				if(isset($_SESSION['id_usuario']))
+				{	
+					get_header(__FILE__);				
+				}
+			?>				
+			</div>
+			
+			<div class="welcome_div" id="dwelcome">
+				<div class="welcome_image">
+					<img alt="" border="0" src="images/llave.gif" width="17" height="13"  />
+				</div>
+				<div class="welcome_name">
+				<?php
+					get_greeting();
+				?>
+				</div>
+				<div class="welcome_date">
+				<?php
+					get_date();
+				?>
+				</div>
+			</div>
+			
+			<div class="data_container" id="dproductos">
+				<div class="folder_all" id="dfolder_head">
+					<div style="width:120px" class="folder_title" id="dsection_title" >
+						<img alt="" width="8" height="19" src="./../../images/boton_izq.gif"/>
+						<span class="folder_title_text">Nuevo pedido</span>
+					</div>
+					<div class="folder_sides">
+						<img alt="" width="7" height="22" src="./../../images/boton_der.gif"/>
+					</div>
+					<div class="sess_close">
+						<a href="<?php echo $_SERVER['PHP_SELF']; ?>?logout=logout">
+							Cerrar sesi&oacute;n
+						</a>
+					</div>
+				</div>
+				
+				<div class="operation_name" id="doperation">
+					<img alt="" src="./../../images/right1.gif" />
+					<b></b>
+					<span><?php echo $txtOrganizacion; ?></span>:&nbsp;
+					<span><?php echo $txtSector; ?></span>
+					<span style="padding-left: 30px;"><!--Lista de Precios-->
+					<?php
+					$link = mysql_connect("localhost", "portal", "portal");
+					mysql_select_db("SAP", $link);
+
+					$query_lista="SELECT pltyp FROM Clientes_R3 WHERE spart='$recibe_sector' AND vkorg='$organizacion_ventas' AND kunnr='$cliente_idname[0]'";
+					$query_sesult = mysql_query($query_lista);
+					$lista='';
+					if ($query_sesult)
+					{ 
+						while ($row = mysql_fetch_array($query_sesult)){
+							$lista=$row['pltyp'];
+						}
+					} 
+					$query_lista2="SELECT lista FROM lista_precios WHERE spart='$recibe_sector' AND vkorg='$organizacion_ventas' AND pltyp='$lista'";
+					$lista2 = mysql_query($query_lista2);
+
+					if ($row = mysql_fetch_array($lista2))
+					{ 
+						do{
+							echo "|&nbsp;&nbsp;Lista de precios: {$row['lista']}.";
+						}while ($row = mysql_fetch_array($lista2)); 
+					}
+					?>
+					</span>
+				</div>
+				<div class="data_filter" id="dmodelo_filter">				
+					<form class="form_entries" id="nuevopedido" name="pedido" method="post" action="./genera_pedido_final2.php">
+						<input type=hidden name=direccion_hidden id=direccion_hidden value="<?php echo $direccion; ?>">
+						<input type=hidden name=cliente_hidden id=cliente_hidden value="<?php echo $cliente_idname[0]; ?>">
+						<input type=hidden name=orgvtas_hidden id=orgvtas_hidden value="<?php echo $organizacion_ventas; ?>">
+						<input type=hidden name=sector_hidden id=sector_hidden value="<?php echo $parsed_sector; ?>">
+						<input type=hidden name=recibe_cliente_hidden id=recibe_cliente_hidden value="<?php echo $recibe_cliente; ?>">
+						<input type=hidden name=carga_hidden id=carga_hidden value="<?php echo $id_pedido; ?>">
+						<input type=hidden name=orden_compra_hidden id=orden_compra_hidden value="<?php echo $orden_compra; ?>">
+						<input type=hidden name=org_txt id=org_txt value='<?php echo $txtOrganizacion; ?>'>
+						<input type=hidden name=sec_txt id=sec_txt value='<?php echo $txtSector; ?>'>
+						<input type="hidden" name=sectorp_hidden id=sectorp_hidden value="<?php echo $parsed_sector; ?>">
+						<input type="hidden" name=orgp_hidden id=orgp_hidden value="<?php echo $organizacion_ventas; ?>">
+                                                <input type="hidden" name=numero_licitacion_hidden id=numero_licitacion_hidden value="<?php echo $numero_licitacion; ?>">
+						
+						<select size="1" name="tipodeobra" id="tipodeobr" style="display:none;">
+						<?php
+						foreach($op_tipopedido as $campo => $valor){
+							echo "<option value='$campo'>$valor</option>";
+						}
+						?>
+						</select>
+						
+						<div id="filter_wraper" style="margin: 10px">
+							<div style="text-align: center;font-weight: bold;">
+								Nota de pedido:<br>
+								<textarea name="notas_hidden" id="notas_hidden" rows="2" cols="60" maxlength="659" onkeyup="return ismaxlength(this)"></textarea>
+							</div>
+							<hr noshade color="#BF0000" size="1" style="width: 70%;">
+							<div id="filters_only" style="float:left;">
+								<p>
+									B&uacute;squeda por
+									<label for="filtromodelo_final" >Modelo:</label>
+									<input type="text" name="filtromodelo_final" id="filtromodelo_final" size="15" onkeyup='filtra_teclado();colocaimagen3();oculta_div("disponibilidad");' >
+									&nbsp;o&nbsp;
+									<label for="acabado">Palabra:</label>
+									<input type="text" name="acabado" id="acabado" size="30" onkeyup='acabado_busqueda();colocaimagen3();'>
+								</p>
+								<p>
+									<label for="proddepwdiv">Producto:</label>
+									<span id="proddep">
+										<select id="proddepwdiv" name="proddepwdiv" style="width:400px;" onchange='colocaimagen3();oculta_div("disponibilidad")'>
+										<?php
+										echo $htmlSelectProducts;
+										?>
+										</select>
+									</span>
+								</p>
+								<p>
+									<label for="cantidad">Cantidad:</label>
+									<input type="text" name="cantidad" id="cantidad" size="5" onKeyPress="handleKeyPress(event,this.form); oculta_div('disponibilidad')" />
+									<span class="link">
+										<a href="javascript:void(0);" onclick='revisar_disponibilidad_db();' title="Las existencias cambian continuamente, para asignarle la cantidad completa env&iacute;e su pedido.">
+											Verificar disponibilidad:
+										</a>
+									</span>
+									<span id="disponibilidad" style="font-weight:bold; background-color:#E7E7E7; color:#864653;"></span>
+								</p>
+								
+								<p>
+									<input type="Button" value="Agregar al pedido" name="agregar" id="agregar" onclick="valida_agrega_producto();onclick_agrega();colocaimagen3();" /> 	
+								</p>								
+							</div>
+							<div id="images_only" style="float:right;">
+								<div  style="width:295px;text-align: center;margin-top: 5px;">
+									<img id=prodimagen border="0" src="images/producto_ejem.jpg"  class="marcoImage">
+									<br><font color="gray">Imagen de referencia</font>
+									<script language="javascript">
+										colocaimagen3();
+									</script>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</form>
+				</div>
+				<div class="dhtmlx_container" id="prod_listing" style="width:94%">
+					<div class="grid_container" id="gridbox" style="height: 450px;"></div>
+					<input type="Button" onclick="javascript:location.href='./captura_pedido.html' " value="Cancelar" />
+					<input type="Button" onclick="pregunta2();" id="guarda_pedido" value="Guardar pedido para despu&eacute;s" style="display:inline;" />  
+					<input type="button" id="Submit" name="Submit" value="Enviar pedido ahora" onclick="pregunta0();" />
+					<div id="pdiv" align="center" style="font-size:14px"></div>
+					<script type="text/javascript">
+						function carg(){
+								document.getElementById('pdiv').innerHTML='<p> Pedido Guardado Exitosamente</p><br><p>Redireccionando...</p>'
+								<!--parent.location.href('./captura_pedido_parte2.html')-->
+							    var t=setTimeout("window.open('./captura_pedido.html',target='_parent')",3000)
+						}														
+										
+						mygrid = new dhtmlXGridObject('gridbox');
+						mygrid.setImagePath("dhtmlx/imgs/");
+						mygrid.enableMultiline(true);
+						
+						mygrid.setHeader("Modelo,Descripci\363n,Cant Ordenada,Unidad,Precio LP,Importe Bruto,Descuento,Importe Neto,Borrar,Total2,IVA,descuento2,iva_precio,moneda");
+						mygrid.setInitWidths("80,300,90,15,90,105,90,115,55,15,10,10,10,10");					
+						mygrid.setColAlign("center,left,center,center,right,right,right,right,center,center,center,center,center,center")
+						mygrid.setDelimiter("|");
+						mygrid.setColTypes("ro|ro|ed|ro|ron|ron[=c2*c4]|ron[=c2*c4*c11]|ron[=(c5-c6)]|img|price|ro|price|price|ro");
+						mygrid.setColumnIds("modelo|descipcion|cantidad|unidad|precio|importe|desc|total|borrar|total2|iva|descuento2|iva_precio|moneda");
+						mygrid.setColumnHidden(3,true);
+						mygrid.setColumnHidden(9,true);
+						mygrid.setColumnHidden(10,true);
+						mygrid.setColumnHidden(11,true);
+						mygrid.setColumnHidden(12,true);
+						mygrid.setColumnHidden(13,true);
+						mygrid.setNumberFormat("0,000.00",4);
+						mygrid.setNumberFormat("0,000.00",5);
+						mygrid.setNumberFormat("0,000.00",6);
+						mygrid.setNumberFormat("0,000.00",7);
+						mygrid.setSkin("helvex");
+						mygrid.setMathRound(2);
+						mygrid.setColSorting("str,str,int,str,int,int,int,int,none,int,int,int,int,none");
+						mygrid.attachEvent("onGridReconstructed",calculateFooterValues);
+						mygrid.attachEvent("onEditCell",calculateFooterValues);
+						mygrid.attachEvent("onRowDblClicked",doOnRowSelected);
+						mygrid.attachEvent("onRowAdded",doOnRowAdded);
+						mygrid.init();
+						if (browser.indexOf("Microsoft") >= 0)
+						{
+							mygrid.attachFooter("Sumas|#cspan|<div id='ar_q'>0</div>|&nbsp;|#cspan|<div id='br_q'>0</div>| <div id='cr_q'>0</div>|&nbsp;");
+							mygrid.attachFooter("&nbsp;|#cspan|#cspan|#cspan|#cspan|#cspan|Subtotal $|<div id='er_q'>0</div>");
+							mygrid.attachFooter("&nbsp;|#cspan|#cspan|#cspan|#cspan|#cspan|IVA $|<div id='fr_q'>0</div>");
+							mygrid.attachFooter("&nbsp;|#cspan|#cspan|#cspan|#cspan|#cspan|Total $|<div id='gr_q'>0</div>");
+						}
+						else{
+							mygrid.attachFooter("Sumas|#cspan|<div id='ar_q'>0</div>||||<div id='br_q'>0</div>| <div id='cr_q'>0</div>|&nbsp;");
+							mygrid.attachFooter("|#cspan|#cspan|#cspan|#cspan|#cspan|Subtotal $|<div id='er_q'>0</div>");
+							mygrid.attachFooter("|#cspan|#cspan|#cspan|#cspan|#cspan|IVA $|<div id='fr_q'>0</div>");
+							mygrid.attachFooter("|#cspan|#cspan|#cspan|#cspan|#cspan|Total $|<div id='gr_q'>0</div>");
+						}
+						
+						<?php
+						if (!$id_pedido || $id_pedido=="")
+						{
+							$link = mysql_connect("localhost", "portal", "portal");
+						    mysql_select_db("SAP", $link);
+								
+							$query="SELECT id_pedido from pedidos_guardados_R3 ORDER BY id_pedido DESC LIMIT 1";
+							$result = @mysql_query($query,$link);
+							$row=mysql_fetch_array($result);
+							$id_pedido=$row['id_pedido']+1;
+						}
+						else
+						{?>
+							mygrid.loadXML("./inicial.php?pedido=<?php echo $id_pedido;?>&cuenta=<?php echo $cliente_idname[0]; ?>&org=<?php echo $organizacion_ventas; ?>&sec=<?php echo $recibe_sector; ?>",calculateFooterValues);
+						<?}?>
+						
+						myDataProcessor = new dataProcessor("./dataprocessor.php?valor0=<?php echo $_SESSION['id_usuario']; ?>&valor1=<?php echo $cliente_idname[0]; ?>&valor2=<?php echo $organizacion_ventas; ?>&valor3=<?php echo $recibe_sector; ?>&valor4=<?php echo $orden_compra; ?>&valor5=<?php echo $id_pedido; ?>");
+						myDataProcessor.enableDataNames(true);
+						myDataProcessor.setTransactionMode("GET");
+						myDataProcessor.init(mygrid);
+						
+						function doOnRowAdded(rowId){
+							mygrid.showRow(rowId);
+						}
+						
+						function doOnRowSelected(rowID,celInd){ //SOLO ES POSIBLE BORRAR Y CAMBIAR LA CANTIDAD
+							if (celInd==8)//para borrar sin tener que seleccionar previamente
+							{
+								if(confirm("\277Eliminar este producto?")){
+									mygrid.deleteRow(rowID);
+								}
+								else{	
+									return false;
+								}
+							}  
+							if (celInd==2)//para editar solo la cantidad
+							{
+								return true;
+							}
+								else
+							return false;
+						}
+						
+						mygrid.attachEvent("onEditCell",function(stage,rowId,cellIndex){
+						                     if (stage==1){
+						                     var c=this.editor.obj;
+						                     c.select();
+						                     return true;
+						                     }
+						                     return true;
+						                     });
+						
+						function calculateFooterValues(stage,id,ind){
+							if (stage==0){
+								oldvalue=mygrid.cells(id,2).getValue();
+							}
+							if(stage==2){
+								//alert (mygrid.cells(id,2).getValue())
+								if (isNaN(mygrid.cells(id,2).getValue())){
+									alert ("Error en la cantidad");
+									mygrid.cells(id,2).setValue(oldvalue);
+									return true;
+								}
+								if ((mygrid.cells(id,2).getValue()%1)>0 || (mygrid.cells(id,2).getValue<1) || (mygrid.cells(id,2).getValue=='')){
+									alert ("Error en la cantidad");
+									mygrid.cells(id,2).setValue(oldvalue);
+									return true;
+								}
+									if (mygrid.cells(id,2).getValue()<1){
+									alert ("Error en la cantidad");
+									mygrid.cells(id,2).setValue(oldvalue);
+									return true;
+								}
+							
+								if (mygrid.cells(id,2).getValue()>maxicanti){
+									alert ("Sobrepasa la cantidad m\341xima permitida");
+									mygrid.cells(id,2).setValue(oldvalue);
+									return true;
+								}
+								
+								var mod_mul=mygrid.cells(id,0).getValue();
+								var cant_mul=mygrid.cells(id,2).getValue();
+							
+								var url1="getprodmult.php?mlp=6";
+								var url2="getprodmult.php?mlp=12";
+							
+							
+								new Ajax.Request(
+								url1,
+								{
+								method: 'post', 
+								asynchronous: false,
+								onSuccess: function(transport) {
+								p_multiplos6=transport.responseText;
+								}
+								});
+							
+								new Ajax.Request(
+								url2,
+								{
+								method: 'post', 
+								asynchronous: false,
+								onSuccess: function(transport) {
+								p_multiplos12=transport.responseText;
+								}
+								});
+								
+								var valida12,valida6=0;
+								productos_multiplos12=p_multiplos12.split(',')
+								productos_multiplos6=p_multiplos6.split(',')
+																				
+								for (i=0;i<=productos_multiplos12.length-1;i++)
+								{
+									if (mod_mul==productos_multiplos12[i]){
+									    modulo=cant_mul%12;
+										if (modulo!=0){
+										alert ("Para su pedido, el material "+mod_mul+"  requiere m\372ltiplos de 12 unidades");
+										mygrid.cells(id,2).setValue(oldvalue);
+										return false;
+										}
+									}
+								}
+								
+								for (i=0;i<=productos_multiplos6.length-1;i++)
+								{
+									if (mod_mul==productos_multiplos6[i]){
+									    modulo=cant_mul%6;
+										if (modulo!=0){
+										alert ("Para su pedido, el material "+mod_mul+"  requiere m\372ltiplos de 6 unidades");
+										mygrid.cells(id,2).setValue(oldvalue);
+										return false;
+										}
+									}
+								}
+									
+								var fi=0;
+								{
+									importe=parseFloat(mygrid.cells(id,2).getValue());
+									descuento_cal=parseFloat(mygrid.cells(id,4).getValue());
+									total=importe*descuento_cal;
+									total=total.toFixed(3);
+									cantidad=parseFloat(mygrid.cells(id,2).getValue()); 
+									unidad=parseFloat(mygrid.cells(id,4).getValue());
+									descuento=parseFloat(mygrid.cells(id,11).getValue());
+									sum2=cantidad*unidad*descuento;
+									fi=total-sum2;
+									fi=fi.toFixed(3);
+								}
+								
+								var sum=0;
+								{
+									cantidad=parseFloat(mygrid.cells(id,2).getValue());            
+									unidad=parseFloat(mygrid.cells(id,4).getValue());
+									descuento=parseFloat(mygrid.cells(id,11).getValue());
+									sum=cantidad*unidad*descuento;
+									sum=sum.toFixed(3);
+								}
+								
+								var cant=0;
+								{
+									cantidad=parseFloat(mygrid.cells(id,2).getValue());
+									unidad=parseFloat(mygrid.cells(id,4).getValue());
+									cant=cantidad*unidad;
+									cant=cant.toFixed(3);
+								}
+								mygrid.cells(id,5).setValue(cant);
+								mygrid.cells(id,6).setValue(sum); 
+								mygrid.cells(id,7).setValue(fi); 
+								//return true;
+							}
+											
+							var out=0,out2=0,out3=0,valiva=0;
+							if(stage && stage!=2)
+								return true;
+							
+							var arQ = document.getElementById("ar_q");
+							var num=parseInt(sumColumn(2));
+							arQ.innerHTML = num;
+								
+							var brQ = document.getElementById("br_q");
+							brQ.innerHTML = CommaFormatted(sumColumn(5));
+								
+							var crQ = document.getElementById("cr_q");
+							crQ.innerHTML = CommaFormatted(sumColumn(6));
+								
+							var erQ = document.getElementById("er_q");
+							erQ.innerHTML = CommaFormatted(sumColumn(7));
+							
+							var frQ = document.getElementById("fr_q");
+							
+							out=sumColumn(7)*0.16000;
+							out=out.toFixed(2);
+							frQ.innerHTML = CommaFormatted(out);
+							
+							var grQ = document.getElementById("gr_q");
+							out2=sumColumn(7)*1.16;
+							out2 = out2.toFixed(2);
+							grQ.innerHTML = CommaFormatted(out2);
+							
+							return true;
+						}
+							
+							//funcion para sumar la columna completa
+						function sumColumn(ind){
+							var out = 0;
+							for(var i=0;i<mygrid.getRowsNum();i++){
+								out+= parseFloat(mygrid.cells2(i,ind).getValue())
+							}
+							out = out.toFixed(2);
+							return out;
+						}
+					</script>
+				</div>
+				<div class="message_to_user">
+				</div>				
+			</div>												
+			<div class="footer" id="dfooter">
+				<div class="footer_l">
+					<span class="hlink">
+						<?php get_footer(__FILE__, 1); ?>
+					</span>
+				</div>
+				<div class="footer_r">
+					<?php get_footer(__FILE__, 2); ?>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/load_google_analytics.js"></script>
+	</body>
+</html>

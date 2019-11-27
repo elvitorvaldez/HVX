@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:28:49" Bandera="T" Version="1.0" NumDocumento="10002171"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500108776" FechaOrdenCompra="2018-05-19" NumeroPedidoProveedor="871192" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-19" FechaEntregaProveedor="2018-05-19" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-06MB470S" NumArtP="B-470-S" Descripcion="04 BARRA RECTA SATINADA B-470-S" PrecioUnitario="588.88">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-02H-8801" NumArtP="H-8801" Descripcion="04 H-8801 CONTRA CANASTA P/FREGADERO" PrecioUnitario="759.09">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-24" NumArtP="RM-24" Descripcion="04 RM-24 REGADERA D/ALTURA DESLIZABLE" PrecioUnitario="2140.26">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-02TV-0058" NumArtP="TV-105" Descripcion="04 TV-105 LLAVE ECONOMIZADORA" PrecioUnitario="1127.97">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="6503.26"/>
+  </Resumen>
+</Documento>

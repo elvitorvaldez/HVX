@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:13:17" Bandera="T" Version="1.0" NumDocumento="10001713"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500110108" FechaOrdenCompra="2018-05-25" NumeroPedidoProveedor="870721" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-25" FechaEntregaProveedor="2018-05-25" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-05C-35-CR" NumArtP="C-35" Descripcion="04 C-35 MANERAL TRIPOLI GDE. CROMO" PrecioUnitario="245.60">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-29"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-05-C-1400" NumArtP="C-14" Descripcion="04 C-14 MANERAL GDE.EUR-CAPRI CROMO" PrecioUnitario="245.60">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-05-29"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3300" NumArtP="H-3300" Descripcion="04 H-3300 REGADERA 5 C/BZO Y CH CR" PrecioUnitario="675.17">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-29"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-H-3303-C/B" NumArtP="H-3303-C/B" Descripcion="04 H-3303-C/B REG MULTICHORR PLATO CR/BC" PrecioUnitario="1168.28">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-29"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-H-3011" NumArtP="H-3011" Descripcion="04 H-3011 REG CUADRADA 12 ANTI CR" PrecioUnitario="2915.95">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-29"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-926-DX" NumArtP="E-926-DX" Descripcion="04 E-926-DX MON/LAV PUSH ACUEDUCTO DX CR" PrecioUnitario="3813.96">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-29"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="11706.44"/>
+  </Resumen>
+</Documento>

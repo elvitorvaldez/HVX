@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:05:25" Bandera="T" Version="1.0" NumDocumento="10001662"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500097445" FechaOrdenCompra="2018-02-07" NumeroPedidoProveedor="870412" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2018-02-07" FechaEntregaProveedor="2018-02-07" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="140" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-3200" NumArtP="E-32" Descripcion="04 E-32 MONOMANDO NUVA P/FREG. CROMO" PrecioUnitario="3850.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="150" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-24-RHLI" NumArtP="24-RHLI" Descripcion="04 24-RHLI COLADERA DE UNA BOCA" PrecioUnitario="2731.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="160" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-151051" NumArtP="15105-S" Descripcion="04 15105-S TOA/BARRA SATIN PREMIER" PrecioUnitario="1929.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="170" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-0350" NumArtP="TR-035-S" Descripcion="04 TR-035-S BRAZO Y CHAPETON ANGULAR SAT" PrecioUnitario="978.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="180" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02910900" NumArtP="9109" Descripcion="04 9109 TOA/BARRA CRO CORTO SENC. NUVA" PrecioUnitario="1249.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="190" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-02-4037-01" NumArtP="E-39" Descripcion="04 E-39 ENSAM.EGO PLUS MONO.C/MANG.CROMO" PrecioUnitario="5268.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="240" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-TR013C" NumArtP="TR-013" Descripcion="04 TR-013 BZO/CHAP. CRO CUADRADO" PrecioUnitario="418.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+    <ART Linea="250" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01059" NumArtP="C-59" Descripcion="04 C-59 MANERAL ATICA CROMO" PrecioUnitario="389.00">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-02-15"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="17201.00"/>
+  </Resumen>
+</Documento>

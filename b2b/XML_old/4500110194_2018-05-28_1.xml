@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:17:10" Bandera="T" Version="1.0" NumDocumento="10001829"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500110194" FechaOrdenCompra="2018-05-26" NumeroPedidoProveedor="0" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-26" FechaEntregaProveedor="2018-05-26" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="50.000" UDM="PZ" NumArtD="04-OP-RIVOLI-PLUS" NumArtP="OP-RIVOLI-PLUS" Descripcion="04 ONE PIECE RIVOLI PLUS 4.8L C/A BLANCO" PrecioUnitario="3364.07">
+      <CAR EstatusArticulo="AR" Cantidad="50.000" CantidadBackorder="0" FechaEntregaArt="2018-06-04"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="50.000" UDM="PZ" NumArtD="04-OP-CAPRI-PLUS" NumArtP="OP CAPRI PLUS" Descripcion="04 ONE PIECE CAPRI PLUS 4.8L C/A BLANCO" PrecioUnitario="3364.07">
+      <CAR EstatusArticulo="AR" Cantidad="50.000" CantidadBackorder="0" FechaEntregaArt="2018-06-04"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="336407.00"/>
+  </Resumen>
+</Documento>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:Documento xmlns:ns1="http://www.tredicom.com/Normalizado">
+  <ns1:Control>
+    <ns1:SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </ns1:Control>
+  <ns1:Cabecera>
+    <ns1:COC NumeroOrdenCompra="4500108053" FechaOrdenCompra="2018-05-15" EstatusOrden="O" TerminosPago="30.00" Extra1COC="0070276783" Extra4COC="SP"/>
+    <ns1:ROC Contacto="ARMANDO JUAN SALAS CAMPOS" Telefono="01553339400" Mail="armando.salas@gilsa.biz" Extra1="0010139791" Extra2="CARRETERA NACIONAL"/>
+    <ns1:FAA FacturarAD="1000" FacturarAP="21-05" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+    <ns1:ENA EnviarAD="1002" EnviarAP="21-03" ENombreLocalidad="Carretera Nacional" ECalle="CARRETERA NACIONAL KM 269" EMunicipio="MONTERREY" EEstado="NL" ECodigoPostal="64988" EPais="MX"/>
+    <ns1:PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+  </ns1:Cabecera>
+  <ns1:Detalle>
+    <ns1:ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19106-ND" NumArtP="19106-ND" Descripcion="04 19106-ND GANCHO SENCILLO MAGNA DX ND" PrecioUnitario="519.66" ImporteTotal="467.69" FechaEntregaArt="2018-05-16" ExtraART2="10.00" ExtraART3="467.69"/>
+    <ns1:ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19109-ND" NumArtP="19109-ND" Descripcion="04 19109 TOA/BARRA CORTO MAGNA DX NIQUEL" PrecioUnitario="825.47" ImporteTotal="742.92" FechaEntregaArt="2018-05-16" ExtraART2="10.00" ExtraART3="742.92"/>
+    <ns1:ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19117-ND" NumArtP="19117-ND" Descripcion="04 19117 PORTAPAPEL MAGNA DX NIQUEL DURA" PrecioUnitario="740.13" ImporteTotal="666.12" FechaEntregaArt="2018-05-16" ExtraART2="10.00" ExtraART3="666.12"/>
+    <ns1:ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-19105-ND" NumArtP="19105-ND" Descripcion="04 19105 TOA/BARRA MAGNA DX NIQUEL DURAV" PrecioUnitario="1331.38" ImporteTotal="1198.24" FechaEntregaArt="2018-05-16" ExtraART2="10.00" ExtraART3="1,198.24"/>
+  </ns1:Detalle>
+  <ns1:Resumen>
+    <ns1:RES Moneda="MXN" Subtotal="3074.97" IVA="492.00" Total="3566.97" MensajeLibreRES1=" * El material deber&#xE1; ser entregado en la direcci&#xF3;n indicada, en caso   contrario no se aceptar&#xE1; la mercanc&#xED;a. * El n&#xFA;mero de esta orden de compra debe ser referenciado en la remisi&#xF3;n   y/o factura con la que se entregue." MensajeLibreRES3="( TRES MIL QUINIENTOS SESENTA Y SEIS PESOS 97/100 M.N. )"/>
+  </ns1:Resumen>
+</ns1:Documento>

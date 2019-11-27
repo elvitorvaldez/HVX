@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:03:47" Bandera="T" Version="1.0" NumDocumento="10001617"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="RE" NumeroOrdenCompra="4500092235" FechaOrdenCompra="2017-12-04" NumeroPedidoProveedor="0" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-04" FechaEntregaProveedor="2017-12-04" TextoLibreOrden="ERROR PEDIDO NO CREADO"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="40" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-E-712" NumArtP="E-712" Descripcion="04 E-712 MONOMANDO P/REG CROMO MAXIMA" PrecioUnitario="1194.60">
+      <CAR EstatusArticulo="AR" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-20105" NumArtP="20105" Descripcion="04 20105 TOA DE BARRA LARGO CROMO MAXIMA" PrecioUnitario="921.80">
+      <CAR EstatusArticulo="AR" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="4232.80"/>
+  </Resumen>
+</Documento>

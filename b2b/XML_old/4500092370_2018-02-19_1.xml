@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:00:55" Bandera="T" Version="1.0" NumDocumento="10001540"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500092370" FechaOrdenCompra="2017-12-05" NumeroPedidoProveedor="870148" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-05" FechaEntregaProveedor="2017-12-05" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-07-HM-17" NumArtP="HM-17" Descripcion="04 HM-17 MEZC.ALBATROS 4 C/REJILLA CRO" PrecioUnitario="1452.00">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2017-12-08"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="1452.00"/>
+  </Resumen>
+</Documento>

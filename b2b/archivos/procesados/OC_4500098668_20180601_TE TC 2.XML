@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Documento xmlns="http://www.tredicom.com/OrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Control>
+<CIN Emisor="GILSACIN" Receptor="HELVEXCIN" FechaCreacionDocumento="2018-06-01T16:58:41" Bandera="P" Version="1.0" NumDocumento="0000051136"/>
+<SCI TipoDocumento="CO" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+</Control>
+<Cabecera>
+<COC NumeroOrdenCompra="4500098668" FechaOrdenCompra="2018-02-19" EstatusOrden="M" TerminosPago="30.00" Revision="00140" Extra1COC="0077003166" Extra2COC="Orden Terceros"/>
+<ROC Contacto="GONZALEZ GAONA PABLO ERIC" Telefono="01553339400" Mail="pablo.gonzalez@gilsa.biz" Extra1="0010126668" Extra2="CEDIS BARRAGAN"/>
+<FAA FacturarAD="1000" FNombreLocalidad="Gilsa SA de CV" FRFC="GIL820401SX1" FCalle="Insurgentes" FNumero="4070" FMunicipio="Monterrey" FEstado="NL" FCodigoPostal="64640" FPais="MX"/>
+<ENA EnviarAD="9000102867" ENombreLocalidad="VICTOR ALVARADO" ECalle="PEDRO RAMIREZ VAZQUEZ" ENumero="200" EMunicipio="SAN PEDRO GARZA GARCÍA" EEstado="NL" ECodigoPostal="99999" EPais="MX"/>
+<PRO NumProveedor="0000100021" NombreProveedor="Helvex, SA de CV" PRFC="HEL830421S14" PCalle="Calzada Coltongo" PNumero="293" PMunicipio="Col. Industrial Vallejo,Azcapot" PEstado="DF" PCodigoPostal="02300" PPais="MX"/>
+</Cabecera>
+<Detalle>
+<ART Linea="10" CantidadOrdenada="13.000" UDM="PZ" NumArtD="04-MG-1" NumArtP="MG FERRY" Descripcion="04 MG-1 MINGI FERRY TIPO CASCADA BLANCO" PrecioUnitario="4585.00" ImporteTotal="29586.43" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="2,275.88"/>
+<ART Linea="20" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-06-SH058" NumArtP="TH-058" Descripcion="04 TH-058 CONTRA P/LAVABO CROMO" PrecioUnitario="809.00" ImporteTotal="7228.21" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="401.57"/>
+<ART Linea="30" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-WC-OPTION" NumArtP="WC OPTION" Descripcion="04 WC OPTION TAZA ALARGADA 4.8LTS S/ASIE" PrecioUnitario="3293.00" ImporteTotal="2479.83" FechaEntregaArt="2018-01-19" ExtraART2="62.35" ExtraART3="1,239.92"/>
+<ART Linea="40" CantidadOrdenada="13.000" UDM="PZ" NumArtD="04-FB-185-19-0.5" NumArtP="FB-185-19-0.5" Descripcion="04 FB-185-19-0.5 FLUXOMETRO BAT.P/MING." PrecioUnitario="10468.00" ImporteTotal="67548.70" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="5,196.05"/>
+<ART Linea="50" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-TZF-17" NumArtP="TZF NAO17" Descripcion="04 TZF-17 TAZA FLUX NAO 17 BLANCO" PrecioUnitario="4044.00" ImporteTotal="12044.04" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="2,007.34"/>
+<ART Linea="60" CantidadOrdenada="35.000" UDM="PZ" NumArtD="04-TZFNAO" NumArtP="TZF NAO" Descripcion="04 TZF NAO TAZA P/FLUX 4.8L BCO" PrecioUnitario="3131.00" ImporteTotal="54395.25" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="1,554.15"/>
+<ART Linea="70" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-01-106-00" NumArtP="106" Descripcion="04 106 GANCHO DOBLE CLASICA CROMO" PrecioUnitario="394.00" ImporteTotal="391.14" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="195.57"/>
+<ART Linea="80" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-01-102-00" NumArtP="102" Descripcion="04 102 JABONERA SENC.C/CHAROLA CROMO" PrecioUnitario="500.50" ImporteTotal="451.70" FechaEntregaArt="2018-01-19" ExtraART2="9.75" ExtraART3="451.70"/>
+<ART Linea="90" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-AT-2" NumArtP="AT-2" Descripcion="04 AT-2 ASIENTO ALA ANTIBACTERIAL BLANCO" PrecioUnitario="378.00" ImporteTotal="375.26" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="187.63"/>
+<ART Linea="100" CantidadOrdenada="12.000" UDM="PZ" NumArtD="04-06MB7000" NumArtP="B-700-S" Descripcion="04 BARRA RECTA SATINADA B-700-S" PrecioUnitario="1088.00" ImporteTotal="6480.67" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="540.06"/>
+<ART Linea="110" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-MB-1012" NumArtP="MB-1012" Descripcion="04 MB-1012 SECADOR DE MANOS TURBO" PrecioUnitario="6816.00" ImporteTotal="33832.92" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="3,383.29"/>
+<ART Linea="120" CantidadOrdenada="41.000" UDM="PZ" NumArtD="04-03FB11038" NumArtP="FB-110-38" Descripcion="04 FB-110-38 FLUXOMETRO BAT.P/W.C.(1SENS" PrecioUnitario="10468.00" ImporteTotal="213038.19" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="5,196.05"/>
+<ART Linea="130" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-MB-1100" NumArtP="MB-1100" Descripcion="04 MB-1100 DOSIFICADOR D/JABON" PrecioUnitario="3225.00" ImporteTotal="16008.09" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="1,600.81"/>
+<ART Linea="140" CantidadOrdenada="41.000" UDM="PZ" NumArtD="04-AF-1" Descripcion="04 AF-1 ASIENTO S/TAPA ANTIBACTERIAL BCO" PrecioUnitario="327.00" ImporteTotal="6654.90" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="162.31"/>
+<ART Linea="150" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-209" NumArtP="209" Descripcion="04 209 TOA/ARO CRO CLASICA" PrecioUnitario="585.00" ImporteTotal="580.76" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="290.38"/>
+<ART Linea="160" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-E907" NumArtP="E-907" Descripcion="04 E-907 MEZC. MONO EXPLORA CROMO" PrecioUnitario="2888.00" ImporteTotal="5734.12" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="1,433.53"/>
+<ART Linea="170" CantidadOrdenada="18.000" UDM="PZ" NumArtD="04-190" NumArtP="TV-190" Descripcion="04 TV-190 LLAVE ELECTRONICA P/LAVABO CRO" PrecioUnitario="8351.00" ImporteTotal="74614.10" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="4,145.23"/>
+<ART Linea="180" CantidadOrdenada="22.000" UDM="PZ" NumArtD="04-02TV-0160" NumArtP="TV-016" Descripcion="04 TV-016 CESPOL P/LAVABO S/CONTRA" PrecioUnitario="901.00" ImporteTotal="9839.15" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="447.23"/>
+<ART Linea="190" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-06-H200" NumArtP="H-200" Descripcion="04 H-200 REGADERA OPTIMA CROMO" PrecioUnitario="741.00" ImporteTotal="367.81" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="367.81"/>
+<ART Linea="200" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-05C-44-CR" NumArtP="C-44" Descripcion="04 C-44 MANERAL ANTARES CROMO" PrecioUnitario="389.00" ImporteTotal="386.18" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="193.09"/>
+<ART Linea="210" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-13E-60000" NumArtP="E-60-II" Descripcion="04 E-60-II ENSAM.INDIVID D/ROSCAR CRO" PrecioUnitario="372.51" ImporteTotal="277.86" FechaEntregaArt="2018-01-19" ExtraART2="62.70" ExtraART3="138.93"/>
+<ART Linea="220" CantidadOrdenada="11.000" UDM="PZ" NumArtD="04-240" NumArtP="24-CH" Descripcion="04 24-CH COLADERA REJ/PISO UNA BOCA CUAD" PrecioUnitario="1029.00" ImporteTotal="5618.47" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="510.77"/>
+<ART Linea="230" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-266" NumArtP="266" Descripcion="04 266 GANCHO PORTA MULETAS CRO" PrecioUnitario="512.00" ImporteTotal="508.29" FechaEntregaArt="2018-01-19" ExtraART2="50.36" ExtraART3="254.15"/>
+</Detalle>
+<Resumen>
+<RES Moneda="MXN" Subtotal="548442.07" IVA="87750.73" Total="636192.80" MensajeLibreRES1=" * El material deberá ser entregado en la dirección indicada, en caso   contrario no se aceptará la mercancía. * El número de esta orden de compra debe ser referenciado en la remisión   y/o factura con la que se entregue." MensajeLibreRES3="( SEISCIENTOS TREINTA Y SEIS MIL CIENTONOVENTA Y DOS PESOS 80/100 M.N. )"/>
+</Resumen>
+</Documento>

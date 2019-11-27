@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:16:53" Bandera="T" Version="1.0" NumDocumento="10001820"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107477" FechaOrdenCompra="2018-05-11" NumeroPedidoProveedor="870883" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-11" FechaEntregaProveedor="2018-05-11" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="6.000" UDM="PZ" NumArtD="04-05C-44-CR" NumArtP="C-44" Descripcion="04 C-44 MANERAL ANTARES CROMO" PrecioUnitario="229.01">
+      <CAR EstatusArticulo="AA" Cantidad="6.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-06MB470S" NumArtP="B-470-S" Descripcion="04 BARRA RECTA SATINADA B-470-S" PrecioUnitario="588.88">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="10.000" UDM="PZ" NumArtD="04-15106" NumArtP="15106" Descripcion="04 15106 GANCHO SENCILLO PREMIER CROMO" PrecioUnitario="240.86">
+      <CAR EstatusArticulo="AA" Cantidad="10.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-210400" NumArtP="2104" Descripcion="04 2104 P.PAPEL CRO KONOS" PrecioUnitario="450.91">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="50" CantidadOrdenada="62.000" UDM="PZ" NumArtD="04-342" NumArtP="342-C" Descripcion="04 342-C COLADERA C/REJILLA CUADRADA" PrecioUnitario="361.77">
+      <CAR EstatusArticulo="AA" Cantidad="62.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="30.000" UDM="PZ" NumArtD="04-342RL" NumArtP="342-RL" Descripcion="04 342-RL REBOSADERO REDONDO C/DES" PrecioUnitario="353.23">
+      <CAR EstatusArticulo="AA" Cantidad="30.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="4.000" UDM="JG" NumArtD="04-C-77" NumArtP="C-77" Descripcion="04 C-77 JGO.MANERALES GDE MAGNA DX CROMO" PrecioUnitario="896.12">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="80" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-E-924" NumArtP="E-924" Descripcion="04 E-924 MEZC/LAV NAUTI CORTA CC PUSH CR" PrecioUnitario="2581.68">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+    <ART Linea="90" CantidadOrdenada="4.000" UDM="PZ" NumArtD="04-RM-15" NumArtP="RM-15" Descripcion="04 RM-15 REGADERA MANUAL CRO BZO.LARGO" PrecioUnitario="2274.92">
+      <CAR EstatusArticulo="AA" Cantidad="4.000" CantidadBackorder="0" FechaEntregaArt="2018-05-28"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="54467.66"/>
+  </Resumen>
+</Documento>

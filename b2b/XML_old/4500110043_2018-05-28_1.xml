@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:19:57" Bandera="T" Version="1.0" NumDocumento="10001915"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500110043" FechaOrdenCompra="2018-05-25" NumeroPedidoProveedor="870921" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-25" FechaEntregaProveedor="2018-05-25" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="13.000" UDM="PZ" NumArtD="04-06-342R" NumArtP="342-R" Descripcion="04 342-R COLADERA C/REJILLA REDONDA" PrecioUnitario="309.14">
+      <CAR EstatusArticulo="AA" Cantidad="13.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="3.000" UDM="PZ" NumArtD="04-E-920" NumArtP="E-920" Descripcion="04 E-920 MONO ALIKA C/DESAGUE DE PUSH CR" PrecioUnitario="2581.68">
+      <CAR EstatusArticulo="AA" Cantidad="3.000" CantidadBackorder="0" FechaEntregaArt="2018-06-02"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="11763.86"/>
+  </Resumen>
+</Documento>

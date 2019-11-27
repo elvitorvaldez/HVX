@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-02-19T10:01:25" Bandera="T" Version="1.0" NumDocumento="10001548"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500092207" FechaOrdenCompra="2017-12-04" NumeroPedidoProveedor="870151" FechaConfirmacion="2018-02-19" FechaEntregaDistribuidor="2017-12-04" FechaEntregaProveedor="2017-12-04" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-RM-15-SD" NumArtP="RM-15-SD" Descripcion="04 RM-15-SD REGAD.MANUAL SAT BZO.LARGO" PrecioUnitario="2341.90">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-M-1006" NumArtP="M-1006" Descripcion="04 M-1006 MEZCLAV NAUTILIA 8 CC PUSH.CR" PrecioUnitario="3227.40">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="30" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-HOT105" NumArtP="HOT-105" Descripcion="04 HOT-105 TOA/BARRA CRO" PrecioUnitario="710.60">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="40" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-EP-94" NumArtP="EP-94" Descripcion="04 EP-94 MONOMANDO DE LAVABO KUBICA CRO" PrecioUnitario="2902.35">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="60" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-310500" NumArtP="2105" Descripcion="04 2105 TOA/BARRA CRO KONOS" PrecioUnitario="674.85">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="70" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-208" NumArtP="208" Descripcion="04 208 JABONERA SENCILLA CLASICA CROMO" PrecioUnitario="316.80">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="110" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-19109-S" NumArtP="19109-S" Descripcion="04 19109-S TOA/BARRA CORTO SAT MAGNA DX" PrecioUnitario="771.65">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+    <ART Linea="120" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-02910500" NumArtP="9105" Descripcion="04 9105 TOA/BARRA CRO NUVA" PrecioUnitario="1112.65">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2017-12-13"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="14934.15"/>
+  </Resumen>
+</Documento>

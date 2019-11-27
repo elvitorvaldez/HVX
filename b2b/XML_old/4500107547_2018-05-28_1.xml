@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Documento xmlns="http://www.tredicom.com/ConfirmacionOrdenCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Control>
+    <CIN Emisor="HELVEXCIN" Receptor="GILSA_SCI_01" FechaCreacionDocumento="2018-05-28T12:25:56" Bandera="T" Version="1.0" NumDocumento="10002089"/>
+    <SCI TipoDocumento="OC" Distribuidor="GILSA_SCI_01" Proveedor="HELVEX_SCI"/>
+  </Control>
+  <Cabecera>
+    <CCO PropositoTransaccion="OR" TipoConfirmacion="AT" NumeroOrdenCompra="4500107547" FechaOrdenCompra="2018-05-11" NumeroPedidoProveedor="871117" FechaConfirmacion="2018-05-28" FechaEntregaDistribuidor="2018-05-11" FechaEntregaProveedor="2018-05-11" TextoLibreOrden="PEDIDO CREADO EXITOSAMENTE"/>
+  </Cabecera>
+  <Detalle>
+    <ART Linea="10" CantidadOrdenada="1.000" UDM="PZ" NumArtD="04-1001002" NumArtP="RM-22-S" Descripcion="04 RM-22-S REGADERA DE ALTURA DESLIZABLE" PrecioUnitario="2249.79">
+      <CAR EstatusArticulo="AA" Cantidad="1.000" CantidadBackorder="0" FechaEntregaArt="2018-05-11"/>
+    </ART>
+    <ART Linea="20" CantidadOrdenada="2.000" UDM="PZ" NumArtD="04-09E-61-CR" NumArtP="E-61-II" Descripcion="04 E-61-II ENSAM.INDIVIDUAL P/SOLDAR CRO" PrecioUnitario="438.58">
+      <CAR EstatusArticulo="AA" Cantidad="2.000" CantidadBackorder="0" FechaEntregaArt="2018-05-11"/>
+    </ART>
+  </Detalle>
+  <Resumen>
+    <RES TotCantidadConfirmada="3126.95"/>
+  </Resumen>
+</Documento>
